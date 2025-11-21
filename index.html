@@ -4,23 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Inoa & Melenciano Services</title>
-  <meta name="description" content="Business registrations, EINs, translations, credit repair and professional services – Inoa & Melenciano Services." />
+  <meta name="description" content="Premium bilingual real estate, tax, credit, immigration, business and administrative services." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
-  <header class="site-header">
+<body class="theme-light">
+  <header class="site-header glass">
     <div class="logo">Inoa &amp; Melenciano <span data-i18n="services">Services</span></div>
     <nav class="main-nav" aria-label="Main Navigation">
-      <ul>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li class="dropdown">
-          <button data-i18n="nav.services">Services ▾</button>
+          <button data-i18n="nav.services" class="dd-btn">Services ▾</button>
           <ul class="dropdown-menu">
-            <li><a href="services/real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate Services (US)</a></li>
+            <li><a href="services/real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
             <li><a href="services/real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
             <li><a href="services/tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
             <li><a href="services/credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
-            <li><a href="services/immigration.html" data-i18n="svc.immigration">Immigration Form Prep</a></li>
+            <li><a href="services/immigration.html" data-i18n="svc.immigration">Immigration Assistance</a></li>
             <li><a href="services/business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
             <li><a href="services/notary.html" data-i18n="svc.notary">Notary Public</a></li>
             <li><a href="services/translations-admin.html" data-i18n="svc.translationsAdmin">Translations & Admin</a></li>
@@ -32,123 +36,180 @@
         <li><a href="disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
       </ul>
     </nav>
-    <div class="lang-switch" aria-label="Language Switcher">
-      <button data-lang="en" class="active">EN</button>
-      <button data-lang="es">ES</button>
+    <div class="header-controls">
+      <div class="lang-switch" aria-label="Language Switcher">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="es">ES</button>
+      </div>
+      <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <h1 data-i18n="hero.title">Empowering Your Business & Personal Growth</h1>
-      <p data-i18n="hero.subtitle">Comprehensive professional services: registrations, EINs, translations, credit guidance and more.</p>
-      <a href="#lead" class="cta" data-i18n="hero.cta">Get Started Today</a>
+    <section class="hero hero-gradient">
+      <div class="hero-inner">
+        <h1 data-i18n="hero.title">Your Trusted Partner in Real Estate, Finance & Growth</h1>
+        <p data-i18n="hero.subtitle">Century 21 | Newfed Mortgage | Tax | Credit | Immigration | Business | Notary | Paraíso Inmobiliario | Administrative Support</p>
+        <div class="hero-cta">
+          <a href="#lead" class="btn primary" data-i18n="hero.cta">Get Started</a>
+          <a href="services/real-estate-us.html" class="btn outline" data-i18n="common.learnMore">Learn More</a>
+        </div>
+        <div class="pill-strip">
+          <span>Licensed REALTOR®</span>
+          <span>DR Investment Access</span>
+          <span>Bilingual Expertise</span>
+          <span>Secure & Professional</span>
+        </div>
+      </div>
+      <div class="hero-bg-decor"></div>
     </section>
 
-    <section class="trust" aria-labelledby="trust-heading">
-      <h2 id="trust-heading" data-i18n="trust.heading">Why Choose Us</h2>
-      <div class="grid-3">
-        <div><h3 data-i18n="trust.expertiseTitle">Expertise</h3><p data-i18n="trust.expertiseDesc">Multi-disciplinary team for evolving needs.</p></div>
-        <div><h3 data-i18n="trust.speedTitle">Efficiency</h3><p data-i18n="trust.speedDesc">Streamlined processes saving time and resources.</p></div>
-        <div><h3 data-i18n="trust.supportTitle">Support</h3><p data-i18n="trust.supportDesc">Bilingual guidance every step of the way.</p></div>
+    <section class="metrics">
+      <div class="container metrics-grid">
+        <div class="metric-card">
+          <h3>10+ <small>Service Areas</small></h3>
+          <p>Bilingual coverage spanning real estate to admin support.</p>
+        </div>
+        <div class="metric-card">
+          <h3>2 Markets <small>US & DR</small></h3>
+          <p>Domestic & international property opportunities.</p>
+        </div>
+        <div class="metric-card">
+          <h3>100% <small>Client Focus</small></h3>
+          <p>Personalized guidance built around your goals.</p>
+        </div>
+        <div class="metric-card">
+          <h3>24/7 <small>Access</small></h3>
+          <p>Submit leads anytime—rapid follow-up.</p>
+        </div>
       </div>
     </section>
 
-    <section class="services-overview" aria-labelledby="services-heading">
-      <h2 id="services-heading" data-i18n="services.heading">Service Highlights</h2>
-      <div class="services-grid">
-        <article>
-          <h3 data-i18n="svc.realEstateUS">Real Estate Services (US)</h3>
+    <section class="services-section" aria-labelledby="services-heading">
+      <div class="section-head">
+        <h2 id="services-heading" data-i18n="services.heading">Our Core Services</h2>
+        <p class="section-sub">Integrated professional solutions under one trusted bilingual brand.</p>
+      </div>
+      <div class="services-grid enhanced">
+        <article class="svc-card">
+          <div class="icon-circle">🏠</div>
+          <h3 data-i18n="svc.realEstateUS">Real Estate (US)</h3>
           <p data-i18n="svc.realEstateUSDesc">Buying, selling, investing. Partnered with Century 21 North East & Newfed Mortgage.</p>
-          <a href="services/real-estate-us.html" data-i18n="common.learnMore">Learn More</a>
+          <a href="services/real-estate-us.html" class="card-link" data-i18n="common.learnMore">Learn More</a>
         </article>
-        <article>
+        <article class="svc-card">
+          <div class="icon-circle">🌴</div>
           <h3 data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</h3>
           <p data-i18n="svc.realEstateDRDesc">Invest in Dominican Republic properties—residential & commercial projects.</p>
-          <a href="services/real-estate-dr.html" data-i18n="common.learnMore">Learn More</a>
+          <a href="services/real-estate-dr.html" class="card-link" data-i18n="common.learnMore">Learn More</a>
         </article>
-        <article>
+        <article class="svc-card">
+          <div class="icon-circle">🧾</div>
           <h3 data-i18n="svc.taxPrep">Tax Preparation</h3>
           <p data-i18n="svc.taxPrepDesc">Personal and business tax filing services.</p>
-          <a href="services/tax-prep.html" data-i18n="common.learnMore">Learn More</a>
+          <a href="services/tax-prep.html" class="card-link" data-i18n="common.learnMore">Learn More</a>
         </article>
-        <article>
+        <article class="svc-card">
+          <div class="icon-circle">📈</div>
           <h3 data-i18n="svc.creditRepair">Credit Repair</h3>
           <p data-i18n="svc.creditRepairDesc">Educational credit guidance to help rebuild your financial standing.</p>
-          <a href="services/credit-repair.html" data-i18n="common.learnMore">Learn More</a>
+          <a href="services/credit-repair.html" class="card-link" data-i18n="common.learnMore">Learn More</a>
         </article>
-        <article>
-          <h3 data-i18n="svc.immigration">Immigration Form Preparation</h3>
-          <p data-i18n="svc.immigrationDesc">Accurate completion of immigration paperwork (USCIS forms).</p>
-          <a href="services/immigration.html" data-i18n="common.learnMore">Learn More</a>
+        <article class="svc-card">
+          <div class="icon-circle">🛂</div>
+          <h3 data-i18n="svc.immigration">Immigration Assistance</h3>
+          <p data-i18n="svc.immigrationDesc">Administrative help completing USCIS forms (not legal advice).</p>
+          <a href="services/immigration.html" class="card-link" data-i18n="common.learnMore">Learn More</a>
         </article>
-        <article>
+        <article class="svc-card">
+          <div class="icon-circle">🧩</div>
           <h3 data-i18n="svc.businessRegistration">Business Registration</h3>
           <p data-i18n="svc.businessRegistrationDesc">LLC, Corp, EIN applications—start your business right.</p>
-          <a href="services/business-registration.html" data-i18n="common.learnMore">Learn More</a>
+          <a href="services/business-registration.html" class="card-link" data-i18n="common.learnMore">Learn More</a>
         </article>
-        <article>
+        <article class="svc-card">
+          <div class="icon-circle">🖋️</div>
           <h3 data-i18n="svc.notary">Notary Public</h3>
           <p data-i18n="svc.notaryDesc">Authorized notarization for legal documents.</p>
-          <a href="services/notary.html" data-i18n="common.learnMore">Learn More</a>
+          <a href="services/notary.html" class="card-link" data-i18n="common.learnMore">Learn More</a>
         </article>
-        <article>
+        <article class="svc-card">
+          <div class="icon-circle">🔄</div>
           <h3 data-i18n="svc.translationsAdmin">Translations & Administrative Support</h3>
           <p data-i18n="svc.translationsAdminDesc">Bilingual help for documents, forms, accounts & daily tasks.</p>
-          <a href="services/translations-admin.html" data-i18n="common.learnMore">Learn More</a>
+          <a href="services/translations-admin.html" class="card-link" data-i18n="common.learnMore">Learn More</a>
         </article>
       </div>
     </section>
 
-    <section id="lead" class="lead-capture" aria-labelledby="lead-heading">
-      <h2 id="lead-heading" data-i18n="lead.heading">Request a Complimentary Consultation</h2>
-      <p data-i18n="lead.copy">Share a few details and we will connect soon.</p>
-      <form id="leadForm" novalidate>
-        <div class="form-row">
-          <label for="name" data-i18n="form.nameLabel">Full Name</label>
-          <input id="name" name="name" type="text" required placeholder="John / María" />
+    <section class="value-prop" aria-labelledby="value-heading">
+      <div class="container">
+        <h2 id="value-heading">Why Clients Choose Us</h2>
+        <div class="vp-grid">
+          <div class="vp-item"><h3>Bilingual Precision</h3><p>Native-level English & Spanish communication ensures clarity and trust.</p></div>
+          <div class="vp-item"><h3>Integrated Approach</h3><p>Real estate, tax, credit and admin services unified under one brand.</p></div>
+          <div class="vp-item"><h3>Investment Bridge</h3><p>Unique access to Dominican Republic real estate opportunities.</p></div>
+          <div class="vp-item"><h3>Compliance Minded</h3><p>Professional handling with proper disclosures and transparent process.</p></div>
         </div>
-        <div class="form-row">
-          <label for="email" data-i18n="form.emailLabel">Email</label>
-          <input id="email" name="email" type="email" required placeholder="you@example.com" />
-        </div>
-        <div class="form-row">
-          <label for="phone" data-i18n="form.phoneLabel">Phone</label>
-          <input id="phone" name="phone" type="tel" placeholder="(xxx) xxx-xxxx" />
-        </div>
-        <div class="form-row">
-          <label for="interest" data-i18n="form.interestLabel">Service Interest</label>
-          <select id="interest" name="interest">
-            <option value="general" data-i18n="form.opt.general">General Inquiry</option>
-            <option value="realEstateUS" data-i18n="form.opt.realEstateUS">Real Estate (US)</option>
-            <option value="realEstateDR" data-i18n="form.opt.realEstateDR">Real Estate (Dominican Republic)</option>
-            <option value="mortgage" data-i18n="form.opt.mortgage">Mortgage/Refinance</option>
-            <option value="taxPrep" data-i18n="form.opt.taxPrep">Tax Preparation</option>
-            <option value="creditRepair" data-i18n="form.opt.creditRepair">Credit Repair</option>
-            <option value="immigration" data-i18n="form.opt.immigration">Immigration Forms</option>
-            <option value="businessReg" data-i18n="form.opt.businessReg">Business Registration</option>
-            <option value="notary" data-i18n="form.opt.notary">Notary Service</option>
-            <option value="translationsAdmin" data-i18n="form.opt.translationsAdmin">Translations & Admin Support</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label for="message" data-i18n="form.messageLabel">Brief Details</label>
-          <textarea id="message" name="message" rows="4" placeholder="" ></textarea>
-        </div>
-        <button type="submit" class="submit" data-i18n="form.submit">Submit</button>
-        <p id="formStatus" class="status" aria-live="polite"></p>
-      </form>
+      </div>
+    </section>
+
+    <section id="lead" class="lead-capture alt" aria-labelledby="lead-heading">
+      <div class="lead-inner">
+        <h2 id="lead-heading" data-i18n="lead.heading">Request a Complimentary Consultation</h2>
+        <p data-i18n="lead.copy">Share a few details and we will connect soon.</p>
+        <form id="leadForm" novalidate class="modern-form">
+          <div class="form-row">
+            <label for="name" data-i18n="form.nameLabel">Full Name</label>
+            <input id="name" name="name" type="text" required placeholder="John / María" />
+          </div>
+          <div class="form-row">
+            <label for="email" data-i18n="form.emailLabel">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          </div>
+          <div class="form-row">
+            <label for="phone" data-i18n="form.phoneLabel">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(xxx) xxx-xxxx" />
+          </div>
+          <div class="form-row">
+            <label for="interest" data-i18n="form.interestLabel">Service Interest</label>
+            <select id="interest" name="interest">
+              <option value="general" data-i18n="form.opt.general">General Inquiry</option>
+              <option value="realEstateUS" data-i18n="form.opt.realEstateUS">Real Estate (US)</option>
+              <option value="realEstateDR" data-i18n="form.opt.realEstateDR">Real Estate (Dominican Republic)</option>
+              <option value="mortgage" data-i18n="form.opt.mortgage">Mortgage/Refinance</option>
+              <option value="taxPrep" data-i18n="form.opt.taxPrep">Tax Preparation</option>
+              <option value="creditRepair" data-i18n="form.opt.creditRepair">Credit Repair</option>
+              <option value="immigration" data-i18n="form.opt.immigration">Immigration Assistance</option>
+              <option value="businessReg" data-i18n="form.opt.businessReg">Business Registration</option>
+              <option value="notary" data-i18n="form.opt.notary">Notary Service</option>
+              <option value="translationsAdmin" data-i18n="form.opt.translationsAdmin">Translations & Admin Support</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message" data-i18n="form.messageLabel">Brief Details</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us how we can help" ></textarea>
+          </div>
+          <button type="submit" class="btn primary" data-i18n="form.submit">Submit</button>
+          <p id="formStatus" class="status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
 
     <section class="disclaimer-preview" aria-labelledby="disclaimer-heading">
       <h2 id="disclaimer-heading" data-i18n="disclaimer.heading">Important Disclosures</h2>
       <p data-i18n="disclaimer.preview">Informational guidance only; not legal, tax, or guaranteed credit outcome advice. Full disclosures below.</p>
-      <a href="disclosures.html" data-i18n="common.readDisclosures">Read Full Disclosures</a>
+      <a href="disclosures.html" class="btn outline small" data-i18n="common.readDisclosures">Read Full Disclosures</a>
     </section>
   </main>
 
-  <footer class="site-footer" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" class="visually-hidden">Footer</h2>
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">Inoa & Melenciano</div>
+      <div class="footer-actions">
+        <button id="themeToggleFooter" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
     <div class="footer-columns">
       <div>
         <h3 data-i18n="footer.company">Company</h3>
