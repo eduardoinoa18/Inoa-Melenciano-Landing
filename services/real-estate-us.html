@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Real Estate Services (US) • Inoa & Melenciano Services</title>
+  <meta name="description" content="Buying, selling, investing—residential & commercial real estate with Century 21 North East and Newfed Mortgage." />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="../index.html">Inoa &amp; Melenciano <span data-i18n="services">Services</span></a></div>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+        <li class="dropdown">
+          <button data-i18n="nav.services">Services ▾</button>
+          <ul class="dropdown-menu">
+            <li><a class="active" href="real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
+            <li><a href="real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
+            <li><a href="tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
+            <li><a href="credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
+            <li><a href="immigration.html" data-i18n="svc.immigration">Immigration</a></li>
+            <li><a href="business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
+            <li><a href="notary.html" data-i18n="svc.notary">Notary Public</a></li>
+          </ul>
+        </li>
+        <li><a href="../about.html" data-i18n="nav.about">About Us</a></li>
+        <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
+        <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" aria-label="Language Switcher">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="es">ES</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 data-i18n="svc.realEstateUS">Real Estate Services (US)</h1>
+      <p data-lang="en">Whether you're buying your first home, selling a property, or investing for long-term wealth, we guide you every step of the way. Partnered with <strong>Century 21 North East</strong> and <strong>Newfed Mortgage</strong>.</p>
+      <p data-lang="es">Ya sea que estés comprando tu primer hogar, vendiendo una propiedad o invirtiendo para riqueza a largo plazo, te guiamos en cada paso. En asociación con <strong>Century 21 North East</strong> y <strong>Newfed Mortgage</strong>.</p>
+    </section>
+
+    <section class="services-overview" aria-labelledby="services-list">
+      <h2 id="services-list" data-lang="en">What We Offer</h2>
+      <h2 id="services-list-es" data-lang="es">Lo Que Ofrecemos</h2>
+      <ul>
+        <li data-lang="en"><strong>Home Buying:</strong> First-time buyer guidance, property search, negotiation, closing support.</li>
+        <li data-lang="es"><strong>Compra de Vivienda:</strong> Guía para compradores primerizos, búsqueda de propiedades, negociación, apoyo en cierre.</li>
+        <li data-lang="en"><strong>Home Selling:</strong> Market analysis, listing, staging tips, marketing strategy.</li>
+        <li data-lang="es"><strong>Venta de Vivienda:</strong> Análisis de mercado, listado, consejos de presentación, estrategia de marketing.</li>
+        <li data-lang="en"><strong>Investment Properties:</strong> Multi-family, rental income analysis, portfolio building.</li>
+        <li data-lang="es"><strong>Propiedades de Inversión:</strong> Multifamiliares, análisis de ingresos por alquiler, construcción de portafolio.</li>
+        <li data-lang="en"><strong>Mortgage Applications:</strong> Pre-approval, application support via Newfed Mortgage partners.</li>
+        <li data-lang="es"><strong>Solicitudes de Hipoteca:</strong> Pre-aprobación, apoyo de solicitud a través de socios de Newfed Mortgage.</li>
+        <li data-lang="en"><strong>Refinancing:</strong> Lower your rate or tap into equity with refinance guidance.</li>
+        <li data-lang="es"><strong>Refinanciamiento:</strong> Reduce tu tasa o aprovecha el capital con guía de refinanciamiento.</li>
+        <li data-lang="en"><strong>Commercial Real Estate:</strong> Office, retail, warehouse—investment and leasing support.</li>
+        <li data-lang="es"><strong>Bienes Raíces Comerciales:</strong> Oficina, comercio, almacén—inversión y apoyo de arrendamiento.</li>
+      </ul>
+    </section>
+
+    <section class="lead-capture" aria-labelledby="contact-us">
+      <h2 id="contact-us" data-lang="en">Schedule a Consultation</h2>
+      <h2 id="contact-us-es" data-lang="es">Agenda una Consulta</h2>
+      <form id="leadForm" novalidate>
+        <div class="form-row">
+          <label for="name" data-i18n="form.nameLabel">Full Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="email" data-i18n="form.emailLabel">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="phone" data-i18n="form.phoneLabel">Phone</label>
+          <input id="phone" name="phone" type="tel" />
+        </div>
+        <input type="hidden" name="interest" value="realEstateUS" />
+        <div class="form-row">
+          <label for="message" data-i18n="form.messageLabel">Brief Details</label>
+          <textarea id="message" name="message" rows="5" placeholder="E.g., looking to buy in Boston area, pre-approval needed..."></textarea>
+        </div>
+        <button type="submit" class="submit" data-i18n="form.submit">Submit</button>
+        <p id="formStatus" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="visually-hidden">Footer</h2>
+    <div class="footer-columns">
+      <div>
+        <h3 data-i18n="footer.company">Company</h3>
+        <ul>
+          <li><a href="../about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
+          <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="footer.services">Services</h3>
+        <ul>
+          <li><a href="real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
+          <li><a href="real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
+          <li><a href="tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
+          <li><a href="credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
+          <li><a href="immigration.html" data-i18n="svc.immigration">Immigration</a></li>
+          <li><a href="business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
+          <li><a href="notary.html" data-i18n="svc.notary">Notary Public</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="footer.connect">Connect</h3>
+        <p>Email: <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p>
+        <p data-i18n="footer.socialComingSoon">Social channels coming soon.</p>
+      </div>
+      <div>
+        <h3 data-i18n="footer.newsletter">Stay Informed</h3>
+        <p data-i18n="footer.newsletterDesc">Opt-in form coming soon (privacy-focused).</p>
+      </div>
+    </div>
+    <div class="legal">
+      <p>&copy; <span id="year"></span> Inoa &amp; Melenciano Services. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/form.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

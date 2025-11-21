@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • Inoa & Melenciano Services</title>
+  <meta name="description" content="Contact Inoa & Melenciano Services for bilingual support." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Inoa &amp; Melenciano <span data-i18n="services">Services</span></div>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li class="dropdown">
+          <button data-i18n="nav.services">Services ▾</button>
+          <ul class="dropdown-menu">
+            <li><a href="services/real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
+            <li><a href="services/real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
+            <li><a href="services/tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
+            <li><a href="services/credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
+            <li><a href="services/immigration.html" data-i18n="svc.immigration">Immigration</a></li>
+            <li><a href="services/business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
+            <li><a href="services/notary.html" data-i18n="svc.notary">Notary Public</a></li>
+            <li><a href="services/translations-admin.html" data-i18n="svc.translationsAdmin">Translations & Admin</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+        <li><a href="team.html" data-i18n="nav.team">Our Team</a></li>
+        <li><a class="active" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" aria-label="Language Switcher">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="es">ES</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 data-i18n="nav.contact">Contact</h1>
+      <p data-lang="en">Send us a message and we’ll get back shortly.</p>
+      <p data-lang="es">Envíanos un mensaje y te responderemos pronto.</p>
+    </section>
+
+    <section class="lead-capture" aria-labelledby="contact-form">
+      <h2 id="contact-form" data-lang="en">Contact Form</h2>
+      <h2 id="contact-form-es" data-lang="es">Formulario de Contacto</h2>
+      <form id="leadForm" novalidate>
+        <div class="form-row">
+          <label for="name" data-i18n="form.nameLabel">Full Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="email" data-i18n="form.emailLabel">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="phone" data-i18n="form.phoneLabel">Phone</label>
+          <input id="phone" name="phone" type="tel" />
+        </div>
+        <div class="form-row">
+          <label for="interest" data-i18n="form.interestLabel">Service Interest</label>
+          <select id="interest" name="interest">
+            <option value="general" data-i18n="form.opt.general">General Inquiry</option>
+            <option value="realEstateUS" data-i18n="form.opt.realEstateUS">Real Estate (US)</option>
+            <option value="realEstateDR" data-i18n="form.opt.realEstateDR">Real Estate (Dominican Republic)</option>
+            <option value="mortgage" data-i18n="form.opt.mortgage">Mortgage/Refinance</option>
+            <option value="taxPrep" data-i18n="form.opt.taxPrep">Tax Preparation</option>
+            <option value="creditRepair" data-i18n="form.opt.creditRepair">Credit Repair</option>
+            <option value="immigration" data-i18n="form.opt.immigration">Immigration Assistance</option>
+            <option value="businessReg" data-i18n="form.opt.businessReg">Business Registration</option>
+            <option value="notary" data-i18n="form.opt.notary">Notary Service</option>
+            <option value="translationsAdmin" data-i18n="form.opt.translationsAdmin">Translations & Admin Support</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message" data-i18n="form.messageLabel">Brief Details</label>
+          <textarea id="message" name="message" rows="6"></textarea>
+        </div>
+        <button type="submit" class="submit" data-i18n="form.submit">Submit</button>
+        <p id="formStatus" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="visually-hidden">Footer</h2>
+    <div class="footer-columns">
+      <div>
+        <h3 data-i18n="footer.company">Company</h3>
+        <ul>
+          <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="team.html" data-i18n="nav.team">Our Team</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="footer.services">Services</h3>
+        <ul>
+          <li><a href="services/real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
+          <li><a href="services/real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
+          <li><a href="services/tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
+          <li><a href="services/credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
+          <li><a href="services/immigration.html" data-i18n="svc.immigration">Immigration</a></li>
+          <li><a href="services/business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
+          <li><a href="services/notary.html" data-i18n="svc.notary">Notary Public</a></li>
+          <li><a href="services/translations-admin.html" data-i18n="svc.translationsAdmin">Translations & Admin</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="footer.connect">Connect</h3>
+        <p>Email: <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p>
+        <p data-i18n="footer.socialComingSoon">Social channels coming soon.</p>
+      </div>
+      <div>
+        <h3 data-i18n="footer.newsletter">Stay Informed</h3>
+        <p data-i18n="footer.newsletterDesc">Opt-in form coming soon (privacy-focused).</p>
+      </div>
+    </div>
+    <div class="legal">
+      <p>&copy; <span id="year"></span> Inoa &amp; Melenciano Services. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/form.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

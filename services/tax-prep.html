@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tax Preparation Services • Inoa & Melenciano Services</title>
+  <meta name="description" content="Personal and business tax preparation services—accurate, bilingual support." />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="../index.html">Inoa &amp; Melenciano <span data-i18n="services">Services</span></a></div>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+        <li class="dropdown">
+          <button data-i18n="nav.services">Services ▾</button>
+          <ul class="dropdown-menu">
+            <li><a href="real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
+            <li><a href="real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
+            <li><a class="active" href="tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
+            <li><a href="credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
+            <li><a href="immigration.html" data-i18n="svc.immigration">Immigration</a></li>
+            <li><a href="business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
+            <li><a href="notary.html" data-i18n="svc.notary">Notary Public</a></li>
+          </ul>
+        </li>
+        <li><a href="../about.html" data-i18n="nav.about">About Us</a></li>
+        <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
+        <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" aria-label="Language Switcher">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="es">ES</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 data-i18n="svc.taxPrep">Tax Preparation</h1>
+      <p data-lang="en">Personal and business tax returns prepared accurately and on time. Bilingual support to maximize deductions and ensure compliance.</p>
+      <p data-lang="es">Declaraciones de impuestos personales y empresariales preparadas con precisión y a tiempo. Soporte bilingüe para maximizar deducciones y garantizar cumplimiento.</p>
+    </section>
+
+    <section class="services-overview" aria-labelledby="details">
+      <h2 id="details" data-lang="en">Services Included</h2>
+      <h2 id="details-es" data-lang="es">Servicios Incluidos</h2>
+      <ul>
+        <li data-lang="en">Personal federal and state tax returns (1040, schedules).</li>
+        <li data-lang="es">Declaraciones de impuestos federales y estatales personales (1040, anexos).</li>
+        <li data-lang="en">Business tax filings (sole proprietor, LLC, S-Corp, C-Corp).</li>
+        <li data-lang="es">Presentaciones de impuestos comerciales (propietario único, LLC, S-Corp, C-Corp).</li>
+        <li data-lang="en">Rental property income and expense reporting.</li>
+        <li data-lang="es">Reporte de ingresos y gastos de propiedades de alquiler.</li>
+        <li data-lang="en">Self-employment and freelancer guidance.</li>
+        <li data-lang="es">Orientación para trabajadores autónomos y freelancers.</li>
+        <li data-lang="en">Year-round tax planning and estimated payment support.</li>
+        <li data-lang="es">Planificación fiscal durante todo el año y apoyo de pagos estimados.</li>
+      </ul>
+    </section>
+
+    <section class="lead-capture" aria-labelledby="get-started">
+      <h2 id="get-started" data-lang="en">Get Started</h2>
+      <h2 id="get-started-es" data-lang="es">Comienza</h2>
+      <form id="leadForm" novalidate>
+        <div class="form-row">
+          <label for="name" data-i18n="form.nameLabel">Full Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="email" data-i18n="form.emailLabel">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="phone" data-i18n="form.phoneLabel">Phone</label>
+          <input id="phone" name="phone" type="tel" />
+        </div>
+        <input type="hidden" name="interest" value="taxPrep" />
+        <div class="form-row">
+          <label for="message" data-i18n="form.messageLabel">Brief Details</label>
+          <textarea id="message" name="message" rows="5" placeholder="E.g., need personal return, have rental income..."></textarea>
+        </div>
+        <button type="submit" class="submit" data-i18n="form.submit">Submit</button>
+        <p id="formStatus" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="visually-hidden">Footer</h2>
+    <div class="footer-columns">
+      <div>
+        <h3 data-i18n="footer.company">Company</h3>
+        <ul>
+          <li><a href="../about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
+          <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="footer.services">Services</h3>
+        <ul>
+          <li><a href="real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
+          <li><a href="real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
+          <li><a href="tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
+          <li><a href="credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
+          <li><a href="immigration.html" data-i18n="svc.immigration">Immigration</a></li>
+          <li><a href="business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
+          <li><a href="notary.html" data-i18n="svc.notary">Notary Public</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="footer.connect">Connect</h3>
+        <p>Email: <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p>
+        <p data-i18n="footer.socialComingSoon">Social channels coming soon.</p>
+      </div>
+      <div>
+        <h3 data-i18n="footer.newsletter">Stay Informed</h3>
+        <p data-i18n="footer.newsletterDesc">Opt-in form coming soon (privacy-focused).</p>
+      </div>
+    </div>
+    <div class="legal">
+      <p>&copy; <span id="year"></span> Inoa &amp; Melenciano Services. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/form.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
