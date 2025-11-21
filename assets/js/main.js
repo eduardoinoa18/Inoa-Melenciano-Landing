@@ -59,7 +59,9 @@
   if(leadForm && statusEl){
     leadForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      statusEl.textContent = 'Sending...';
+      const lang = document.documentElement.lang || 'en';
+      const dict = (typeof DICT !== 'undefined' && DICT[lang]) ? DICT[lang] : {};
+      statusEl.textContent = dict['status.sending'] || 'Sending...';
       const fd = new FormData(leadForm);
       const payload = Object.fromEntries(fd.entries());
       try {
@@ -72,10 +74,10 @@
           const text = await res.text();
           throw new Error(text || 'Request failed');
         }
-        statusEl.textContent = '✓ Received. We will contact you shortly.';
+        statusEl.textContent = dict['status.success'] || '✓ Received. We will contact you shortly.';
         leadForm.reset();
       } catch(err){
-        statusEl.textContent = 'Error: ' + err.message;
+        statusEl.textContent = dict['status.error'] || 'Submission error.';
       }
     });
   }
