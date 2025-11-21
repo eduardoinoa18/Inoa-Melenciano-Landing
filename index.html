@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Inoa & Melenciano Services</title>
   <meta name="description" content="Premium bilingual real estate, tax, credit, immigration, business and administrative services." />
+  <meta name="keywords" content="real estate, Dominican Republic, tax preparation, credit repair, immigration assistance, business registration, notary, bilingual services" />
+  <meta name="author" content="Inoa & Melenciano Services" />
+  <link rel="canonical" href="https://www.inoamelenciano.com/" />
+  <meta property="og:title" content="Inoa & Melenciano Services" />
+  <meta property="og:description" content="Bilingual real estate, tax, credit, immigration, business and administrative services across US & Dominican Republic." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.inoamelenciano.com/" />
+  <meta property="og:image" content="https://www.inoamelenciano.com/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Inoa & Melenciano Services" />
+  <meta name="twitter:description" content="Bilingual real estate + financial & administrative services." />
+  <meta name="theme-color" content="#0d4d8a" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -159,6 +172,11 @@
         <h2 id="lead-heading" data-i18n="lead.heading">Request a Complimentary Consultation</h2>
         <p data-i18n="lead.copy">Share a few details and we will connect soon.</p>
         <form id="leadForm" novalidate class="modern-form">
+          <!-- Honeypot anti-spam field -->
+          <div class="form-row" style="display:none;visibility:hidden;">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
+          </div>
           <div class="form-row">
             <label for="name" data-i18n="form.nameLabel">Full Name</label>
             <input id="name" name="name" type="text" required placeholder="John / María" />

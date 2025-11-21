@@ -15,7 +15,11 @@ app.use(express.static(path.join(__dirname)));
 
 // Lead capture endpoint (stores to JSON and attempts email forward)
 app.post('/api/lead', async (req, res) => {
-  const { name = '', email = '', phone = '', interest = 'general', message = '' } = req.body || {};
+  const { name = '', email = '', phone = '', interest = 'general', message = '', company = '' } = req.body || {};
+  // Honeypot spam trap: if company field filled, treat as bot and succeed silently
+  if (company) {
+    return res.status(201).json({ ok: true, filtered: true });
+  }
   if(!name || !email){
     return res.status(400).json({ error: 'Name and email are required.' });
   }
