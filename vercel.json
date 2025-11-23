@@ -1,5 +1,11 @@
 {
   "version": 2,
   "installCommand": "cd api && npm install",
-  "framework": null
+  "buildCommand": null,
+  "framework": null,
+  "functions": {
+    "api/*.js": {
+      "runtime": "nodejs20.x"
+    }
+  }
 }
