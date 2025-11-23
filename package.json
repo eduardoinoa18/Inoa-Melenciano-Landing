@@ -4,9 +4,9 @@
   "private": true,
   "description": "Bilingual landing and services site for Inoa & Melenciano Services (business registrations, EINs, translations, credit repair, more).",
   "scripts": {
-    "dev": "node server.js",
-    "start": "NODE_ENV=production node server.js",
-    "start:win": "node server.js"
+    "dev": "echo Static site; no dev server needed",
+    "start": "echo Static site; served by Vercel",
+    "build": "echo No build step"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
