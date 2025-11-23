@@ -16,7 +16,6 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Inoa & Melenciano Services" />
   <meta name="twitter:description" content="Bilingual real estate + financial & administrative services." />
-  <meta name="theme-color" content="#0d4d8a" />
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,10 +67,10 @@
           <a href="services/real-estate-us.html" class="btn outline" data-i18n="common.learnMore">Learn More</a>
         </div>
         <div class="pill-strip">
-          <span>Licensed REALTOR®</span>
-          <span>DR Investment Access</span>
-          <span>Bilingual Expertise</span>
-          <span>Secure & Professional</span>
+          <span data-i18n="hero.pill.licensed">Licensed REALTOR®</span>
+          <span data-i18n="hero.pill.drAccess">DR Investment Access</span>
+          <span data-i18n="hero.pill.bilingual">Bilingual Expertise</span>
+          <span data-i18n="hero.pill.secure">Secure & Professional</span>
         </div>
       </div>
       <div class="hero-bg-decor"></div>
@@ -80,20 +79,20 @@
     <section class="metrics">
       <div class="container metrics-grid">
         <div class="metric-card">
-          <h3>10+ <small>Service Areas</small></h3>
-          <p>Bilingual coverage spanning real estate to admin support.</p>
+          <h3>10+ <small data-i18n="metrics.serviceAreas">Service Areas</small></h3>
+          <p data-i18n="metrics.desc.serviceAreas">Bilingual coverage spanning real estate to admin support.</p>
         </div>
         <div class="metric-card">
-          <h3>2 Markets <small>US & DR</small></h3>
-          <p>Domestic & international property opportunities.</p>
+          <h3>2 <small data-i18n="metrics.markets">US & DR</small></h3>
+          <p data-i18n="metrics.desc.markets">Domestic & international property opportunities.</p>
         </div>
         <div class="metric-card">
-          <h3>100% <small>Client Focus</small></h3>
-          <p>Personalized guidance built around your goals.</p>
+          <h3>100% <small data-i18n="metrics.clientFocus">Client Focus</small></h3>
+          <p data-i18n="metrics.desc.clientFocus">Personalized guidance built around your goals.</p>
         </div>
         <div class="metric-card">
-          <h3>24/7 <small>Access</small></h3>
-          <p>Submit leads anytime—rapid follow-up.</p>
+          <h3>24/7 <small data-i18n="metrics.access">Access</small></h3>
+          <p data-i18n="metrics.desc.access">Submit leads anytime—rapid follow-up.</p>
         </div>
       </div>
     </section>
@@ -157,12 +156,12 @@
 
     <section class="value-prop" aria-labelledby="value-heading">
       <div class="container">
-        <h2 id="value-heading">Why Clients Choose Us</h2>
+        <h2 id="value-heading" data-i18n="value.heading">Why Clients Choose Us</h2>
         <div class="vp-grid">
-          <div class="vp-item"><h3>Bilingual Precision</h3><p>Native-level English & Spanish communication ensures clarity and trust.</p></div>
-          <div class="vp-item"><h3>Integrated Approach</h3><p>Real estate, tax, credit and admin services unified under one brand.</p></div>
-          <div class="vp-item"><h3>Investment Bridge</h3><p>Unique access to Dominican Republic real estate opportunities.</p></div>
-          <div class="vp-item"><h3>Compliance Minded</h3><p>Professional handling with proper disclosures and transparent process.</p></div>
+          <div class="vp-item"><h3 data-i18n="value.bilingualPrecision.title">Bilingual Precision</h3><p data-i18n="value.bilingualPrecision.desc">Native-level English & Spanish communication ensures clarity and trust.</p></div>
+          <div class="vp-item"><h3 data-i18n="value.integrated.title">Integrated Approach</h3><p data-i18n="value.integrated.desc">Real estate, tax, credit and admin services unified under one brand.</p></div>
+          <div class="vp-item"><h3 data-i18n="value.investmentBridge.title">Investment Bridge</h3><p data-i18n="value.investmentBridge.desc">Unique access to Dominican Republic real estate opportunities.</p></div>
+          <div class="vp-item"><h3 data-i18n="value.compliance.title">Compliance Minded</h3><p data-i18n="value.compliance.desc">Professional handling with proper disclosures and transparent process.</p></div>
         </div>
       </div>
     </section>
@@ -173,7 +172,7 @@
         <p data-i18n="lead.copy">Share a few details and we will connect soon.</p>
         <form id="leadForm" novalidate class="modern-form">
           <!-- Honeypot anti-spam field -->
-          <div class="form-row" style="display:none;visibility:hidden;">
+          <div class="form-row honeypot">
             <label for="company">Company</label>
             <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
           </div>
@@ -267,7 +266,6 @@
   </footer>
 
   <script src="/assets/js/i18n.js"></script>
-  <script src="/assets/js/form.js"></script>
   <script src="/assets/js/main.js"></script>
 </body>
 </html>
