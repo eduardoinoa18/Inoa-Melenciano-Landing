@@ -31,7 +31,7 @@
   }
   function updateThemeText(){
     const light = body.classList.contains('theme-light');
-    const label = light ? '🌙' : '☀️';
+    const label = light ? '🌙 Dark' : '☀️ Light';
     if(themeToggle) themeToggle.textContent = label;
     if(themeToggleFooter) themeToggleFooter.textContent = label;
   }
