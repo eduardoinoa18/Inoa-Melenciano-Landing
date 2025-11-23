@@ -1,6 +1,3 @@
 {
-  "version": 2,
-  "routes": [
-    { "handle": "filesystem" }
-  ]
+  "version": 2
 }
