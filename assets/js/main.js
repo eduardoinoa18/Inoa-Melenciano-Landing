@@ -1,5 +1,5 @@
-// Main interaction logic for Inoa & Melenciano Services
-// Features: dark mode toggle, mobile nav, lead form submit enhancement, footer year, scroll animations
+// Main interaction logic for Inoa & Melenciano Services - Enhanced Version
+// Features: dark mode toggle, mobile nav, lead form submit, scroll animations, back to top
 (function(){
   const body = document.body;
   const themeToggle = document.getElementById('themeToggle');
@@ -38,7 +38,17 @@
   themeToggle && themeToggle.addEventListener('click', toggleTheme);
   themeToggleFooter && themeToggleFooter.addEventListener('click', toggleTheme);
 
-  // Scroll header effect
+  // Create and add back to top button
+  const backToTopBtn = document.createElement('button');
+  backToTopBtn.className = 'back-to-top';
+  backToTopBtn.innerHTML = '↑';
+  backToTopBtn.setAttribute('aria-label', 'Back to top');
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  document.body.appendChild(backToTopBtn);
+
+  // Scroll header effect and back to top visibility
   let lastScroll = 0;
   window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
@@ -49,6 +59,14 @@
         header.classList.remove('scrolled');
       }
     }
+    
+    // Back to top button visibility
+    if(currentScroll > 300){
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+    
     lastScroll = currentScroll;
   });
 
@@ -97,12 +115,17 @@
         if(target){
           e.preventDefault();
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Close mobile menu if open
+          if(navLinks && navLinks.classList.contains('open')){
+            navLinks.classList.remove('open');
+            navToggle && navToggle.setAttribute('aria-expanded','false');
+          }
         }
       }
     });
   });
 
-  // Lead form submit enhancement
+  // Lead form submit enhancement with loading spinner
   if(leadForm && statusEl){
     leadForm.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -113,8 +136,9 @@
       const submitBtn = leadForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.textContent;
       submitBtn.disabled = true;
-      submitBtn.textContent = dict['status.sending'] || 'Sending...';
+      submitBtn.innerHTML = (dict['status.sending'] || 'Sending') + '<span class="spinner"></span>';
       statusEl.textContent = '';
+      statusEl.className = 'status';
       
       const fd = new FormData(leadForm);
       const payload = Object.fromEntries(fd.entries());
@@ -129,8 +153,8 @@
           const text = await res.text();
           throw new Error(text || 'Request failed');
         }
-        statusEl.textContent = dict['status.success'] || '✓ Received. We will contact you shortly.';
-        statusEl.style.color = 'var(--accent)';
+        statusEl.innerHTML = '<span class="status-icon">✓</span>' + (dict['status.success'] || 'Received. We will contact you shortly.');
+        statusEl.className = 'status success';
         leadForm.reset();
         
         // Scroll to status message
@@ -138,11 +162,11 @@
           statusEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }, 100);
       } catch(err){
-        statusEl.textContent = dict['status.error'] || '✗ Submission error. Please try again.';
-        statusEl.style.color = '#ff6b6b';
+        statusEl.innerHTML = '<span class="status-icon">✗</span>' + (dict['status.error'] || 'Submission error. Please try again.');
+        statusEl.className = 'status error';
       } finally {
         submitBtn.disabled = false;
-        submitBtn.textContent = originalText;
+        submitBtn.innerHTML = originalText;
       }
     });
   }
@@ -164,14 +188,15 @@
     }, observerOptions);
 
     // Observe elements that should animate on scroll
-    document.querySelectorAll('.metric-card, .svc-card, .vp-item').forEach(el => {
-      // Reset initial state for non-animated elements
-      if(!el.style.opacity){
+    document.querySelectorAll('.metric-card, .svc-card, .vp-item, .feature-item, .team-member, .contact-card').forEach(el => {
+      // Only apply if not already animated via CSS
+      const computed = window.getComputedStyle(el);
+      if(!computed.animationName || computed.animationName === 'none'){
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        observer.observe(el);
       }
-      observer.observe(el);
     });
   }
 
@@ -194,4 +219,24 @@
       setTimeout(() => ripple.remove(), 600);
     });
   });
+
+  // Lazy load images if any
+  if('IntersectionObserver' in window){
+    const imageObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          const img = entry.target;
+          if(img.dataset.src){
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            imageObserver.unobserve(img);
+          }
+        }
+      });
+    });
+
+    document.querySelectorAll('img[data-src]').forEach(img => {
+      imageObserver.observe(img);
+    });
+  }
 })();
