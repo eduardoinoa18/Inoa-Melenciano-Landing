@@ -9,8 +9,12 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="logo"><a href="../index.html">Inoa &amp; Melenciano <span data-i18n="services">Services</span></a></div>
+    <a href="../index.html" class="logo">
+      <img src="../assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
+      <span>Inoa &amp; Melenciano <span data-i18n="services">Services</span></span>
+    </a>
     <nav class="main-nav" aria-label="Main Navigation">
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
       <ul>
         <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
         <li class="dropdown">
@@ -90,6 +94,15 @@
 
   <footer class="site-footer" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="visually-hidden">Footer</h2>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="../assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
+        <span>Inoa &amp; Melenciano</span>
+      </div>
+      <div class="footer-actions">
+        <button id="themeToggleFooter" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
     <div class="footer-columns">
       <div>
         <h3 data-i18n="footer.company">Company</h3>

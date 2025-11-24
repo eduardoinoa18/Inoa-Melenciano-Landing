@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#1a2a4a"/>
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#c9a961" stroke-width="2"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#c9a961" stroke-width="1"/>
+  
+  <!-- House roof -->
+  <path d="M 60 80 L 100 50 L 140 80 Z" fill="none" stroke="#c9a961" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Letter I -->
+  <rect x="72" y="85" width="8" height="50" fill="#c9a961"/>
+  
+  <!-- Letter M -->
+  <path d="M 90 135 L 90 85 L 105 105 L 120 85 L 120 135" fill="none" stroke="#c9a961" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Shield/Key element -->
+  <path d="M 100 95 L 110 100 L 110 125 L 100 130 L 90 125 L 90 100 Z" fill="#7a8a9a" opacity="0.7"/>
+</svg>
