@@ -84,6 +84,29 @@ body {
 img, svg { display: block; max-width: 100%; height: auto; }
 .visually-hidden { position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
 
+/* ========== ANIMATIONS ========== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+body { animation: fadeIn 0.3s ease-out; }
+
 /* ========== HEADER ========== */
 .site-header {
   position: sticky;
@@ -98,6 +121,11 @@ img, svg { display: block; max-width: 100%; height: auto; }
   border-bottom: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
   transition: all var(--transition);
+  animation: slideInLeft 0.4s ease-out;
+}
+.site-header.scrolled {
+  padding: 0.75rem 2rem;
+  box-shadow: var(--shadow);
 }
 body.theme-dark .site-header {
   background: rgba(31, 37, 46, 0.95);
