@@ -14,17 +14,17 @@
       <span>Inoa &amp; Melenciano <span data-i18n="services">Services</span></span>
     </a>
     <nav class="main-nav" aria-label="Main Navigation">
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-      <ul>
+      <button class="nav-toggle" aria-label="Toggle menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li class="dropdown">
-          <button data-i18n="nav.services">Services ▾</button>
+          <button data-i18n="nav.services" class="dd-btn">Services ▾</button>
           <ul class="dropdown-menu">
             <li><a href="services/real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
             <li><a href="services/real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
             <li><a href="services/tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
             <li><a href="services/credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
-            <li><a href="services/immigration.html" data-i18n="svc.immigration">Immigration</a></li>
+            <li><a href="services/immigration.html" data-i18n="svc.immigration">Immigration Assistance</a></li>
             <li><a href="services/business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
             <li><a href="services/notary.html" data-i18n="svc.notary">Notary Public</a></li>
             <li><a href="services/translations-admin.html" data-i18n="svc.translationsAdmin">Translations & Admin</a></li>
@@ -36,9 +36,12 @@
         <li><a class="active" href="disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
       </ul>
     </nav>
-    <div class="lang-switch" aria-label="Language Switcher">
-      <button data-lang="en" class="active">EN</button>
-      <button data-lang="es">ES</button>
+    <div class="header-controls">
+      <div class="lang-switch" aria-label="Language Switcher">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="es">ES</button>
+      </div>
+      <button id="themeToggle" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
     </div>
   </header>
 
@@ -146,7 +149,7 @@
             <span>Inoa &amp; Melenciano</span>
           </div>
           <div class="footer-actions">
-            <button id="themeToggleFooter" aria-label="Toggle dark mode">🌙</button>
+            <button id="themeToggleFooter" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
           </div>
         </div>
     <div class="footer-columns">
