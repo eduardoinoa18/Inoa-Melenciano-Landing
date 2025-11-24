@@ -1,5 +1,5 @@
 // Main interaction logic for Inoa & Melenciano Services
-// Features: dark mode toggle, mobile nav, contact form, scroll effects, back-to-top
+// Features: dark mode toggle, mobile nav, contact form, scroll effects, back-to-top, enhanced UX
 (function(){
   const body = document.body;
   const themeToggle = document.getElementById('themeToggle');
@@ -13,6 +13,11 @@
 
   // Set footer year
   if(yearEl){ yearEl.textContent = new Date().getFullYear(); }
+
+  // Add page load animation
+  document.addEventListener('DOMContentLoaded', () => {
+    body.style.opacity = '1';
+  });
 
   // Restore theme preference
   const savedTheme = localStorage.getItem('theme');
