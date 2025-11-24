@@ -2,14 +2,16 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/lead.js",
+      "src": "api/*.js",
       "use": "@vercel/node"
-    }
-  ],
-  "routes": [
+    },
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "src": "**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "assets/**",
+      "use": "@vercel/static"
     }
   ]
 }

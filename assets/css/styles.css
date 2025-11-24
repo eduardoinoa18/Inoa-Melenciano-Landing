@@ -616,13 +616,13 @@ body.theme-dark .vp-item h3 { color: var(--text); }
 }
 
 /* ========== BEAUTIFUL FORMS ========== */
-.lead-capture {
+.contact-section {
   padding: 5rem 2rem;
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
   position: relative;
   overflow: hidden;
 }
-.lead-capture::before {
+.contact-section::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -632,13 +632,13 @@ body.theme-dark .vp-item h3 { color: var(--text); }
   pointer-events: none;
 }
 
-.lead-inner {
+.contact-inner {
   max-width: 720px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
 }
-.lead-inner h2 {
+.contact-inner h2 {2 {
   margin: 0 0 0.75rem;
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 800;
@@ -646,7 +646,7 @@ body.theme-dark .vp-item h3 { color: var(--text); }
   text-align: center;
   letter-spacing: -0.5px;
 }
-.lead-inner > p {
+.contact-inner > p {
   margin: 0 0 2.5rem;
   font-size: 1.05rem;
   color: rgba(255, 255, 255, 0.85);
