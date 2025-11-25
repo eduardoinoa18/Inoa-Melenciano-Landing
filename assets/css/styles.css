@@ -2293,3 +2293,252 @@ body.theme-dark .feature-box h3 {
   }
 }
 
+/* ========== SIMPLIFIED SERVICE PAGES ========== */
+.simple-card {
+  background: var(--surface);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.simple-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.simple-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  color: var(--navy);
+}
+
+body.theme-dark .simple-card h3 {
+  color: var(--gold);
+}
+
+.simple-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.simple-process {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-step-simple {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto 1rem;
+}
+
+body.theme-dark .step-number {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+  color: var(--navy);
+}
+
+.process-step-simple h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+  color: var(--navy);
+}
+
+body.theme-dark .process-step-simple h3 {
+  color: var(--gold);
+}
+
+.process-step-simple p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.checklist-box {
+  background: var(--surface);
+  padding: 1.75rem;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--gold);
+  box-shadow: var(--shadow-sm);
+}
+
+.checklist-box h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: var(--navy);
+}
+
+body.theme-dark .checklist-box h3 {
+  color: var(--gold);
+}
+
+.compact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.compact-list li {
+  padding: 0.5rem 0;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.compact-list li:last-child {
+  border-bottom: none;
+}
+
+.compact-list li::before {
+  content: "✓ ";
+  color: var(--gold);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.note-text {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: var(--bg-alt);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.stats-section.compact {
+  padding: 3rem 2rem;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  min-width: 120px;
+}
+
+.stat-item strong {
+  display: block;
+  font-size: 2.5rem;
+  color: var(--navy);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+body.theme-dark .stat-item strong {
+  color: var(--gold);
+}
+
+.stat-item span {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.reviews-section.compact {
+  padding: 3rem 2rem;
+  background: var(--bg-alt);
+}
+
+.review-grid-simple {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto 0;
+}
+
+.review-card-simple {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--gold);
+  box-shadow: var(--shadow-sm);
+  margin: 0;
+}
+
+.review-card-simple p {
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+
+.review-card-simple cite {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 0.9rem;
+}
+
+body.theme-dark .review-card-simple cite {
+  color: var(--gold);
+}
+
+.process-section.compact {
+  padding: 4rem 2rem;
+}
+
+/* Responsive adjustments for service pages */
+@media (max-width: 768px) {
+  .simple-process {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-row {
+    gap: 2rem;
+  }
+  
+  .stat-item {
+    min-width: 100px;
+  }
+  
+  .stat-item strong {
+    font-size: 2rem;
+  }
+  
+  .review-grid-simple {
+    grid-template-columns: 1fr;
+  }
+}
+
+
