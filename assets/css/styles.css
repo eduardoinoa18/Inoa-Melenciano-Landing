@@ -1847,3 +1847,65 @@ body.theme-dark .trust-badge h4 { color: var(--text); }
     grid-template-columns: 1fr;
   }
 }
+
+/* ========== TEAM MEMBER SECTIONS ========== */
+.team-member-section {
+  padding: 6rem 2rem;
+  background: var(--bg);
+}
+.team-member-section.alternate {
+  background: var(--surface);
+}
+.team-member-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.profile-card-solo {
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  padding: 3rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+}
+.team-member-section.alternate .profile-card-solo {
+  background: var(--bg);
+}
+
+/* ========== CONTACT INFO CARDS ========== */
+.contact-info-section {
+  padding: 4rem 2rem;
+  background: var(--bg);
+}
+.contact-info-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.contact-info-grid {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+.contact-info-card {
+  padding: 2rem;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+.contact-info-card h3 {
+  margin: 0 0 1rem;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+body.theme-dark .contact-info-card h3 {
+  color: var(--gold);
+}
+.contact-icon {
+  font-size: 1.5rem;
+}
+.contact-info-card p {
+  margin: 0;
+  color: var(--text);
+}

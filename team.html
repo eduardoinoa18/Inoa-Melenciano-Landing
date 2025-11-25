@@ -45,24 +45,18 @@
   </header>
 
   <main>
-    <section class="hero team-hero">
-      <div class="hero-content">
+    <section class="hero team-hero" style="background: linear-gradient(135deg, rgba(18, 32, 52, 0.92) 0%, rgba(25, 45, 70, 0.88) 100%), url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&h=600&fit=crop&q=90') center/cover; min-height: 50vh;">
+      <div class="hero-inner">
         <h1 data-i18n="nav.team">Our Team</h1>
-        <p class="hero-subtitle" data-lang="en">People-first professionals dedicated to your success</p>
-        <p class="hero-subtitle" data-lang="es">Profesionales comprometidos con tu éxito</p>
+        <p data-lang="en">People-first professionals dedicated to your success</p>
+        <p data-lang="es">Profesionales comprometidos con tu éxito</p>
       </div>
-      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&h=450&fit=crop&q=90" alt="Professional team meeting" class="hero-image">
     </section>
 
-    <section class="services-overview" aria-labelledby="founders-heading">
-      <h2 id="founders-heading" data-lang="en">Leadership & Founders</h2>
-      <h2 id="founders-heading-es" data-lang="es">Liderazgo y Fundadores</h2>
-      <p class="section-intro" data-lang="en">Meet the visionaries behind Inoa & Melenciano Services</p>
-      <p class="section-intro" data-lang="es">Conoce a los visionarios detrás de Inoa & Melenciano Services</p>
-    </section>
-
-    <section class="team-profiles">
-      <article class="profile-card">
+    <!-- Eduardo Inoa Section -->
+    <section class="team-member-section">
+      <div class="team-member-container">
+        <article class="profile-card-solo">
         <div class="profile-header">
           <div class="profile-photo">
             <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&q=90" alt="Eduardo Inoa">
@@ -116,8 +110,13 @@
           </div>
         </div>
       </article>
+      </div>
+    </section>
 
-      <article class="profile-card">
+    <!-- Ader Melenciano Section -->
+    <section class="team-member-section alternate">
+      <div class="team-member-container">
+        <article class="profile-card-solo">
         <div class="profile-header">
           <div class="profile-photo">
             <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&q=90" alt="Ader Melenciano">
@@ -173,6 +172,7 @@
           </div>
         </div>
       </article>
+      </div>
     </section>
 
     <section class="services-overview" aria-labelledby="vision-heading">
