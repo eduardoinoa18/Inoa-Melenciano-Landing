@@ -34,6 +34,7 @@
         <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
         <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
         <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+                <li><a href="../join-us.html">Eres profesional? �nete</a></li>
       </ul>
     </nav>
     <div class="header-controls">
@@ -95,26 +96,38 @@
     </section>
 
     <section class="contact-section" aria-labelledby="get-started">
-      <h2 id="get-started" data-i18n="tax.cta.title">Get Started Today</h2>
+      <h2 id="get-started" data-i18n="tax.cta.title">Comienza tu preparación de impuestos</h2>
       <form id="contactForm" novalidate>
         <div class="form-row">
-          <label for="name" data-i18n="form.nameLabel">Full Name</label>
-          <input id="name" name="name" type="text" required />
+          <label for="name">Nombre completo / Full Name</label>
+          <input id="name" name="name" type="text" required placeholder="Ej.: Carlos Rodríguez" />
         </div>
         <div class="form-row">
-          <label for="email" data-i18n="form.emailLabel">Email</label>
-          <input id="email" name="email" type="email" required />
+          <label for="email">Correo electrónico / Email</label>
+          <input id="email" name="email" type="email" required placeholder="tu@email.com" />
         </div>
         <div class="form-row">
-          <label for="phone" data-i18n="form.phoneLabel">Phone</label>
-          <input id="phone" name="phone" type="tel" />
+          <label for="phone">Teléfono / Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="(xxx) xxx-xxxx" />
+        </div>
+        <div class="form-row">
+          <label for="tax-type">¿Qué tipo de declaración?</label>
+          <select id="tax-type" name="taxType">
+            <option value="">Selecciona una opción…</option>
+            <option value="personal">Personal (W-2 / 1099)</option>
+            <option value="business">Negocio (LLC / Corp)</option>
+            <option value="rental">Propiedades de renta</option>
+            <option value="self-employed">Trabajador por cuenta propia</option>
+            <option value="other">Otro / No estoy seguro</option>
+          </select>
         </div>
         <input type="hidden" name="interest" value="taxPrep" />
         <div class="form-row">
-          <label for="message" data-i18n="form.messageLabel">Brief Details</label>
-          <textarea id="message" name="message" rows="5" placeholder="E.g., need personal return, have rental income..."></textarea>
+          <label for="message">Cuéntanos detalles / Tell us more</label>
+          <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito declaración personal y tengo un pequeño negocio de limpieza."></textarea>
         </div>
-        <button type="submit" class="btn primary" data-i18n="form.submit">Submit</button>
+        <button type="submit" class="btn primary">Enviar</button>
+        <p class="form-helper">Si también tienes casa, negocio o planes de invertir, podemos coordinar impuestos, crédito y registro de negocio juntos.</p>
         <p id="formStatus" class="status" aria-live="polite"></p>
       </form>
     </section>
@@ -139,6 +152,7 @@
           <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
           <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
           <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+                  <li><a href="../join-us.html">Eres profesional? �nete</a></li>
         </ul>
       </div>
       <div>
@@ -172,3 +186,4 @@
   <script src="/assets/js/main.js"></script>
 </body>
 </html>
+

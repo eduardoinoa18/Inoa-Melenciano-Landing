@@ -34,6 +34,7 @@
         <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
         <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
         <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+                <li><a href="../join-us.html">Eres profesional? �nete</a></li>
       </ul>
     </nav>
     <div class="header-controls">
@@ -94,26 +95,38 @@
     </section>
 
     <section class="contact-section" aria-labelledby="credit-start">
-      <h2 id="credit-start" data-i18n="credit.cta.title">Talk With Us</h2>
+      <h2 id="credit-start" data-i18n="credit.cta.title">Hablemos de tu crédito</h2>
       <form id="contactForm" novalidate>
         <div class="form-row">
-          <label for="name" data-i18n="form.nameLabel">Full Name</label>
-          <input id="name" name="name" type="text" required />
+          <label for="name">Nombre completo / Full Name</label>
+          <input id="name" name="name" type="text" required placeholder="Ej.: Ana Martínez" />
         </div>
         <div class="form-row">
-          <label for="email" data-i18n="form.emailLabel">Email</label>
-          <input id="email" name="email" type="email" required />
+          <label for="email">Correo electrónico / Email</label>
+          <input id="email" name="email" type="email" required placeholder="tu@email.com" />
         </div>
         <div class="form-row">
-          <label for="phone" data-i18n="form.phoneLabel">Phone</label>
-          <input id="phone" name="phone" type="tel" />
+          <label for="phone">Teléfono / Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="WhatsApp o teléfono" />
+        </div>
+        <div class="form-row">
+          <label for="credit-goal">Meta principal</label>
+          <select id="credit-goal" name="creditGoal">
+            <option value="">Selecciona una opción…</option>
+            <option value="buy-home">Mejorar crédito para comprar casa</option>
+            <option value="rent">Calificar para mejor renta</option>
+            <option value="cards">Organizar deudas / tarjetas</option>
+            <option value="auto">Comprar vehículo</option>
+            <option value="other">Otro / No estoy seguro</option>
+          </select>
         </div>
         <input type="hidden" name="interest" value="creditRepair" />
         <div class="form-row">
-          <label for="message" data-i18n="form.messageLabel">Brief Details</label>
-          <textarea id="message" name="message" rows="5"></textarea>
+          <label for="message">Cuéntanos detalles / Tell us more</label>
+          <textarea id="message" name="message" rows="5" placeholder="Ej.: Tengo colecciones y quiero prepararme para comprar casa en 1-2 años."></textarea>
         </div>
-        <button type="submit" class="btn primary" data-i18n="form.submit">Submit</button>
+        <button type="submit" class="btn primary">Enviar</button>
+        <p class="form-helper">Podemos coordinar tu crédito con planes de compra de casa, impuestos y registro de tu negocio.</p>
         <p id="formStatus" class="status" aria-live="polite"></p>
       </form>
     </section>
@@ -138,6 +151,7 @@
           <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
           <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
           <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+                  <li><a href="../join-us.html">Eres profesional? �nete</a></li>
         </ul>
       </div>
       <div>
@@ -169,3 +183,4 @@
   <script src="/assets/js/main.js"></script>
 </body>
 </html>
+

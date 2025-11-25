@@ -34,6 +34,7 @@
         <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
         <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
         <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+                <li><a href="../join-us.html">Eres profesional? �nete</a></li>
       </ul>
     </nav>
     <div class="header-controls">
@@ -96,48 +97,49 @@
     </section>
 
     <section class="contact-section" aria-labelledby="get-started">
-      <h2 id="get-started" data-i18n="realdr.cta.title">Begin Your DR Investment Journey</h2>
+      <h2 id="get-started" data-i18n="realdr.cta.title">Comienza tu inversión en RD</h2>
       <form id="contactForm" novalidate>
         <div class="form-row">
-          <label for="name" data-i18n="form.nameLabel">Full Name</label>
-          <input id="name" name="name" type="text" required />
+          <label for="name">Nombre completo / Full Name</label>
+          <input id="name" name="name" type="text" required placeholder="Ej.: Juan Pérez" />
         </div>
         <div class="form-row">
-          <label for="email" data-i18n="form.emailLabel">Email</label>
-          <input id="email" name="email" type="email" required />
+          <label for="email">Correo electrónico / Email</label>
+          <input id="email" name="email" type="email" required placeholder="tu@email.com" />
         </div>
         <div class="form-row">
-          <label for="phone" data-i18n="form.phoneLabel">Phone</label>
-          <input id="phone" name="phone" type="tel" />
+          <label for="phone">Teléfono / Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="WhatsApp o teléfono" />
         </div>
         <div class="form-row">
-          <label for="property-type">Property Interest:</label>
+          <label for="property-type">Tipo de propiedad</label>
           <select id="property-type" name="propertyType">
-            <option value="">Select property type...</option>
-            <option value="beachfront">Beachfront Condo/Villa</option>
-            <option value="mountain">Mountain/Eco Property</option>
-            <option value="commercial">Commercial/Mixed-Use</option>
-            <option value="land">Development Land</option>
-            <option value="consultation">General Investment Consultation</option>
+            <option value="">Selecciona una opción…</option>
+            <option value="beachfront">Condo/Villa frente a la playa</option>
+            <option value="mountain">Propiedad de montaña / eco</option>
+            <option value="commercial">Proyecto comercial / mixto</option>
+            <option value="land">Terreno para desarrollo</option>
+            <option value="consultation">Consulta general de inversión</option>
           </select>
         </div>
         <div class="form-row">
-          <label for="budget">Investment Budget Range:</label>
+          <label for="budget">Rango de inversión</label>
           <select id="budget" name="budgetRange">
-            <option value="">Select budget range...</option>
-            <option value="under100k">Under $100,000</option>
-            <option value="100k-250k">$100,000 - $250,000</option>
-            <option value="250k-500k">$250,000 - $500,000</option>
-            <option value="500k-1m">$500,000 - $1,000,000</option>
-            <option value="over1m">Over $1,000,000</option>
+            <option value="">Selecciona un rango…</option>
+            <option value="under100k">Menos de US$100,000</option>
+            <option value="100k-250k">US$100,000 - US$250,000</option>
+            <option value="250k-500k">US$250,000 - US$500,000</option>
+            <option value="500k-1m">US$500,000 - US$1,000,000</option>
+            <option value="over1m">Más de US$1,000,000</option>
           </select>
         </div>
         <input type="hidden" name="interest" value="realEstateDR" />
         <div class="form-row">
-          <label for="message" data-i18n="form.messageLabel">Brief Details</label>
-          <textarea id="message" name="message" rows="5" placeholder="E.g., interested in beachfront condo, budget $150K–$300K..."></textarea>
+          <label for="message">Cuéntanos detalles / Tell us more</label>
+          <textarea id="message" name="message" rows="5" placeholder="Ej.: Me interesa proyecto en Punta Cana para renta corta, presupuesto 200k."></textarea>
         </div>
-        <button type="submit" class="btn primary" data-i18n="form.submit">Submit</button>
+        <button type="submit" class="btn primary">Enviar</button>
+        <p class="form-helper">Además de tu inversión en RD, también podemos orientarte en impuestos y planificación financiera.</p>
         <p id="formStatus" class="status" aria-live="polite"></p>
       </form>
     </section>
@@ -162,6 +164,7 @@
           <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
           <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
           <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+                  <li><a href="../join-us.html">Eres profesional? �nete</a></li>
         </ul>
       </div>
       <div>
@@ -195,3 +198,4 @@
   <script src="/assets/js/main.js"></script>
 </body>
 </html>
+

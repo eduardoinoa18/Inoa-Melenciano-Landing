@@ -34,6 +34,7 @@
         <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
         <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
         <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+                <li><a href="../join-us.html">Eres profesional? �nete</a></li>
       </ul>
     </nav>
     <div class="header-controls">
@@ -74,23 +75,36 @@
       <h2 id="book-es" data-lang="es">Agenda Notarización</h2>
       <form id="leadForm" novalidate>
         <div class="form-row">
-          <label for="name" data-i18n="form.nameLabel">Full Name</label>
-          <input id="name" name="name" type="text" required />
+          <label for="name">Nombre completo / Full Name</label>
+          <input id="name" name="name" type="text" required placeholder="Ej.: Juan Pérez" />
         </div>
         <div class="form-row">
-          <label for="email" data-i18n="form.emailLabel">Email</label>
-          <input id="email" name="email" type="email" required />
+          <label for="email">Correo electrónico / Email</label>
+          <input id="email" name="email" type="email" required placeholder="ejemplo@correo.com" />
         </div>
         <div class="form-row">
-          <label for="phone" data-i18n="form.phoneLabel">Phone</label>
-          <input id="phone" name="phone" type="tel" />
+          <label for="phone">Teléfono / Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="(123) 456-7890" />
+        </div>
+        <div class="form-row">
+          <label for="service-type">¿Qué documento necesitas notarizar?</label>
+          <select id="service-type" name="serviceType">
+            <option value="">Selecciona una opción…</option>
+            <option value="affidavit">Declaración jurada / Affidavit</option>
+            <option value="power-attorney">Poder legal / Power of Attorney</option>
+            <option value="acknowledgment">Reconocimiento de firma / Acknowledgment</option>
+            <option value="immigration-doc">Documentos de inmigración / Immigration docs</option>
+            <option value="real-estate">Documentos inmobiliarios / Real estate docs</option>
+            <option value="other">Otro / Other</option>
+          </select>
         </div>
         <input type="hidden" name="interest" value="notary" />
         <div class="form-row">
-          <label for="message" data-i18n="form.messageLabel">Brief Details</label>
-          <textarea id="message" name="message" rows="5" placeholder="E.g., need power of attorney notarized, available afternoons..."></textarea>
+          <label for="message">Detalles adicionales / Additional details</label>
+          <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito notarizar un poder legal para trámites en RD, disponible por las tardes..."></textarea>
         </div>
-        <button type="submit" class="btn primary" data-i18n="form.submit">Submit</button>
+        <p class="form-helper">Mientras te apoyamos con notarización, también podemos ayudarte con traducciones, formularios de inmigración y documentos administrativos relacionados.</p>
+        <button type="submit" class="btn primary">Enviar</button>
         <p id="formStatus" class="status" aria-live="polite"></p>
       </form>
     </section>
@@ -115,6 +129,7 @@
           <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
           <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
           <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+                  <li><a href="../join-us.html">Eres profesional? �nete</a></li>
         </ul>
       </div>
       <div>
@@ -148,3 +163,4 @@
   <script src="/assets/js/main.js"></script>
 </body>
 </html>
+

@@ -33,6 +33,7 @@
       <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
       <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
       <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
+              <li><a href="../join-us.html">Eres profesional? �nete</a></li>
     </ul>
   </nav>
   <div class="header-controls">
@@ -98,28 +99,36 @@
     <form id="lead-form" class="lead-form">
       <input type="hidden" name="service" value="translationsAdmin" />
       <div class="form-group">
-        <label for="lead-name" data-lang="en">Name</label>
-        <label for="lead-name" data-lang="es">Nombre</label>
-        <input id="lead-name" type="text" name="name" required />
+        <label for="lead-name">Nombre completo / Full Name</label>
+        <input id="lead-name" type="text" name="name" required placeholder="Ej.: Ana Rodríguez" />
       </div>
       <div class="form-group">
-        <label for="lead-email">Email</label>
-        <input id="lead-email" type="email" name="email" required />
+        <label for="lead-email">Correo electrónico / Email</label>
+        <input id="lead-email" type="email" name="email" required placeholder="ana@ejemplo.com" />
       </div>
       <div class="form-group">
-        <label for="lead-phone" data-lang="en">Phone (optional)</label>
-        <label for="lead-phone" data-lang="es">Teléfono (opcional)</label>
-        <input id="lead-phone" type="text" name="phone" />
+        <label for="lead-phone">Teléfono / Phone (opcional)</label>
+        <input id="lead-phone" type="text" name="phone" placeholder="(555) 123-4567" />
       </div>
       <div class="form-group">
-        <label for="lead-message" data-lang="en">Message / Documents Needed</label>
-        <label for="lead-message" data-lang="es">Mensaje / Documentos Necesarios</label>
-        <textarea id="lead-message" name="message" rows="4" required></textarea>
+        <label for="doc-type">¿Qué tipo de documento necesitas?</label>
+        <select id="doc-type" name="docType">
+          <option value="">Selecciona una opción…</option>
+          <option value="legal">Documentos legales / Legal documents</option>
+          <option value="medical">Documentos médicos / Medical records</option>
+          <option value="business">Documentos de negocio / Business docs</option>
+          <option value="immigration">Formularios de inmigración / Immigration forms</option>
+          <option value="administrative">Soporte administrativo / Administrative support</option>
+          <option value="other">Otro / Other</option>
+        </select>
       </div>
-      <button type="submit" class="btn primary" data-lang="en">Request Support</button>
-      <button type="submit" class="btn primary" data-lang="es">Solicitar Soporte</button>
-      <p class="form-status" data-lang="en"></p>
-      <p class="form-status" data-lang="es"></p>
+      <div class="form-group">
+        <label for="lead-message">Detalles adicionales / Additional details</label>
+        <textarea id="lead-message" name="message" rows="4" required placeholder="Ej.: Necesito traducir acta de nacimiento para USCIS y ayuda organizando documentos para solicitud de residencia..."></textarea>
+      </div>
+      <p class="form-helper">Además de traducciones y soporte administrativo, también podemos ayudarte con notarización, formularios de inmigración y otros servicios relacionados con tus documentos.</p>
+      <button type="submit" class="btn primary">Enviar</button>
+      <p class="form-status"></p>
     </form>
   </section>
 </main>

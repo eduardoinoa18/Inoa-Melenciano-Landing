@@ -144,8 +144,8 @@
     });
   }, observerOptions);
   
-  // Apply animation to cards
-  document.querySelectorAll('.metric-card, .service-card, .value-item').forEach(el => {
+  // Apply animation to cards and sections
+  document.querySelectorAll('.metric-card, .service-card, .value-item, .svc-card, .vp-item, .hub-card, .process-step, .property-type, .form-helper').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
@@ -198,3 +198,76 @@
     });
   }
 })();
+
+  // ========== FLOATING ACTION BUTTONS ==========
+  // Create floating actions container
+  const floatingActions = document.createElement('div');
+  floatingActions.className = 'floating-actions';
+  floatingActions.innerHTML = `
+    <a href="https://wa.me/19783909619" target="_blank" rel="noopener" class="floating-btn whatsapp">
+      <span class="tooltip">WhatsApp</span>
+      
+    </a>
+    <button class="floating-btn contact" onclick="document.querySelector('#contact, .lead-capture, .contact-section').scrollIntoView({behavior: 'smooth'})">
+      <span class="tooltip">Contacto</span>
+      
+    </button>
+  `;
+  document.body.appendChild(floatingActions);
+
+  // ========== JOIN FORM HANDLER (for join-us.html) ==========
+  const joinForm = document.getElementById('joinForm');
+  if(joinForm){
+    joinForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const statusEl = document.getElementById('formStatus');
+      const submitBtn = this.querySelector('button[type="submit"]');
+      
+      // Gather all form data
+      const formData = new FormData(this);
+      const data = {};
+      formData.forEach((value, key) => {
+        if(key === 'serviceArea'){ // Handle checkbox array
+          if(!data.serviceArea) data.serviceArea = [];
+          data.serviceArea.push(value);
+        } else {
+          data[key] = value;
+        }
+      });
+      
+      // Convert array to comma-separated string
+      if(data.serviceArea && Array.isArray(data.serviceArea)){
+        data.serviceArea = data.serviceArea.join(', ');
+      }
+      
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+      statusEl.textContent = '';
+      
+      try {
+        const response = await fetch('/api/lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        
+        const result = await response.json();
+        
+        if(response.ok){
+          statusEl.textContent = 'Gracias! Hemos recibido tu solicitud. Te contactaremos pronto.';
+          statusEl.style.color = '#27ae60';
+          joinForm.reset();
+          // Reset to step 1
+          if(typeof showStep === 'function') showStep(1);
+        } else {
+          throw new Error(result.message || 'Error al enviar');
+        }
+      } catch(error) {
+        statusEl.textContent = 'Hubo un error. Por favor intenta de nuevo o cont�ctanos directamente.';
+        statusEl.style.color = '#e74c3c';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Enviar Solicitud';
+      }
+    });
+  }
