@@ -48,8 +48,14 @@
   <main>
     <section class="hero">
       <h1 data-i18n="svc.realEstateUS">Real Estate Services (US)</h1>
-      <p data-i18n="realus.intro.desc">Whether you're buying your first home, selling a property, or investing for long-term wealth, we guide you every step of the way. Partnered with <strong>Century 21 North East</strong> and <strong>Newfed Mortgage</strong>.</p>
+      <p data-i18n="realus.intro.desc">Whether you're buying your first home, selling a property, or investing for long-term wealth, we guide you every step of the way with professional real estate services.</p>
     </section>
+
+    <div class="disclaimer-box">
+      <h3>Professional Affiliations</h3>
+      <p>We provide <strong>licensed real estate services</strong> through our affiliation with <strong>Century 21 North East</strong> and <strong>The Fermin Group</strong>. Our team brings you access to their established network, expertise, and resources.</p>
+      <p>Additionally, we can connect you with <strong>mortgage financing services through Newfed Mortgage</strong>, a trusted partner offering competitive rates and bilingual support—though Newfed Mortgage is an independent entity.</p>
+    </div>
 
     <section class="services-overview" aria-labelledby="services-list">
       <h2 id="services-list" data-i18n="realus.offer.title">What We Offer</h2>
@@ -57,10 +63,36 @@
         <li data-i18n="realus.offer.buy"><strong>Home Buying:</strong> First-time buyer guidance, property search, negotiation, closing support.</li>
         <li data-i18n="realus.offer.sell"><strong>Home Selling:</strong> Market analysis, listing, staging tips, marketing strategy.</li>
         <li data-i18n="realus.offer.invest"><strong>Investment Properties:</strong> Multi-family, rental income analysis, portfolio building.</li>
-        <li data-i18n="realus.offer.mortgage"><strong>Mortgage Applications:</strong> Pre-approval, application support via Newfed Mortgage partners.</li>
+        <li data-i18n="realus.offer.mortgage"><strong>Mortgage Connections:</strong> Pre-approval assistance, lender connections via Newfed Mortgage partners.</li>
         <li data-i18n="realus.offer.refinance"><strong>Refinancing:</strong> Lower your rate or tap into equity with refinance guidance.</li>
         <li data-i18n="realus.offer.commercial"><strong>Commercial Real Estate:</strong> Office, retail, warehouse—investment and leasing support.</li>
       </ul>
+    </section>
+
+    <section class="process-section">
+      <h2>Your Real Estate Journey</h2>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-number">1</div>
+          <h3>Consultation</h3>
+          <p>Discuss your goals, budget, and timeline. We assess your needs and create a personalized strategy.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">2</div>
+          <h3>Search & Connect</h3>
+          <p>Access curated listings, mortgage pre-approval assistance, and expert market insights.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">3</div>
+          <h3>Negotiate & Secure</h3>
+          <p>Skilled negotiation, offer preparation, and guidance through inspections and contingencies.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">4</div>
+          <h3>Close with Confidence</h3>
+          <p>Coordinate closing details, final walkthroughs, and ensure smooth transfer of ownership.</p>
+        </div>
+      </div>
     </section>
 
     <section class="contact-section" aria-labelledby="contact-us">
@@ -78,10 +110,22 @@
           <label for="phone" data-i18n="form.phoneLabel">Phone</label>
           <input id="phone" name="phone" type="tel" />
         </div>
+        <div class="form-row">
+          <label for="property-interest">I'm interested in:</label>
+          <select id="property-interest" name="propertyInterest">
+            <option value="">Select an option...</option>
+            <option value="buying-residential">Buying a Home</option>
+            <option value="selling-residential">Selling a Home</option>
+            <option value="investment">Investment Properties</option>
+            <option value="commercial">Commercial Real Estate</option>
+            <option value="mortgage">Mortgage/Refinancing</option>
+            <option value="consultation">General Consultation</option>
+          </select>
+        </div>
         <input type="hidden" name="interest" value="realEstateUS" />
         <div class="form-row">
           <label for="message" data-i18n="form.messageLabel">Brief Details</label>
-          <textarea id="message" name="message" rows="5" placeholder="E.g., looking to buy in Boston area, pre-approval needed..."></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="E.g., looking to buy in Boston area, budget range, timeline..."></textarea>
         </div>
         <button type="submit" class="btn primary" data-i18n="form.submit">Submit</button>
         <p id="formStatus" class="status" aria-live="polite"></p>

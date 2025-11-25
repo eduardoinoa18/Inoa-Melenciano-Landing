@@ -48,16 +48,40 @@
   <main>
     <section class="hero">
       <h1 data-i18n="realdr.hero.title">Paraíso Inmobiliario – Dominican Republic Real Estate</h1>
-      <p data-i18n="realdr.hero.intro">Invest in the Caribbean paradise. We connect you with premium residential and commercial projects in the Dominican Republic—tourism-driven markets, retirement havens, and high-growth opportunities.</p>
+      <p data-i18n="realdr.hero.intro">Unlock Caribbean investment opportunities with exceptional ROI potential. We connect you with premium residential and commercial projects in the Dominican Republic—from beachfront condos to commercial developments in tourism-driven markets.</p>
+    </section>
+
+    <div class="disclaimer-box">
+      <h3>Investment Opportunities</h3>
+      <p>We specialize in connecting investors with <strong>Dominican Republic real estate opportunities</strong> through our network of trusted developers and local partners. Our bilingual team guides you through the entire investment process—from property selection to closing.</p>
+      <p>Note: Real estate transactions in the Dominican Republic are governed by Dominican law. We provide investment guidance and coordination services but recommend working with licensed Dominican attorneys for legal matters.</p>
+    </div>
+
+    <section class="services-overview" aria-labelledby="property-types">
+      <h2 id="property-types">Property Types & Investment Options</h2>
+      <div class="property-showcase">
+        <div class="property-type">
+          <h3>🏖️ Beachfront Properties</h3>
+          <p>Punta Cana, Bávaro, and coastal condos with tourism rental income potential. Strong vacation rental markets with year-round demand.</p>
+        </div>
+        <div class="property-type">
+          <h3>🏔️ Mountain & Eco Developments</h3>
+          <p>Jarabacoa and mountain retreat projects targeting retirement and wellness tourism markets with cooler climates.</p>
+        </div>
+        <div class="property-type">
+          <h3>🏢 Commercial Projects</h3>
+          <p>Mixed-use developments, hotel condos, and retail opportunities in Santo Domingo and Santiago growth zones.</p>
+        </div>
+      </div>
     </section>
 
     <section class="services-overview" aria-labelledby="why-dr">
       <h2 id="why-dr" data-i18n="realdr.why.title">Why Dominican Republic?</h2>
       <ul>
-        <li data-i18n="realdr.why.tourism"><strong>Tourism Hub:</strong> Millions of visitors annually drive rental demand in Punta Cana, Santo Domingo, and more.</li>
-        <li data-i18n="realdr.why.affordable"><strong>Affordable Entry:</strong> Lower property prices compared to US coastal markets.</li>
-        <li data-i18n="realdr.why.retirement"><strong>Retirement & Second Home:</strong> Ideal climate, growing expat communities, and lifestyle appeal.</li>
-        <li data-i18n="realdr.why.diversification"><strong>Portfolio Diversification:</strong> Hedge against US market volatility with Caribbean real estate.</li>
+        <li data-i18n="realdr.why.tourism"><strong>Tourism Hub:</strong> Millions of visitors annually drive rental demand in Punta Cana, Santo Domingo, and beach destinations.</li>
+        <li data-i18n="realdr.why.affordable"><strong>Attractive Pricing:</strong> Lower property prices compared to US coastal markets with higher ROI potential.</li>
+        <li data-i18n="realdr.why.retirement"><strong>Retirement & Second Home:</strong> Ideal year-round climate, growing expat communities, and Caribbean lifestyle appeal.</li>
+        <li data-i18n="realdr.why.diversification"><strong>Portfolio Diversification:</strong> Hedge against US market volatility with international Caribbean real estate exposure.</li>
       </ul>
     </section>
 
@@ -85,6 +109,28 @@
         <div class="form-row">
           <label for="phone" data-i18n="form.phoneLabel">Phone</label>
           <input id="phone" name="phone" type="tel" />
+        </div>
+        <div class="form-row">
+          <label for="property-type">Property Interest:</label>
+          <select id="property-type" name="propertyType">
+            <option value="">Select property type...</option>
+            <option value="beachfront">Beachfront Condo/Villa</option>
+            <option value="mountain">Mountain/Eco Property</option>
+            <option value="commercial">Commercial/Mixed-Use</option>
+            <option value="land">Development Land</option>
+            <option value="consultation">General Investment Consultation</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="budget">Investment Budget Range:</label>
+          <select id="budget" name="budgetRange">
+            <option value="">Select budget range...</option>
+            <option value="under100k">Under $100,000</option>
+            <option value="100k-250k">$100,000 - $250,000</option>
+            <option value="250k-500k">$250,000 - $500,000</option>
+            <option value="500k-1m">$500,000 - $1,000,000</option>
+            <option value="over1m">Over $1,000,000</option>
+          </select>
         </div>
         <input type="hidden" name="interest" value="realEstateDR" />
         <div class="form-row">

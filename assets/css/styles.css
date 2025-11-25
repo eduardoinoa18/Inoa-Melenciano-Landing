@@ -546,6 +546,49 @@ body.theme-dark .section-head h2 { color: var(--text); }
   transition: var(--transition-slow);
   box-shadow: var(--shadow-sm);
 }
+
+.service-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(135deg, var(--gold) 0%, #d4af6a 100%);
+  color: var(--navy);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 2px 8px rgba(201, 169, 97, 0.3);
+  z-index: 2;
+}
+
+.service-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.service-highlights li {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  padding-left: 0.25rem;
+}
+
+.svc-card.real-estate {
+  border-color: var(--gold);
+  background: linear-gradient(to bottom, rgba(201, 169, 97, 0.03) 0%, var(--surface) 50%);
+}
+.svc-card.caribbean {
+  border-color: #4db8b8;
+  background: linear-gradient(to bottom, rgba(77, 184, 184, 0.03) 0%, var(--surface) 50%);
+}
+.svc-card.caribbean .icon-circle {
+  background: linear-gradient(135deg, #4db8b8 0%, #3a9a9a 100%);
+}
 .svc-card::before {
   content: '';
   position: absolute;
@@ -644,6 +687,131 @@ body.theme-dark .svc-card h3 { color: var(--text); }
   background: var(--bg-alt);
   padding: 5rem 2rem;
 }
+
+/* ========== DISCLAIMER BOX ========== */
+.disclaimer-box {
+  background: linear-gradient(135deg, rgba(201, 169, 97, 0.1) 0%, rgba(201, 169, 97, 0.05) 100%);
+  border-left: 4px solid var(--gold);
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  border-radius: var(--radius-md);
+}
+.disclaimer-box h3 {
+  margin: 0 0 0.75rem;
+  color: var(--navy);
+  font-size: 1.1rem;
+}
+body.theme-dark .disclaimer-box h3 {
+  color: var(--gold);
+}
+.disclaimer-box p {
+  margin: 0 0 0.5rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+.disclaimer-box p:last-child {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ========== PROCESS STEPS ========== */
+.process-section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.process-section h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: var(--navy);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+body.theme-dark .process-section h2 {
+  color: var(--text);
+}
+.process-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.process-step {
+  position: relative;
+  background: var(--surface);
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+}
+.process-step:hover {
+  border-color: var(--gold);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
+}
+.process-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--gradient-accent);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.process-step h3 {
+  margin: 0 0 0.5rem;
+  color: var(--navy);
+  font-size: 1.2rem;
+}
+body.theme-dark .process-step h3 {
+  color: var(--text);
+}
+.process-step p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* ========== PROPERTY SHOWCASE ========== */
+.property-showcase {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 1.5rem;
+}
+.property-type {
+  background: linear-gradient(135deg, rgba(77, 184, 184, 0.08) 0%, rgba(77, 184, 184, 0.03) 100%);
+  border: 2px solid #4db8b8;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+.property-type:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(77, 184, 184, 0.2);
+  border-color: #3a9a9a;
+}
+.property-type h3 {
+  margin: 0 0 0.75rem;
+  color: var(--navy);
+  font-size: 1.15rem;
+}
+body.theme-dark .property-type h3 {
+  color: #4db8b8;
+}
+.property-type p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 .vp-grid {
   display: grid;
   gap: 1.5rem;
