@@ -82,6 +82,36 @@
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">"They registered my cleaning business LLC in Massachusetts and got me an EIN within days. Professional guidance on choosing the right structure. Excellent service!"</p>
+          <div class="review-author">
+            <div class="review-avatar">MP</div>
+            <div class="review-info">
+              <h4>Maria P.</h4>
+              <p>Business Owner, Lawrence MA</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Starting my construction company was intimidating but they explained everything in Spanish and handled all the paperwork. Now I'm operating legally and with confidence."</p>
+          <div class="review-author">
+            <div class="review-avatar">JG</div>
+            <div class="review-info">
+              <h4>Jose G.</h4>
+              <p>Contractor, Haverhill MA</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Fast LLC formation and they coordinated with their tax team to get my accounting set up properly from day one. Perfect for new entrepreneurs."</p>
+          <div class="review-author">
+            <div class="review-avatar">LS</div>
+            <div class="review-info">
+              <h4>Luis S.</h4>
+              <p>Entrepreneur, Boston MA</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -96,14 +126,62 @@
           <p>Get the right tax structure from day one and maximize your business deductions.</p>
           <span class="card-link">Learn More →</span>
         </a>
+        <a href="notary.html" class="related-card" title="Notary Services">
+          <div class="icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </div>
+          <h3>Notary Services</h3>
+          <p>Notarize your business formation documents and operating agreements.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+        <a href="credit-repair.html" class="related-card" title="Credit Repair">
+          <div class="icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Credit Repair</h3>
+          <p>Build business credit separate from your personal credit profile.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
       </div>
     </section>
 
     <section class="lead-capture" aria-labelledby="get-started">
       <div class="contact-inner">
-        <h2 id="get-started" data-lang="en">Get Started</h2>
-        <h2 id="get-started-es" data-lang="es">Comienza</h2>
+        <h2 id="get-started">Start Your Business Registration</h2>
         <p>Complete el formulario y nos pondremos en contacto pronto</p>
+        <form id="contactForm" class="modern-form" novalidate>
+          <div class="form-row">
+            <label for="name">Nombre completo / Full Name *</label>
+            <input id="name" name="name" type="text" required placeholder="Ej.: Ana Torres" />
+          </div>
+          <div class="form-row">
+            <label for="email">Correo electrónico / Email *</label>
+            <input id="email" name="email" type="email" required placeholder="tu@email.com" />
+          </div>
+          <div class="form-row">
+            <label for="phone">Teléfono / Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(xxx) xxx-xxxx" />
+          </div>
+          <div class="form-row">
+            <label for="entity-type">What type of business? / ¿Qué tipo de negocio?</label>
+            <select id="entity-type" name="entityType">
+              <option value="">Select / Selecciona...</option>
+              <option value="llc">LLC (Limited Liability Company)</option>
+              <option value="corp">Corporation / Corporación</option>
+              <option value="sole">Sole Proprietorship / Negocio individual</option>
+              <option value="partnership">Partnership / Sociedad</option>
+              <option value="unsure">Not sure / No estoy seguro</option>
+            </select>
+          </div>
+          <input type="hidden" name="interest" value="businessRegistration" />
+          <div class="form-row full-width">
+            <label for="message">Cuéntanos más / Tell us more</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ej.: Quiero registrar un negocio de limpieza en Massachusetts..."></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send Message / Enviar</button>
+          <p class="form-helper">We guide you through entity selection, state registration, EIN application, and initial compliance setup.</p>
+          <p id="formStatus" class="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>

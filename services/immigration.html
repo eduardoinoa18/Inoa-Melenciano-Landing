@@ -83,9 +83,42 @@
 
     <section class="lead-capture" aria-labelledby="start">
       <div class="contact-inner">
-        <h2 id="start" data-lang="en">Request Assistance</h2>
-        <h2 id="start-es" data-lang="es">Solicita Asistencia</h2>
+        <h2 id="start">Request Immigration Assistance</h2>
         <p>Complete el formulario y nos pondremos en contacto pronto</p>
+        <form id="contactForm" class="modern-form" novalidate>
+          <div class="form-row">
+            <label for="name">Nombre completo / Full Name *</label>
+            <input id="name" name="name" type="text" required placeholder="Ej.: Juan Pérez" />
+          </div>
+          <div class="form-row">
+            <label for="email">Correo electrónico / Email *</label>
+            <input id="email" name="email" type="email" required placeholder="tu@email.com" />
+          </div>
+          <div class="form-row">
+            <label for="phone">Teléfono / Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(xxx) xxx-xxxx" />
+          </div>
+          <div class="form-row">
+            <label for="form-type">What type of form? / ¿Qué tipo de formulario?</label>
+            <select id="form-type" name="formType">
+              <option value="">Select / Selecciona...</option>
+              <option value="citizenship">Citizenship / Ciudadanía</option>
+              <option value="greencard">Green Card / Residencia</option>
+              <option value="familyPetition">Family Petition / Petición familiar</option>
+              <option value="workPermit">Work Permit / Permiso de trabajo</option>
+              <option value="adjustment">Adjustment of Status / Ajuste de estatus</option>
+              <option value="other">Other / Otro</option>
+            </select>
+          </div>
+          <input type="hidden" name="interest" value="immigration" />
+          <div class="form-row full-width">
+            <label for="message">Cuéntanos más / Tell us more</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito ayuda completando el formulario N-400..."></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send Message / Enviar</button>
+          <p class="form-helper">We provide administrative support only - not legal advice. Consult an immigration attorney for legal matters.</p>
+          <p id="formStatus" class="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>

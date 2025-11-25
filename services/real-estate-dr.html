@@ -84,15 +84,38 @@
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">"Bought a beachfront condo in Punta Cana through their recommendations. The rental income has exceeded expectations and the process was smooth despite being international."</p>
-      </div>
-    </section><section class="contact-section" aria-labelledby="get-started">
-      <div class="contact-inner">
-        <h2 id="get-started" data-i18n="realdr.cta.title">Comienza tu inversión en RD</h2>
-        <p>Completa el formulario y exploraremos oportunidades juntos</p>
+          <div class="review-author">
+            <div class="review-avatar">RM</div>
+            <div class="review-info">
+              <h4>Roberto M.</h4>
+              <p>Investor, Miami FL</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"They connected us with a great developer in Santo Domingo. We purchased two units and the rental management program they recommended has been excellent."</p>
+          <div class="review-author">
+            <div class="review-avatar">CF</div>
+            <div class="review-info">
+              <h4>Carlos F.</h4>
+              <p>Real Estate Investor, Boston MA</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Perfect for diversifying our portfolio. The bilingual support made everything easy and we're seeing strong returns from our Caribbean investment."</p>
+          <div class="review-author">
+            <div class="review-avatar">AS</div>
+            <div class="review-info">
+              <h4>Ana S.</h4>
+              <p>Entrepreneur, New York NY</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-  
-
 
     <section class="related-services">
       <h2>Servicios complementarios / Complementary Services</h2>
@@ -105,6 +128,62 @@
           <p>Navigate international investment tax implications and maximize deductions.</p>
           <span class="card-link">Learn More →</span>
         </a>
+        <a href="real-estate-us.html" class="related-card" title="Real Estate (US)">
+          <div class="icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Real Estate (US)</h3>
+          <p>Looking for properties in the US market? We also serve domestic buyers.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+        <a href="credit-repair.html" class="related-card" title="Credit Repair">
+          <div class="icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Credit Repair</h3>
+          <p>Improve your financial profile for better investment financing options.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="get-started">
+      <div class="contact-inner">
+        <h2 id="get-started">Comienza tu inversión en RD</h2>
+        <p>Completa el formulario y exploraremos oportunidades juntos</p>
+        <form id="contactForm" class="modern-form" novalidate>
+          <div class="form-row">
+            <label for="name">Nombre completo / Full Name *</label>
+            <input id="name" name="name" type="text" required placeholder="Ej.: María López" />
+          </div>
+          <div class="form-row">
+            <label for="email">Correo electrónico / Email *</label>
+            <input id="email" name="email" type="email" required placeholder="tu@email.com" />
+          </div>
+          <div class="form-row">
+            <label for="phone">Teléfono / Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(xxx) xxx-xxxx" />
+          </div>
+          <div class="form-row">
+            <label for="investment-type">What interests you? / ¿Qué te interesa?</label>
+            <select id="investment-type" name="investmentType">
+              <option value="">Select / Selecciona...</option>
+              <option value="condo">Beachfront Condo / Apartamento frente al mar</option>
+              <option value="villa">Villa / Casa</option>
+              <option value="commercial">Commercial / Comercial</option>
+              <option value="land">Land / Terreno</option>
+              <option value="consultation">General Consultation / Consulta general</option>
+            </select>
+          </div>
+          <input type="hidden" name="interest" value="realEstateDR" />
+          <div class="form-row full-width">
+            <label for="message">Cuéntanos más / Tell us more</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ej.: Busco un condo en Punta Cana para alquiler vacacional..."></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send Message / Enviar</button>
+          <p class="form-helper">We connect investors with vetted developers and provide complete bilingual support throughout the process.</p>
+          <p id="formStatus" class="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
 

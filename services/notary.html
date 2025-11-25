@@ -89,14 +89,63 @@
           <p>Need immigration form help? We prepare USCIS documents and notarize supporting affidavits.</p>
           <span class="card-link">Learn More →</span>
         </a>
+        <a href="business-registration.html" class="related-card" title="Business Registration">
+          <div class="icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <h3>Business Registration</h3>
+          <p>Starting a business? We notarize formation documents and operating agreements.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+        <a href="translations-admin.html" class="related-card" title="Translations & Admin">
+          <div class="icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Translation Services</h3>
+          <p>Need document translation? We translate and notarize certified documents.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
       </div>
     </section>
 
     <section class="lead-capture" aria-labelledby="book">
       <div class="contact-inner">
-        <h2 id="book" data-lang="en">Schedule Notarization</h2>
-        <h2 id="book-es" data-lang="es">Agenda Notarización</h2>
+        <h2 id="book">Schedule Notarization</h2>
         <p>Complete el formulario y nos pondremos en contacto pronto</p>
+        <form id="contactForm" class="modern-form" novalidate>
+          <div class="form-row">
+            <label for="name">Nombre completo / Full Name *</label>
+            <input id="name" name="name" type="text" required placeholder="Ej.: Carlos Méndez" />
+          </div>
+          <div class="form-row">
+            <label for="email">Correo electrónico / Email *</label>
+            <input id="email" name="email" type="email" required placeholder="tu@email.com" />
+          </div>
+          <div class="form-row">
+            <label for="phone">Teléfono / Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(xxx) xxx-xxxx" />
+          </div>
+          <div class="form-row">
+            <label for="document-type">Type of document / Tipo de documento</label>
+            <select id="document-type" name="documentType">
+              <option value="">Select / Selecciona...</option>
+              <option value="affidavit">Affidavit / Declaración jurada</option>
+              <option value="contract">Contract / Contrato</option>
+              <option value="power">Power of Attorney / Poder notarial</option>
+              <option value="deed">Property Deed / Escritura</option>
+              <option value="certification">Document Certification / Certificación</option>
+              <option value="other">Other / Otro</option>
+            </select>
+          </div>
+          <input type="hidden" name="interest" value="notary" />
+          <div class="form-row full-width">
+            <label for="message">Cuéntanos más / Tell us more</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito notarizar un contrato de venta..."></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send Message / Enviar</button>
+          <p class="form-helper">We offer flexible appointment scheduling including evenings and weekends.</p>
+          <p id="formStatus" class="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
