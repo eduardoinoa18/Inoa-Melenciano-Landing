@@ -45,9 +45,11 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h1 data-i18n="svc.realEstateUS">Real Estate Services (US)</h1>
+    <section class="hero"> style="background: linear-gradient(135deg, rgba(18, 32, 52, 0.92) 0%, rgba(25, 45, 70, 0.88) 100%), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&h=600&fit=crop&q=90') center/cover; min-height: 45vh;">
+      <div class="hero-inner">
+        <h1 data-i18n="svc.realEstateUS">Real Estate Services (US)</h1>
       <p data-i18n="realus.intro.desc">Whether you're buying your first home, selling a property, or investing for long-term wealth, we guide you every step of the way with professional real estate services.</p>
+      </div>
     </section>
 
     <section class="trust-section">
@@ -56,41 +58,13 @@
           <div class="trust-icon">🏆</div>
           <h4>Licensed Agents</h4>
           <p>Century 21 North East affiliated</p>
-        </div>
-        <div class="trust-badge">
-          <div class="trust-icon">💼</div>
-          <h4>Bilingual Service</h4>
-          <p>English & Spanish support</p>
-        </div>
-        <div class="trust-badge">
-          <div class="trust-icon">🤝</div>
-          <h4>Full Service</h4>
-          <p>From search to closing</p>
-        </div>
-        <div class="trust-badge">
-          <div class="trust-icon">✨</div>
-          <h4>Trusted Partners</h4>
-          <p>Newfed Mortgage network</p>
-        </div>
       </div>
     </section>
 
     <div class="disclaimer-box">
       <h3>Professional Affiliations</h3>
       <p>We provide <strong>licensed real estate services</strong> through our affiliation with <strong>Century 21 North East</strong> and <strong>The Fermin Group</strong>. Our team brings you access to their established network, expertise, and resources.</p>
-      <p>Additionally, we can connect you with <strong>mortgage financing services through Newfed Mortgage</strong>, a trusted partner offering competitive rates and bilingual support—though Newfed Mortgage is an independent entity.</p>
-    </div>
-
-    <section class="services-overview" aria-labelledby="services-list">
-      <h2 id="services-list" data-i18n="realus.offer.title">What We Offer</h2>
-      <ul>
-        <li data-i18n="realus.offer.buy"><strong>Home Buying:</strong> First-time buyer guidance, property search, negotiation, closing support.</li>
-        <li data-i18n="realus.offer.sell"><strong>Home Selling:</strong> Market analysis, listing, staging tips, marketing strategy.</li>
-        <li data-i18n="realus.offer.invest"><strong>Investment Properties:</strong> Multi-family, rental income analysis, portfolio building.</li>
-        <li data-i18n="realus.offer.mortgage"><strong>Mortgage Connections:</strong> Pre-approval assistance, lender connections via Newfed Mortgage partners.</li>
-        <li data-i18n="realus.offer.refinance"><strong>Refinancing:</strong> Lower your rate or tap into equity with refinance guidance.</li>
-        <li data-i18n="realus.offer.commercial"><strong>Commercial Real Estate:</strong> Office, retail, warehouse—investment and leasing support.</li>
-      </ul>
+      </div>
     </section>
 
     <section class="process-section">
@@ -100,22 +74,6 @@
           <div class="process-number">1</div>
           <h3>Consultation</h3>
           <p>Discuss your goals, budget, and timeline. We assess your needs and create a personalized strategy.</p>
-        </div>
-        <div class="process-step">
-          <div class="process-number">2</div>
-          <h3>Search & Connect</h3>
-          <p>Access curated listings, mortgage pre-approval assistance, and expert market insights.</p>
-        </div>
-        <div class="process-step">
-          <div class="process-number">3</div>
-          <h3>Negotiate & Secure</h3>
-          <p>Skilled negotiation, offer preparation, and guidance through inspections and contingencies.</p>
-        </div>
-        <div class="process-step">
-          <div class="process-number">4</div>
-          <h3>Close with Confidence</h3>
-          <p>Coordinate closing details, final walkthroughs, and ensure smooth transfer of ownership.</p>
-        </div>
       </div>
     </section>
 
@@ -125,36 +83,6 @@
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">"Eduardo helped us find our dream home in Lawrence. He understood our budget and made the process smooth. His bilingual support was invaluable for my parents."</p>
-          <div class="review-author">
-            <div class="review-avatar">CM</div>
-            <div class="review-info">
-              <h4>Carlos M.</h4>
-              <p>First-time homebuyer, Lawrence MA</p>
-            </div>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Professional service from start to finish. They connected us with great mortgage rates through Newfed and handled all negotiations. Highly recommend!"</p>
-          <div class="review-author">
-            <div class="review-avatar">JS</div>
-            <div class="review-info">
-              <h4>Jennifer S.</h4>
-              <p>Home seller, Methuen MA</p>
-            </div>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Excellent investment property guidance. They analyzed the numbers, found us a great multi-family, and even helped with tax planning. Complete service."</p>
-          <div class="review-author">
-            <div class="review-avatar">RP</div>
-            <div class="review-info">
-              <h4>Roberto P.</h4>
-              <p>Real estate investor, Haverhill MA</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -183,40 +111,6 @@
       <div class="contact-inner">
         <h2 id="contact-us" data-i18n="realus.cta.title">Agenda una consulta / Schedule a Consultation</h2>
         <p>Complete el formulario y nos pondremos en contacto pronto</p>
-        <form id="contactForm" class="modern-form" novalidate>
-          <div class="form-row">
-            <label for="name">Nombre / Name *</label>
-            <input id="name" name="name" type="text" required placeholder="María López" />
-          </div>
-          <div class="form-row">
-            <label for="email">Email *</label>
-            <input id="email" name="email" type="email" required placeholder="tu@email.com" />
-          </div>
-          <div class="form-row">
-            <label for="phone">Teléfono / Phone</label>
-            <input id="phone" name="phone" type="tel" placeholder="(617) 555-0100" />
-          </div>
-          <div class="form-row">
-            <label for="property-interest">Servicio / Service</label>
-            <select id="property-interest" name="propertyInterest">
-              <option value="">Selecciona...</option>
-              <option value="buying-residential">Comprar casa / Buy home</option>
-              <option value="selling-residential">Vender casa / Sell home</option>
-              <option value="investment">Inversión / Investment</option>
-              <option value="commercial">Comercial / Commercial</option>
-              <option value="mortgage">Hipoteca / Mortgage</option>
-              <option value="consultation">Consulta / Consultation</option>
-            </select>
-          </div>
-          <input type="hidden" name="interest" value="realEstateUS" />
-          <div class="form-row full-width">
-            <label for="message">Detalles / Details</label>
-            <textarea id="message" name="message" placeholder="Busco comprar en Boston, presupuesto 450k..."></textarea>
-          </div>
-          <button type="submit" class="btn primary">Enviar / Submit</button>
-          <p class="form-helper">También ofrecemos servicios de impuestos, crédito y negocios.</p>
-          <p id="formStatus" class="status" aria-live="polite"></p>
-        </form>
       </div>
     </section>
 
@@ -227,20 +121,6 @@
           <div class="icon-circle">🧾</div>
           <h3>Tax Preparation</h3>
           <p>Maximize deductions on your real estate investments and homeownership benefits.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-        <a href="credit-repair.html" class="related-card">
-          <div class="icon-circle">📈</div>
-          <h3>Credit Repair</h3>
-          <p>Improve your credit score for better mortgage rates and loan approval odds.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-        <a href="business-registration.html" class="related-card">
-          <div class="icon-circle">🧩</div>
-          <h3>Business Registration</h3>
-          <p>Set up an LLC for your investment properties and protect your assets.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
       </div>
     </section>
   </main>
@@ -296,6 +176,7 @@
   <script src="/assets/js/main.js"></script>
 </body>
 </html>
+
 
 
 

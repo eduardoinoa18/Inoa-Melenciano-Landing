@@ -45,9 +45,11 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h1 data-i18n="svc.notary">Notary Public</h1>
+    <section class="hero"> style="background: linear-gradient(135deg, rgba(18, 32, 52, 0.92) 0%, rgba(25, 45, 70, 0.88) 100%), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&h=600&fit=crop&q=90') center/cover; min-height: 45vh;">
+      <div class="hero-inner">
+        <h1 data-i18n="svc.notary">Notary Public</h1>
       <p data-lang="en">Authorized notarization of legal documents. Convenient, professional, and bilingual service for affidavits, powers of attorney, real estate closings, and more.</p>
+      </div>
     </section>
 
     <section class="services-overview" aria-labelledby="documents">
@@ -73,36 +75,6 @@
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">"Quick and professional notary service for my real estate closing. They explained everything in Spanish and made the process stress-free. Highly recommend!"</p>
-          <div class="review-author">
-            <div class="review-avatar">JR</div>
-            <div class="review-info">
-              <h4>Juan R.</h4>
-              <p>Home buyer, Lawrence MA</p>
-            </div>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Excellent service notarizing my power of attorney for immigration paperwork. Convenient hours, bilingual, and very professional. Will use again!"</p>
-          <div class="review-author">
-            <div class="review-avatar">DM</div>
-            <div class="review-info">
-              <h4>Diana M.</h4>
-              <p>Immigration client, Boston MA</p>
-            </div>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Fast and reliable notary for my business contracts. They also helped with translations and document prep. One-stop shop for all my business needs!"</p>
-          <div class="review-author">
-            <div class="review-avatar">AL</div>
-            <div class="review-info">
-              <h4>Antonio L.</h4>
-              <p>Business owner, Salem MA</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -113,20 +85,6 @@
           <div class="icon-circle">🌎</div>
           <h3>Immigration Assistance</h3>
           <p>Need immigration form help? We prepare USCIS documents and notarize supporting affidavits.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-        <a href="business-registration.html" class="related-card">
-          <div class="icon-circle">🧩</div>
-          <h3>Business Registration</h3>
-          <p>Starting a business? We handle registration, EIN applications, and notarize operating agreements.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-        <a href="translations-admin.html" class="related-card">
-          <div class="icon-circle">🌐</div>
-          <h3>Translations</h3>
-          <p>Professional document translation services for documents that require notarization.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
       </div>
     </section>
 
@@ -135,40 +93,6 @@
         <h2 id="book" data-lang="en">Schedule Notarization</h2>
         <h2 id="book-es" data-lang="es">Agenda Notarización</h2>
         <p>Complete el formulario y nos pondremos en contacto pronto</p>
-        <form id="leadForm" class="modern-form" novalidate>
-        <div class="form-row">
-          <label for="name">Nombre completo / Full Name</label>
-          <input id="name" name="name" type="text" required placeholder="Ej.: Juan Pérez" />
-        </div>
-        <div class="form-row">
-          <label for="email">Correo electrónico / Email</label>
-          <input id="email" name="email" type="email" required placeholder="ejemplo@correo.com" />
-        </div>
-        <div class="form-row">
-          <label for="phone">Teléfono / Phone</label>
-          <input id="phone" name="phone" type="tel" placeholder="(123) 456-7890" />
-        </div>
-        <div class="form-row">
-          <label for="service-type">¿Qué documento necesitas notarizar?</label>
-          <select id="service-type" name="serviceType">
-            <option value="">Selecciona una opción…</option>
-            <option value="affidavit">Declaración jurada / Affidavit</option>
-            <option value="power-attorney">Poder legal / Power of Attorney</option>
-            <option value="acknowledgment">Reconocimiento de firma / Acknowledgment</option>
-            <option value="immigration-doc">Documentos de inmigración / Immigration docs</option>
-            <option value="real-estate">Documentos inmobiliarios / Real estate docs</option>
-            <option value="other">Otro / Other</option>
-          </select>
-        </div>
-        <input type="hidden" name="interest" value="notary" />
-        <div class="form-row full-width">
-          <label for="message">Detalles adicionales / Additional details</label>
-          <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito notarizar un poder legal para trámites en RD, disponible por las tardes..."></textarea>
-        </div>
-        <p class="form-helper">Mientras te apoyamos con notarización, también podemos ayudarte con traducciones, formularios de inmigración y documentos administrativos relacionados.</p>
-        <button type="submit" class="btn primary">Enviar</button>
-        <p id="formStatus" class="status" aria-live="polite"></p>
-      </form>
       </div>
     </section>
   </main>
@@ -224,6 +148,7 @@
   <script src="/assets/js/main.js"></script>
 </body>
 </html>
+
 
 
 

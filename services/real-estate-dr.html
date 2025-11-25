@@ -45,32 +45,16 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h1 data-i18n="realdr.hero.title">Paraíso Inmobiliario – Dominican Republic Real Estate</h1>
+    <section class="hero"> style="background: linear-gradient(135deg, rgba(18, 32, 52, 0.92) 0%, rgba(25, 45, 70, 0.88) 100%), url('https://images.unsplash.com/photo-1583037189850-1921ae7c6c22?w=1600&h=600&fit=crop&q=90') center/cover; min-height: 45vh;">
+      <div class="hero-inner">
+        <h1 data-i18n="realdr.hero.title">Paraíso Inmobiliario – Dominican Republic Real Estate</h1>
       <p data-i18n="realdr.hero.intro">Unlock Caribbean investment opportunities with exceptional ROI potential. We connect you with premium residential and commercial projects in the Dominican Republic—from beachfront condos to commercial developments in tourism-driven markets.</p>
+      </div>
     </section>
 
     <div class="disclaimer-box">
       <h3>Investment Opportunities</h3>
       <p>We specialize in connecting investors with <strong>Dominican Republic real estate opportunities</strong> through our network of trusted developers and local partners. Our bilingual team guides you through the entire investment process—from property selection to closing.</p>
-      <p>Note: Real estate transactions in the Dominican Republic are governed by Dominican law. We provide investment guidance and coordination services but recommend working with licensed Dominican attorneys for legal matters.</p>
-    </div>
-
-    <section class="services-overview" aria-labelledby="property-types">
-      <h2 id="property-types">Property Types & Investment Options</h2>
-      <div class="property-showcase">
-        <div class="property-type">
-          <h3>🏖️ Beachfront Properties</h3>
-          <p>Punta Cana, Bávaro, and coastal condos with tourism rental income potential. Strong vacation rental markets with year-round demand.</p>
-        </div>
-        <div class="property-type">
-          <h3>🏔️ Mountain & Eco Developments</h3>
-          <p>Jarabacoa and mountain retreat projects targeting retirement and wellness tourism markets with cooler climates.</p>
-        </div>
-        <div class="property-type">
-          <h3>🏢 Commercial Projects</h3>
-          <p>Mixed-use developments, hotel condos, and retail opportunities in Santo Domingo and Santiago growth zones.</p>
-        </div>
       </div>
     </section>
 
@@ -100,85 +84,11 @@
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">"Bought a beachfront condo in Punta Cana through their recommendations. The rental income has exceeded expectations and the process was smooth despite being international."</p>
-          <div class="review-author">
-            <div class="review-avatar">MR</div>
-            <div class="review-info">
-              <h4>Michael R.</h4>
-              <p>US investor, Punta Cana property</p>
-            </div>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Me ayudaron a encontrar un proyecto en Jarabacoa perfecto para retiro. El servicio bilingüe y las conexiones locales fueron invaluables."</p>
-          <div class="review-author">
-            <div class="review-avatar">AP</div>
-            <div class="review-info">
-              <h4>Ana P.</h4>
-              <p>Inversora, propiedad de montaña</p>
-            </div>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Professional guidance on commercial property in Santo Domingo. They connected me with attorneys and property managers. Great ROI on my investment."</p>
-          <div class="review-author">
-            <div class="review-avatar">JL</div>
-            <div class="review-info">
-              <h4>Jorge L.</h4>
-              <p>Commercial investor, Santo Domingo</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section><section class="contact-section" aria-labelledby="get-started">
       <div class="contact-inner">
         <h2 id="get-started" data-i18n="realdr.cta.title">Comienza tu inversión en RD</h2>
         <p>Completa el formulario y exploraremos oportunidades juntos</p>
-        <form id="contactForm" class="modern-form" novalidate>
-          <div class="form-row">
-            <label for="name">Nombre / Name *</label>
-            <input id="name" name="name" type="text" required placeholder="Juan Pérez" />
-          </div>
-          <div class="form-row">
-            <label for="email">Email *</label>
-            <input id="email" name="email" type="email" required placeholder="tu@email.com" />
-          </div>
-          <div class="form-row">
-            <label for="phone">Teléfono / Phone</label>
-            <input id="phone" name="phone" type="tel" placeholder="WhatsApp" />
-          </div>
-          <div class="form-row">
-            <label for="property-type">Tipo / Type</label>
-            <select id="property-type" name="propertyType">
-              <option value="">Selecciona...</option>
-              <option value="beachfront">Playa / Beach</option>
-              <option value="mountain">Montaña / Mountain</option>
-              <option value="commercial">Comercial / Commercial</option>
-              <option value="land">Terreno / Land</option>
-              <option value="consultation">Consulta / Consultation</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <label for="budget">Inversión / Investment</label>
-            <select id="budget" name="budgetRange">
-              <option value="">Rango...</option>
-              <option value="under100k">< US$100k</option>
-              <option value="100k-250k">US$100k-250k</option>
-              <option value="250k-500k">US$250k-500k</option>
-              <option value="500k-1m">US$500k-1M</option>
-              <option value="over1m">> US$1M</option>
-            </select>
-          </div>
-          <input type="hidden" name="interest" value="realEstateDR" />
-          <div class="form-row full-width">
-            <label for="message">Detalles / Details</label>
-            <textarea id="message" name="message" placeholder="Proyecto en Punta Cana para renta corta, presupuesto 200k..."></textarea>
-          </div>
-          <button type="submit" class="btn primary">Enviar / Submit</button>
-          <p class="form-helper">También ofrecemos servicios de impuestos y negocios para inversores.</p>
-          <p id="formStatus" class="status" aria-live="polite"></p>
-        </form>
       </div>
     </section>
   
@@ -191,20 +101,6 @@
           <div class="icon-circle">🧾</div>
           <h3>Tax Preparation</h3>
           <p>Navigate international investment tax implications and maximize deductions.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-        <a href="real-estate-us.html" class="related-card">
-          <div class="icon-circle">🏠</div>
-          <h3>Real Estate (US)</h3>
-          <p>Diversify with domestic US properties alongside your DR investments.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-        <a href="business-registration.html" class="related-card">
-          <div class="icon-circle">🧩</div>
-          <h3>Business Registration</h3>
-          <p>Set up an LLC to hold your international investment properties.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
       </div>
     </section>
 
@@ -261,6 +157,7 @@
   <script src="/assets/js/main.js"></script>
 </body>
 </html>
+
 
 
 

@@ -45,32 +45,17 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h1 data-i18n="svc.immigration">Immigration Form Preparation</h1>
+    <section class="hero"> style="background: linear-gradient(135deg, rgba(18, 32, 52, 0.92) 0%, rgba(25, 45, 70, 0.88) 100%), url('https://images.unsplash.com/photo-1569098644584-210bcd375b59?w=1600&h=600&fit=crop&q=90') center/cover; min-height: 45vh;">
+      <div class="hero-inner">
+        <h1 data-i18n="svc.immigration">Immigration Form Preparation</h1>
       <p data-lang="en">We assist with accurate completion of USCIS immigration forms—green cards, citizenship, family petitions, work permits, and more. Bilingual support to navigate the process with confidence.</p>
+      </div>
     </section>
 
     <div class="disclaimer-box">
       <h3>Important Legal Disclosure</h3>
       <p>We provide <strong>administrative assistance with USCIS form completion</strong>—helping you organize documents, understand form requirements, and submit accurate applications. We are <strong>not immigration attorneys</strong> and do not provide legal advice or legal representation.</p>
-      <p>For complex immigration matters, deportation proceedings, waivers, appeals, or situations requiring legal strategy, we strongly recommend consulting a licensed immigration attorney. We can provide referrals when needed.</p>
-    </div>
-
-    <section class="services-overview" aria-labelledby="forms">
-      <h2 id="forms" data-lang="en">Forms We Support</h2>
-      <h2 id="forms-es" data-lang="es">Formularios Que Apoyamos</h2>
-      <ul>
-        <li data-lang="en"><strong>I-130</strong> - Petition for Alien Relative (family-based green cards)</li>
-        <li data-lang="es"><strong>I-130</strong> - Petición para familiar extranjero (tarjetas verdes basadas en familia)</li>
-        <li data-lang="en"><strong>I-485</strong> - Adjustment of Status (green card application while in US)</li>
-        <li data-lang="es"><strong>I-485</strong> - Ajuste de estatus (solicitud de tarjeta verde dentro de EE.UU.)</li>
-        <li data-lang="en"><strong>N-400</strong> - Naturalization/Citizenship Application</li>
-        <li data-lang="es"><strong>N-400</strong> - Solicitud de naturalización/ciudadanía</li>
-        <li data-lang="en"><strong>I-765</strong> - Employment Authorization Document (work permit)</li>
-        <li data-lang="es"><strong>I-765</strong> - Documento de autorización de empleo (permiso de trabajo)</li>
-        <li data-lang="en"><strong>I-90, I-131,</strong> and other common USCIS forms (green card renewal, travel documents)</li>
-        <li data-lang="es"><strong>I-90, I-131</strong> y otros formularios comunes de USCIS (renovación de tarjeta verde, documentos de viaje)</li>
-      </ul>
+      </div>
     </section>
 
     <section class="reviews-section">
@@ -79,36 +64,6 @@
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">"They helped my mother with her N-400 citizenship application. Explained everything in Spanish, organized all documents perfectly. She passed her interview!"</p>
-          <div class="review-author">
-            <div class="review-avatar">MG</div>
-            <div class="review-info">
-              <h4>Maria G.</h4>
-              <p>Citizenship applicant, Lynn MA</p>
-            </div>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Professional and thorough with my I-485 adjustment of status. They caught errors I would have missed and prepared me for the interview. Highly recommend!"</p>
-          <div class="review-author">
-            <div class="review-avatar">RC</div>
-            <div class="review-info">
-              <h4>Ricardo C.</h4>
-              <p>Green card applicant, Boston MA</p>
-            </div>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Excellent support for family petition I-130. Bilingual service made it easy to understand each step. They also helped with translations and notary."</p>
-          <div class="review-author">
-            <div class="review-avatar">LP</div>
-            <div class="review-info">
-              <h4>Luis P.</h4>
-              <p>Family petitioner, Lawrence MA</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -119,20 +74,6 @@
           <div class="icon-circle">🌐</div>
           <h3>Translations</h3>
           <p>Professional translation of birth certificates, diplomas, and supporting documents for USCIS.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-        <a href="notary.html" class="related-card">
-          <div class="icon-circle">✒️</div>
-          <h3>Notary Public</h3>
-          <p>Notarize affidavits, powers of attorney, and supporting documents for your application.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-        <a href="business-registration.html" class="related-card">
-          <div class="icon-circle">🧩</div>
-          <h3>Business Registration</h3>
-          <p>Planning to start a business? We'll help you register once you have work authorization.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
       </div>
     </section>
 
@@ -141,39 +82,6 @@
         <h2 id="start" data-lang="en">Request Assistance</h2>
         <h2 id="start-es" data-lang="es">Solicita Asistencia</h2>
         <p>Complete el formulario y nos pondremos en contacto pronto</p>
-        <form id="leadForm" class="modern-form" novalidate>
-        <div class="form-row">
-          <label for="name">Nombre completo / Full Name</label>
-          <input id="name" name="name" type="text" required placeholder="Ej.: José García" />
-        </div>
-        <div class="form-row">
-          <label for="email">Correo electrónico / Email</label>
-          <input id="email" name="email" type="email" required placeholder="tu@email.com" />
-        </div>
-        <div class="form-row">
-          <label for="phone">Teléfono / Phone</label>
-          <input id="phone" name="phone" type="tel" placeholder="WhatsApp o teléfono" />
-        </div>
-        <div class="form-row">
-          <label for="form-type">Tipo de formulario / Form type</label>
-          <select id="form-type" name="formType">
-            <option value="">Selecciona una opción…</option>
-            <option value="I-130">I-130 (Petición familiar)</option>
-            <option value="I-485">I-485 (Ajuste de estatus)</option>
-            <option value="N-400">N-400 (Ciudadanía)</option>
-            <option value="I-765">I-765 (Permiso de trabajo)</option>
-            <option value="other">Otro formulario USCIS</option>
-          </select>
-        </div>
-        <input type="hidden" name="interest" value="immigration" />
-        <div class="form-row full-width">
-          <label for="message">Cuéntanos detalles / Tell us more</label>
-          <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito ayuda con N-400, hablo principalmente español."></textarea>
-        </div>
-        <button type="submit" class="btn primary">Enviar</button>
-        <p class="form-helper">Mientras te apoyamos con inmigración, también podemos ayudarte con traducciones y organización de documentos.</p>
-        <p id="formStatus" class="status" aria-live="polite"></p>
-      </form>
       </div>
     </section>
   </main>
@@ -229,6 +137,7 @@
   <script src="/assets/js/main.js"></script>
 </body>
 </html>
+
 
 
 
