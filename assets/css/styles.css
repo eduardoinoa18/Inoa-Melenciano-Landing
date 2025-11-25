@@ -1361,6 +1361,7 @@ body.theme-dark .hub-desc {
 @media (max-width: 768px) {
   .floating-buttons {
     right: 1.5rem;
+    /* Position above back-to-top button and mobile safe area */
     bottom: 5.5rem;
   }
   .floating-btn {
