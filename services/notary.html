@@ -34,7 +34,7 @@
         <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
         <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
         <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
-                <li><a href="../join-us.html">Eres profesional? �nete</a></li>
+                <li><a href="../join-us.html">Eres profesional? �nete</a></li>
       </ul>
     </nav>
     <div class="header-controls">
@@ -51,6 +51,7 @@
       <h1 data-i18n="svc.notary">Notary Public</h1>
       <p data-lang="en">Authorized notarization of legal documents. Convenient, professional, and bilingual service for affidavits, powers of attorney, real estate closings, and more.</p>
       <p data-lang="es">Notarización autorizada de documentos legales. Servicio conveniente, profesional y bilingüe para declaraciones juradas, poderes notariales, cierres de bienes raíces y más.</p>
+      <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=320&fit=crop&q=80" alt="Document signing and notarization" class="hero-image" loading="lazy">
     </section>
 
     <section class="services-overview" aria-labelledby="documents">
@@ -70,10 +71,75 @@
       </ul>
     </section>
 
+    <section class="reviews-section">
+      <h2>Lo que dicen nuestros clientes / What Our Clients Say</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Quick and professional notary service for my real estate closing. They explained everything in Spanish and made the process stress-free. Highly recommend!"</p>
+          <div class="review-author">
+            <div class="review-avatar">JR</div>
+            <div class="review-info">
+              <h4>Juan R.</h4>
+              <p>Home buyer, Lawrence MA</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Excellent service notarizing my power of attorney for immigration paperwork. Convenient hours, bilingual, and very professional. Will use again!"</p>
+          <div class="review-author">
+            <div class="review-avatar">DM</div>
+            <div class="review-info">
+              <h4>Diana M.</h4>
+              <p>Immigration client, Boston MA</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Fast and reliable notary for my business contracts. They also helped with translations and document prep. One-stop shop for all my business needs!"</p>
+          <div class="review-author">
+            <div class="review-avatar">AL</div>
+            <div class="review-info">
+              <h4>Antonio L.</h4>
+              <p>Business owner, Salem MA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-services">
+      <h2>Servicios complementarios / Complementary Services</h2>
+      <div class="related-grid">
+        <a href="immigration.html" class="related-card">
+          <div class="icon-circle">🌎</div>
+          <h3>Immigration Assistance</h3>
+          <p>Need immigration form help? We prepare USCIS documents and notarize supporting affidavits.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+        <a href="business-registration.html" class="related-card">
+          <div class="icon-circle">🧩</div>
+          <h3>Business Registration</h3>
+          <p>Starting a business? We handle registration, EIN applications, and notarize operating agreements.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+        <a href="translations-admin.html" class="related-card">
+          <div class="icon-circle">🌐</div>
+          <h3>Translations</h3>
+          <p>Professional document translation services for documents that require notarization.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+      </div>
+    </section>
+
     <section class="lead-capture" aria-labelledby="book">
-      <h2 id="book" data-lang="en">Schedule Notarization</h2>
-      <h2 id="book-es" data-lang="es">Agenda Notarización</h2>
-      <form id="leadForm" novalidate>
+      <div class="contact-inner">
+        <h2 id="book" data-lang="en">Schedule Notarization</h2>
+        <h2 id="book-es" data-lang="es">Agenda Notarización</h2>
+        <p>Complete el formulario y nos pondremos en contacto pronto</p>
+        <form id="leadForm" class="modern-form" novalidate>
         <div class="form-row">
           <label for="name">Nombre completo / Full Name</label>
           <input id="name" name="name" type="text" required placeholder="Ej.: Juan Pérez" />
@@ -99,7 +165,7 @@
           </select>
         </div>
         <input type="hidden" name="interest" value="notary" />
-        <div class="form-row">
+        <div class="form-row full-width">
           <label for="message">Detalles adicionales / Additional details</label>
           <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito notarizar un poder legal para trámites en RD, disponible por las tardes..."></textarea>
         </div>
@@ -107,6 +173,7 @@
         <button type="submit" class="btn primary">Enviar</button>
         <p id="formStatus" class="status" aria-live="polite"></p>
       </form>
+      </div>
     </section>
   </main>
 
@@ -129,7 +196,7 @@
           <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
           <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
           <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
-                  <li><a href="../join-us.html">Eres profesional? �nete</a></li>
+                  <li><a href="../join-us.html">Eres profesional? �nete</a></li>
         </ul>
       </div>
       <div>

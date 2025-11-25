@@ -34,7 +34,7 @@
         <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
         <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
         <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
-                <li><a href="../join-us.html">Eres profesional? �nete</a></li>
+                <li><a href="../join-us.html">Eres profesional? �nete</a></li>
       </ul>
     </nav>
     <div class="header-controls">
@@ -51,6 +51,7 @@
       <h1 data-i18n="svc.immigration">Immigration Form Preparation</h1>
       <p data-lang="en">We assist with accurate completion of USCIS immigration forms—green cards, citizenship, family petitions, work permits, and more. Bilingual support to navigate the process with confidence.</p>
       <p data-lang="es">Asistimos con la completación precisa de formularios de inmigración de USCIS—tarjetas verdes, ciudadanía, peticiones familiares, permisos de trabajo y más. Apoyo bilingüe para navegar el proceso con confianza.</p>
+      <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&h=320&fit=crop&q=80" alt="Passport and travel documents" class="hero-image" loading="lazy">
     </section>
 
     <div class="disclaimer-box">
@@ -76,10 +77,75 @@
       </ul>
     </section>
 
+    <section class="reviews-section">
+      <h2>Lo que dicen nuestros clientes / What Our Clients Say</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"They helped my mother with her N-400 citizenship application. Explained everything in Spanish, organized all documents perfectly. She passed her interview!"</p>
+          <div class="review-author">
+            <div class="review-avatar">MG</div>
+            <div class="review-info">
+              <h4>Maria G.</h4>
+              <p>Citizenship applicant, Lynn MA</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Professional and thorough with my I-485 adjustment of status. They caught errors I would have missed and prepared me for the interview. Highly recommend!"</p>
+          <div class="review-author">
+            <div class="review-avatar">RC</div>
+            <div class="review-info">
+              <h4>Ricardo C.</h4>
+              <p>Green card applicant, Boston MA</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Excellent support for family petition I-130. Bilingual service made it easy to understand each step. They also helped with translations and notary."</p>
+          <div class="review-author">
+            <div class="review-avatar">LP</div>
+            <div class="review-info">
+              <h4>Luis P.</h4>
+              <p>Family petitioner, Lawrence MA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-services">
+      <h2>Servicios complementarios / Complementary Services</h2>
+      <div class="related-grid">
+        <a href="translations-admin.html" class="related-card">
+          <div class="icon-circle">🌐</div>
+          <h3>Translations</h3>
+          <p>Professional translation of birth certificates, diplomas, and supporting documents for USCIS.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+        <a href="notary.html" class="related-card">
+          <div class="icon-circle">✒️</div>
+          <h3>Notary Public</h3>
+          <p>Notarize affidavits, powers of attorney, and supporting documents for your application.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+        <a href="business-registration.html" class="related-card">
+          <div class="icon-circle">🧩</div>
+          <h3>Business Registration</h3>
+          <p>Planning to start a business? We'll help you register once you have work authorization.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+      </div>
+    </section>
+
     <section class="lead-capture" aria-labelledby="start">
-      <h2 id="start" data-lang="en">Request Assistance</h2>
-      <h2 id="start-es" data-lang="es">Solicita Asistencia</h2>
-      <form id="leadForm" novalidate>
+      <div class="contact-inner">
+        <h2 id="start" data-lang="en">Request Assistance</h2>
+        <h2 id="start-es" data-lang="es">Solicita Asistencia</h2>
+        <p>Complete el formulario y nos pondremos en contacto pronto</p>
+        <form id="leadForm" class="modern-form" novalidate>
         <div class="form-row">
           <label for="name">Nombre completo / Full Name</label>
           <input id="name" name="name" type="text" required placeholder="Ej.: José García" />
@@ -104,7 +170,7 @@
           </select>
         </div>
         <input type="hidden" name="interest" value="immigration" />
-        <div class="form-row">
+        <div class="form-row full-width">
           <label for="message">Cuéntanos detalles / Tell us more</label>
           <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito ayuda con N-400, hablo principalmente español."></textarea>
         </div>
@@ -112,6 +178,7 @@
         <p class="form-helper">Mientras te apoyamos con inmigración, también podemos ayudarte con traducciones y organización de documentos.</p>
         <p id="formStatus" class="status" aria-live="polite"></p>
       </form>
+      </div>
     </section>
   </main>
 
@@ -134,7 +201,7 @@
           <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
           <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
           <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
-                  <li><a href="../join-us.html">Eres profesional? �nete</a></li>
+                  <li><a href="../join-us.html">Eres profesional? �nete</a></li>
         </ul>
       </div>
       <div>

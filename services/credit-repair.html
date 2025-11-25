@@ -34,7 +34,7 @@
         <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
         <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
         <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
-                <li><a href="../join-us.html">Eres profesional? �nete</a></li>
+                <li><a href="../join-us.html">Eres profesional? �nete</a></li>
       </ul>
     </nav>
     <div class="header-controls">
@@ -50,6 +50,7 @@
     <section class="hero">
       <h1 data-i18n="svc.creditRepair">Credit Repair Guidance</h1>
       <p data-i18n="credit.guidance.desc">Educational credit guidance, dispute assistance, and financial literacy support to help you rebuild your credit score and unlock better financial opportunities.</p>
+      <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&h=320&fit=crop&q=80" alt="Credit score improvement" class="hero-image" loading="lazy">
     </section>
 
     <div class="disclaimer-box">
@@ -94,9 +95,74 @@
       </div>
     </section>
 
+    <section class="reviews-section">
+      <h2>Lo que dicen nuestros clientes / What Our Clients Say</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"My credit score went from 520 to 680 in 8 months! They taught me the process, gave me templates, and kept me accountable. Finally qualified for a mortgage!"</p>
+          <div class="review-author">
+            <div class="review-avatar">AS</div>
+            <div class="review-info">
+              <h4>Ana S.</h4>
+              <p>First-time homebuyer, Lawrence MA</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Professional and patient. They explained every dispute step and helped me budget better. Real results, no empty promises."</p>
+          <div class="review-author">
+            <div class="review-avatar">JM</div>
+            <div class="review-info">
+              <h4>Jose M.</h4>
+              <p>Business owner, Boston MA</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Excellent education and guidance. They connected me with their real estate team once my credit improved. Complete support!"</p>
+          <div class="review-author">
+            <div class="review-avatar">TC</div>
+            <div class="review-info">
+              <h4>Teresa C.</h4>
+              <p>Home buyer, Haverhill MA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-services">
+      <h2>Servicios complementarios / Complementary Services</h2>
+      <div class="related-grid">
+        <a href="real-estate-us.html" class="related-card">
+          <div class="icon-circle">🏠</div>
+          <h3>Real Estate (US)</h3>
+          <p>Once your credit improves, we'll help you find and finance your dream home.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+        <a href="tax-prep.html" class="related-card">
+          <div class="icon-circle">🧧</div>
+          <h3>Tax Preparation</h3>
+          <p>Clean tax returns help rebuild credit and support loan applications.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+        <a href="business-registration.html" class="related-card">
+          <div class="icon-circle">🧩</div>
+          <h3>Business Registration</h3>
+          <p>Start building business credit separate from your personal credit profile.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+      </div>
+    </section>
+
     <section class="contact-section" aria-labelledby="credit-start">
-      <h2 id="credit-start" data-i18n="credit.cta.title">Hablemos de tu crédito</h2>
-      <form id="contactForm" novalidate>
+      <div class="contact-inner">
+        <h2 id="credit-start" data-i18n="credit.cta.title">Hablemos de tu crédito</h2>
+        <p>Complete el formulario y nos pondremos en contacto pronto</p>
+        <form id="contactForm" class="modern-form" novalidate>
         <div class="form-row">
           <label for="name">Nombre completo / Full Name</label>
           <input id="name" name="name" type="text" required placeholder="Ej.: Ana Martínez" />
@@ -121,7 +187,7 @@
           </select>
         </div>
         <input type="hidden" name="interest" value="creditRepair" />
-        <div class="form-row">
+        <div class="form-row full-width">
           <label for="message">Cuéntanos detalles / Tell us more</label>
           <textarea id="message" name="message" rows="5" placeholder="Ej.: Tengo colecciones y quiero prepararme para comprar casa en 1-2 años."></textarea>
         </div>
@@ -129,6 +195,7 @@
         <p class="form-helper">Podemos coordinar tu crédito con planes de compra de casa, impuestos y registro de tu negocio.</p>
         <p id="formStatus" class="status" aria-live="polite"></p>
       </form>
+      </div>
     </section>
   </main>
 
@@ -151,7 +218,7 @@
           <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
           <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
           <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
-                  <li><a href="../join-us.html">Eres profesional? �nete</a></li>
+                  <li><a href="../join-us.html">Eres profesional? �nete</a></li>
         </ul>
       </div>
       <div>

@@ -34,7 +34,7 @@
         <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
         <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
         <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
-                <li><a href="../join-us.html">Eres profesional? �nete</a></li>
+                <li><a href="../join-us.html">Eres profesional? �nete</a></li>
       </ul>
     </nav>
     <div class="header-controls">
@@ -50,6 +50,7 @@
     <section class="hero">
       <h1 data-i18n="realdr.hero.title">Paraíso Inmobiliario – Dominican Republic Real Estate</h1>
       <p data-i18n="realdr.hero.intro">Unlock Caribbean investment opportunities with exceptional ROI potential. We connect you with premium residential and commercial projects in the Dominican Republic—from beachfront condos to commercial developments in tourism-driven markets.</p>
+      <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&h=320&fit=crop&q=80" alt="Dominican Republic beach resort" class="hero-image" loading="lazy">
     </section>
 
     <div class="disclaimer-box">
@@ -96,52 +97,118 @@
       </ul>
     </section>
 
+    <section class="reviews-section">
+      <h2>Testimonios de inversores / Investor Testimonials</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Bought a beachfront condo in Punta Cana through their recommendations. The rental income has exceeded expectations and the process was smooth despite being international."</p>
+          <div class="review-author">
+            <div class="review-avatar">MR</div>
+            <div class="review-info">
+              <h4>Michael R.</h4>
+              <p>US investor, Punta Cana property</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Me ayudaron a encontrar un proyecto en Jarabacoa perfecto para retiro. El servicio bilingüe y las conexiones locales fueron invaluables."</p>
+          <div class="review-author">
+            <div class="review-avatar">AP</div>
+            <div class="review-info">
+              <h4>Ana P.</h4>
+              <p>Inversora, propiedad de montaña</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Professional guidance on commercial property in Santo Domingo. They connected me with attorneys and property managers. Great ROI on my investment."</p>
+          <div class="review-author">
+            <div class="review-avatar">JL</div>
+            <div class="review-info">
+              <h4>Jorge L.</h4>
+              <p>Commercial investor, Santo Domingo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-services">
+      <h2>Servicios complementarios / Complementary Services</h2>
+      <div class="related-grid">
+        <a href="tax-prep.html" class="related-card">
+          <div class="icon-circle">🧾</div>
+          <h3>Tax Preparation</h3>
+          <p>Navigate international investment tax implications and maximize deductions.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+        <a href="real-estate-us.html" class="related-card">
+          <div class="icon-circle">🏠</div>
+          <h3>Real Estate (US)</h3>
+          <p>Diversify with domestic US properties alongside your DR investments.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+        <a href="business-registration.html" class="related-card">
+          <div class="icon-circle">🧩</div>
+          <h3>Business Registration</h3>
+          <p>Set up an LLC to hold your international investment properties.</p>
+          <span class="card-link">Learn More →</span>
+        </a>
+      </div>
+    </section>
+
     <section class="contact-section" aria-labelledby="get-started">
-      <h2 id="get-started" data-i18n="realdr.cta.title">Comienza tu inversión en RD</h2>
-      <form id="contactForm" novalidate>
-        <div class="form-row">
-          <label for="name">Nombre completo / Full Name</label>
-          <input id="name" name="name" type="text" required placeholder="Ej.: Juan Pérez" />
-        </div>
-        <div class="form-row">
-          <label for="email">Correo electrónico / Email</label>
-          <input id="email" name="email" type="email" required placeholder="tu@email.com" />
-        </div>
-        <div class="form-row">
-          <label for="phone">Teléfono / Phone</label>
-          <input id="phone" name="phone" type="tel" placeholder="WhatsApp o teléfono" />
-        </div>
-        <div class="form-row">
-          <label for="property-type">Tipo de propiedad</label>
-          <select id="property-type" name="propertyType">
-            <option value="">Selecciona una opción…</option>
-            <option value="beachfront">Condo/Villa frente a la playa</option>
-            <option value="mountain">Propiedad de montaña / eco</option>
-            <option value="commercial">Proyecto comercial / mixto</option>
-            <option value="land">Terreno para desarrollo</option>
-            <option value="consultation">Consulta general de inversión</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label for="budget">Rango de inversión</label>
-          <select id="budget" name="budgetRange">
-            <option value="">Selecciona un rango…</option>
-            <option value="under100k">Menos de US$100,000</option>
-            <option value="100k-250k">US$100,000 - US$250,000</option>
-            <option value="250k-500k">US$250,000 - US$500,000</option>
-            <option value="500k-1m">US$500,000 - US$1,000,000</option>
-            <option value="over1m">Más de US$1,000,000</option>
-          </select>
-        </div>
-        <input type="hidden" name="interest" value="realEstateDR" />
-        <div class="form-row">
-          <label for="message">Cuéntanos detalles / Tell us more</label>
-          <textarea id="message" name="message" rows="5" placeholder="Ej.: Me interesa proyecto en Punta Cana para renta corta, presupuesto 200k."></textarea>
-        </div>
-        <button type="submit" class="btn primary">Enviar</button>
-        <p class="form-helper">Además de tu inversión en RD, también podemos orientarte en impuestos y planificación financiera.</p>
-        <p id="formStatus" class="status" aria-live="polite"></p>
-      </form>
+      <div class="contact-inner">
+        <h2 id="get-started" data-i18n="realdr.cta.title">Comienza tu inversión en RD</h2>
+        <p>Completa el formulario y exploraremos oportunidades juntos</p>
+        <form id="contactForm" class="modern-form" novalidate>
+          <div class="form-row">
+            <label for="name">Nombre / Name *</label>
+            <input id="name" name="name" type="text" required placeholder="Juan Pérez" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required placeholder="tu@email.com" />
+          </div>
+          <div class="form-row">
+            <label for="phone">Teléfono / Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="WhatsApp" />
+          </div>
+          <div class="form-row">
+            <label for="property-type">Tipo / Type</label>
+            <select id="property-type" name="propertyType">
+              <option value="">Selecciona...</option>
+              <option value="beachfront">Playa / Beach</option>
+              <option value="mountain">Montaña / Mountain</option>
+              <option value="commercial">Comercial / Commercial</option>
+              <option value="land">Terreno / Land</option>
+              <option value="consultation">Consulta / Consultation</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="budget">Inversión / Investment</label>
+            <select id="budget" name="budgetRange">
+              <option value="">Rango...</option>
+              <option value="under100k">< US$100k</option>
+              <option value="100k-250k">US$100k-250k</option>
+              <option value="250k-500k">US$250k-500k</option>
+              <option value="500k-1m">US$500k-1M</option>
+              <option value="over1m">> US$1M</option>
+            </select>
+          </div>
+          <input type="hidden" name="interest" value="realEstateDR" />
+          <div class="form-row full-width">
+            <label for="message">Detalles / Details</label>
+            <textarea id="message" name="message" placeholder="Proyecto en Punta Cana para renta corta, presupuesto 200k..."></textarea>
+          </div>
+          <button type="submit" class="btn primary">Enviar / Submit</button>
+          <p class="form-helper">También ofrecemos servicios de impuestos y negocios para inversores.</p>
+          <p id="formStatus" class="status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
   </main>
 
@@ -164,7 +231,7 @@
           <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
           <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
           <li><a href="../disclosures.html" data-i18n="nav.disclosures">Disclosures</a></li>
-                  <li><a href="../join-us.html">Eres profesional? �nete</a></li>
+                  <li><a href="../join-us.html">Eres profesional? �nete</a></li>
         </ul>
       </div>
       <div>
