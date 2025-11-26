@@ -58,6 +58,18 @@
       </div>
     </section>
 
+    <section class="benefits-section" aria-labelledby="cr-benefits">
+      <h2 id="cr-benefits">Why Work With Us</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card"><h3>Educational</h3><p>We teach you the process step by step.</p></div>
+        <div class="benefit-card"><h3>Templates</h3><p>Ready-to-use dispute letters and trackers.</p></div>
+        <div class="benefit-card"><h3>Bilingual</h3><p>Clear guidance in Spanish & English.</p></div>
+        <div class="benefit-card"><h3>Budget Help</h3><p>Strategies for utilization and payments.</p></div>
+        <div class="benefit-card"><h3>Accountability</h3><p>Check-ins to keep you on track.</p></div>
+        <div class="benefit-card"><h3>Integrated</h3><p>Coordinate with homebuying and tax goals.</p></div>
+      </div>
+    </section>
+
     <div class="disclaimer-box">
       <h3>Important Disclosure</h3>
       <p>We provide <strong>educational credit guidance and dispute assistance</strong> to help you understand your credit reports and work toward credit improvement. We teach you the process and provide organizational support.</p>
@@ -97,6 +109,16 @@
           <h3>Credit Mix & New Credit</h3>
           <p>Diverse credit types (cards, loans) and limiting hard inquiries support healthy scores.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="results-section" aria-labelledby="cr-outcomes">
+      <h2 id="cr-outcomes">What to Expect</h2>
+      <div class="stats-grid">
+        <div class="stat-card"><span class="stat-number">3–9 mo</span><span class="stat-label">Typical Engagement</span></div>
+        <div class="stat-card"><span class="stat-number">4+</span><span class="stat-label">Dispute Templates</span></div>
+        <div class="stat-card"><span class="stat-number">Monthly</span><span class="stat-label">Check-ins</span></div>
+        <div class="stat-card"><span class="stat-number">ES/EN</span><span class="stat-label">Bilingual Sessions</span></div>
       </div>
     </section>
 
@@ -168,14 +190,29 @@
           </select>
         </div>
         <input type="hidden" name="interest" value="creditRepair" />
+        <!-- UTM Capture Fields -->
+        <input type="hidden" name="utm_source" id="utm_source">
+        <input type="hidden" name="utm_medium" id="utm_medium">
+        <input type="hidden" name="utm_campaign" id="utm_campaign">
         <div class="form-row full-width">
           <label for="message">Cuéntanos detalles / Tell us more</label>
           <textarea id="message" name="message" rows="5" placeholder="Ej.: Tengo colecciones y quiero prepararme para comprar casa en 1-2 años."></textarea>
         </div>
+        <div class="form-row"><label><input type="checkbox" id="consent" name="consent" required> Acepto la política de privacidad y recibir comunicaciones / I agree to the privacy policy and to receive communications</label></div>
         <button type="submit" class="btn primary">Enviar</button>
         <p class="form-helper">Podemos coordinar tu crédito con planes de compra de casa, impuestos y registro de tu negocio.</p>
         <p id="formStatus" class="status" aria-live="polite"></p>
       </form>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-labelledby="cr-faq">
+      <h2 id="cr-faq">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <details><summary>Can you guarantee a score increase?</summary><p>No. Results depend on your credit profile and creditor/bureau responses. We focus on education and process.</p></details>
+        <details><summary>How long does it take?</summary><p>Many clients work through a plan over 3–9 months, depending on number of items and responsiveness.</p></details>
+        <details><summary>Do you send disputes on my behalf?</summary><p>We provide templates and guidance. You remain in control and submit disputes directly to creditors/bureaus.</p></details>
+        <details><summary>Should I close old accounts?</summary><p>Usually no. Older accounts help credit history length. We explain best practices for your situation.</p></details>
       </div>
     </section>
   
@@ -260,6 +297,18 @@
 
   <script src="/assets/js/i18n.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script>
+    // UTM capture for credit repair form
+    (function(){
+      try {
+        const p = new URLSearchParams(window.location.search);
+        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
+          var el = document.getElementById(k);
+          if (el) el.value = p.get(k) || '';
+        });
+      } catch(e) {}
+    })();
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -275,6 +324,18 @@
     },
     "description": "Educational guidance on credit reports, dispute templates, and financial literacy. No guaranteed outcomes.",
     "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free consultation; pay-as-you-go guidance"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Can you guarantee a score increase?","acceptedAnswer":{"@type":"Answer","text":"No. Results depend on your credit profile and creditor/bureau responses; we focus on education and process."}},
+      {"@type":"Question","name":"How long does it take?","acceptedAnswer":{"@type":"Answer","text":"Many clients work through a plan over 3–9 months, depending on items and responsiveness."}},
+      {"@type":"Question","name":"Do you send disputes on my behalf?","acceptedAnswer":{"@type":"Answer","text":"We provide templates and guidance; you submit disputes directly to creditors/bureaus."}},
+      {"@type":"Question","name":"Should I close old accounts?","acceptedAnswer":{"@type":"Answer","text":"Usually no. Older accounts help credit history length; we explain best practices for your case."}}
+    ]
   }
   </script>
 </body>
