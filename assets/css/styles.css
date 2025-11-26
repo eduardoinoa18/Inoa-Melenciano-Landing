@@ -118,6 +118,42 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   from { opacity: 0; transform: translateX(-30px); }
   to { opacity: 1; transform: translateX(0); }
 }
+
+/* ========== STICKY MOBILE CTA BAR ========== */
+.sticky-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -4px 16px rgba(0,0,0,0.06);
+  padding: 8px 12px;
+  display: none;
+  gap: 8px;
+  z-index: 1000;
+}
+.sticky-cta .sticky-cta-btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 10px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: var(--surface);
+}
+.sticky-cta .sticky-cta-btn.call { background: var(--navy); color: #fff; border-color: var(--navy); }
+.sticky-cta .sticky-cta-btn.whatsapp { background: #25D366; color: #0b2a17; border-color: #1db954; }
+.sticky-cta .sticky-cta-btn.book { background: var(--gold); color: #1a1a1a; border-color: var(--gold-dark); }
+
+@media (max-width: 768px) {
+  .sticky-cta { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+  body { padding-bottom: 70px; }
+}
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.02); }

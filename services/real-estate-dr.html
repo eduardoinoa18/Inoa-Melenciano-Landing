@@ -78,6 +78,32 @@
       </ul>
     </section>
 
+    <section class="process-section">
+      <h2>Your 4-Step DR Investment Journey</h2>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-number">1</div>
+          <h3>Discovery Call</h3>
+          <p>Define goals, budget, timeline, and preferred locations (ES/EN).</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">2</div>
+          <h3>Curated Projects</h3>
+          <p>Receive vetted options with ROI, rental comps, and developer track record.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">3</div>
+          <h3>Site Visit or Remote</h3>
+          <p>Tours, reservations, legal referrals, escrow coordination, and payment plan.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">4</div>
+          <h3>Close & Manage</h3>
+          <p>Title delivery, handover, and connection to rental programs or managers.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="reviews-section">
       <h2>Testimonios de inversores / Investor Testimonials</h2>
       <div class="reviews-grid">
@@ -176,14 +202,29 @@
             </select>
           </div>
           <input type="hidden" name="interest" value="realEstateDR" />
+          <!-- UTM Capture Fields -->
+          <input type="hidden" name="utm_source" id="utm_source">
+          <input type="hidden" name="utm_medium" id="utm_medium">
+          <input type="hidden" name="utm_campaign" id="utm_campaign">
           <div class="form-row full-width">
             <label for="message">Cuéntanos más / Tell us more</label>
             <textarea id="message" name="message" rows="5" placeholder="Ej.: Busco un condo en Punta Cana para alquiler vacacional..."></textarea>
           </div>
+          <div class="form-row"><label><input type="checkbox" id="consent" name="consent" required> Acepto la política de privacidad y recibir comunicaciones / I agree to the privacy policy and to receive communications</label></div>
           <button type="submit" class="btn primary">Send Message / Enviar</button>
           <p class="form-helper">We connect investors with vetted developers and provide complete bilingual support throughout the process.</p>
           <p id="formStatus" class="status" aria-live="polite"></p>
         </form>
+      </div>
+    </section>
+
+    <section class="results-section" aria-labelledby="realdr-results">
+      <h2 id="realdr-results">Investment Outcomes</h2>
+      <div class="stats-grid">
+        <div class="stat-card"><span class="stat-number">8-12%</span><span class="stat-label">Typical Gross ROI</span></div>
+        <div class="stat-card"><span class="stat-number">30-90d</span><span class="stat-label">Reservation to Contract</span></div>
+        <div class="stat-card"><span class="stat-number">70%+</span><span class="stat-label">Projects With Rental Program</span></div>
+        <div class="stat-card"><span class="stat-number">ES/EN</span><span class="stat-label">Bilingual Transaction</span></div>
       </div>
     </section>
 
@@ -238,6 +279,44 @@
 
   <script src="/assets/js/i18n.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script>
+    // UTM capture for real estate DR form
+    (function(){
+      try {
+        const p = new URLSearchParams(window.location.search);
+        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
+          var el = document.getElementById(k);
+          if (el) el.value = p.get(k) || '';
+        });
+      } catch(e) {}
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Dominican Republic Real Estate (Paraíso Inmobiliario)",
+    "serviceType": "International Real Estate Investment Facilitation",
+    "areaServed": [
+      {"@type": "Country", "name": "Dominican Republic"},
+      {"@type": "Country", "name": "United States"}
+    ],
+    "provider": {
+      "@type": "Organization",
+      "name": "Inoa & Melenciano Services",
+      "url": "https://inoamelenciano.com/",
+      "logo": "https://inoamelenciano.com/assets/img/logo-icon.svg"
+    },
+    "description": "Curated DR real estate projects, developer access, bilingual support, and introductions to rental programs.",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free initial consultation"}
+  }
+  </script>
+  <!-- Sticky Mobile CTA Bar -->
+  <div class="sticky-cta" aria-label="Quick actions">
+    <a class="sticky-cta-btn call" href="tel:+19783909619">Call</a>
+    <a class="sticky-cta-btn whatsapp" href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="sticky-cta-btn book" href="../contact.html#contact-form">Book</a>
+  </div>
 </body>
 </html>
 

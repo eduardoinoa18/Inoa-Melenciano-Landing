@@ -52,6 +52,24 @@
       </div>
     </section>
 
+    <!-- Quick Contact Actions -->
+    <section class="stats-section compact" aria-label="Quick contact options">
+      <div class="stats-row">
+        <a class="stat-item" href="tel:+19783909619">
+          <strong>Call Us</strong>
+          <span>(978) 390-9619</span>
+        </a>
+        <a class="stat-item" href="https://wa.me/19783909619" target="_blank" rel="noopener">
+          <strong>WhatsApp</strong>
+          <span>Chat Now</span>
+        </a>
+        <a class="stat-item" href="#contact-form">
+          <strong>Book</strong>
+          <span>Free 15-min consult</span>
+        </a>
+      </div>
+    </section>
+
     <section class="trust-section">
       <div class="trust-badges">
         <div class="trust-badge">
@@ -121,6 +139,14 @@
             <label for="message">Your Message / Tu Mensaje *</label>
             <textarea id="message" name="message" required placeholder="Tell us how we can help you... / Cuéntanos cómo podemos ayudarte..."></textarea>
           </div>
+            <!-- UTM Capture Fields -->
+            <input type="hidden" name="utm_source" id="utm_source">
+            <input type="hidden" name="utm_medium" id="utm_medium">
+            <input type="hidden" name="utm_campaign" id="utm_campaign">
+            <!-- Consent -->
+            <div class="form-row">
+              <label><input type="checkbox" id="consent" name="consent" required> Acepto la política de privacidad y recibir comunicaciones / I agree to the privacy policy and to receive communications</label>
+            </div>
           <button type="submit" class="btn primary">Send Message / Enviar</button>
           <p class="form-helper">We respond to all inquiries within 24-48 hours. For urgent matters, call us at (978) 390-9619.</p>
           <p id="formStatus" class="status" aria-live="polite"></p>
@@ -245,7 +271,25 @@
     </div>
   </footer>
 
-  <script src="/assets/js/i18n.js"></script>
-  <script src="/assets/js/main.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- Sticky Mobile CTA Bar -->
+  <div class="sticky-cta" aria-label="Quick actions">
+    <a class="sticky-cta-btn call" href="tel:+19783909619">Call</a>
+    <a class="sticky-cta-btn whatsapp" href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="sticky-cta-btn book" href="#contact-form">Book</a>
+  </div>
+  <script>
+    // UTM capture
+    (function(){
+      try {
+        const p = new URLSearchParams(window.location.search);
+        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
+          var el = document.getElementById(k);
+          if (el) el.value = p.get(k) || '';
+        });
+      } catch(e) {}
+    })();
+  </script>
 </body>
 </html>

@@ -78,6 +78,30 @@
       </div>
     </section>
 
+    <section class="benefits-section" aria-labelledby="re-us-benefits">
+      <h2 id="re-us-benefits">Why Work With Us</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card"><h3>Local Expertise</h3><p>Neighborhood insights across MA & NH.</p></div>
+        <div class="benefit-card"><h3>Strong Partners</h3><p>Century 21 North East + Newfed Mortgage.</p></div>
+        <div class="benefit-card"><h3>Bilingual Guidance</h3><p>Clear support in English & Spanish.</p></div>
+        <div class="benefit-card"><h3>Negotiation Power</h3><p>Offers structured to win in any market.</p></div>
+        <div class="benefit-card"><h3>End-to-End</h3><p>From pre-approval to closing day.</p></div>
+        <div class="benefit-card"><h3>Investor Savvy</h3><p>Cash-flow analysis and hold/sell strategy.</p></div>
+      </div>
+    </section>
+
+    <section class="services-overview" aria-labelledby="re-us-services">
+      <h2 id="re-us-services">What We Do</h2>
+      <div class="grid-3">
+        <div class="simple-card"><h3>Buyers</h3><p>Pre-approval guidance, curated tours, offer strategy, inspections, closing.</p></div>
+        <div class="simple-card"><h3>Sellers</h3><p>Pricing, staging, marketing, showings, negotiation, smooth close.</p></div>
+        <div class="simple-card"><h3>Investors</h3><p>Deal sourcing, numbers review, rental comps, financing options.</p></div>
+        <div class="simple-card"><h3>Market Analysis</h3><p>CMA reports, trends, and neighborhood insights.</p></div>
+        <div class="simple-card"><h3>Financing</h3><p>Newfed coordination, down payment programs, timelines.</p></div>
+        <div class="simple-card"><h3>Post-Close</h3><p>Trusted network for maintenance, insurance, and tax planning.</p></div>
+      </div>
+    </section>
+
     <div class="disclaimer-box">
       <h3>Professional Affiliations</h3>
       <p>We provide <strong>licensed real estate services</strong> through our affiliation with <strong>Century 21 North East</strong> and <strong>The Fermin Group</strong>. Our team brings you access to their established network, expertise, and resources.</p>
@@ -169,6 +193,16 @@
       </div>
     </section>
 
+    <section class="results-section" aria-labelledby="re-us-results">
+      <h2 id="re-us-results">Results You Can Expect</h2>
+      <div class="stats-grid">
+        <div class="stat-card"><span class="stat-number">45 days</span><span class="stat-label">Avg. Time to Close</span></div>
+        <div class="stat-card"><span class="stat-number">92%</span><span class="stat-label">Pre-Approval Success</span></div>
+        <div class="stat-card"><span class="stat-number">70%+</span><span class="stat-label">Repeat & Referrals</span></div>
+        <div class="stat-card"><span class="stat-number">$25k</span><span class="stat-label">Avg. Seller Upside</span></div>
+      </div>
+    </section>
+
     <section class="contact-section" aria-labelledby="contact-us">
       <div class="contact-inner">
         <h2 id="contact-us">Schedule Your Real Estate Consultation</h2>
@@ -198,10 +232,15 @@
             </select>
           </div>
           <input type="hidden" name="interest" value="realEstateUS" />
+          <!-- UTM Capture Fields -->
+          <input type="hidden" name="utm_source" id="utm_source">
+          <input type="hidden" name="utm_medium" id="utm_medium">
+          <input type="hidden" name="utm_campaign" id="utm_campaign">
           <div class="form-row full-width">
             <label for="message">Cuéntanos más / Tell us more</label>
             <textarea id="message" name="message" rows="5" placeholder="Ej.: Buscamos una casa de 3 habitaciones en Lawrence..."></textarea>
           </div>
+          <div class="form-row"><label><input type="checkbox" id="consent" name="consent" required> I agree to the privacy policy and to receive communications / Acepto la política de privacidad y recibir comunicaciones</label></div>
           <button type="submit" class="btn primary">Send Message / Enviar</button>
           <p class="form-helper">We also coordinate mortgage financing, tax planning, and credit improvement services.</p>
           <p id="formStatus" class="status" aria-live="polite"></p>
@@ -289,6 +328,47 @@
 
   <script src="/assets/js/i18n.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script>
+    // UTM capture for real estate US form
+    (function(){
+      try {
+        const p = new URLSearchParams(window.location.search);
+        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
+          var el = document.getElementById(k);
+          if (el) el.value = p.get(k) || '';
+        });
+      } catch(e) {}
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Real Estate Services (US)",
+    "serviceType": "Real Estate Brokerage",
+    "areaServed": [{"@type": "Country", "name": "United States"}],
+    "provider": {
+      "@type": "Organization",
+      "name": "Inoa & Melenciano Services",
+      "url": "https://inoamelenciano.com/",
+      "logo": "https://inoamelenciano.com/assets/img/logo-icon.svg"
+    },
+    "description": "Buying, selling, and investing services with Century 21 North East and Newfed Mortgage coordination. Bilingual guidance.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free consultation; brokerage and lender fees may apply"
+    },
+    "hasCredential": [{"@type": "EducationalOccupationalCredential", "credentialCategory": "Real Estate License"}]
+  }
+  </script>
+  <!-- Sticky Mobile CTA Bar -->
+  <div class="sticky-cta" aria-label="Quick actions">
+    <a class="sticky-cta-btn call" href="tel:+19783909619">Call</a>
+    <a class="sticky-cta-btn whatsapp" href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="sticky-cta-btn book" href="../contact.html#contact-form">Book</a>
+  </div>
 </body>
 </html>
 

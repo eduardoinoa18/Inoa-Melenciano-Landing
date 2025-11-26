@@ -383,10 +383,15 @@
             </select>
           </div>
           <input type="hidden" name="interest" value="immigration" />
+          <!-- UTM Capture Fields -->
+          <input type="hidden" name="utm_source" id="utm_source">
+          <input type="hidden" name="utm_medium" id="utm_medium">
+          <input type="hidden" name="utm_campaign" id="utm_campaign">
           <div class="form-row full-width">
             <label for="message">Cuéntanos más / Tell us more</label>
             <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito ayuda completando el formulario N-400. Ya tengo mi green card por 5 años..."></textarea>
           </div>
+          <div class="form-row"><label><input type="checkbox" id="consent" name="consent" required> Acepto la política de privacidad y recibir comunicaciones / I agree to the privacy policy and to receive communications</label></div>
           <button type="submit" class="btn primary">Send Message / Enviar</button>
           <p class="form-helper">We provide administrative support only—not legal advice. For complex legal matters, consult an immigration attorney.</p>
           <p id="formStatus" class="status" aria-live="polite"></p>
@@ -445,5 +450,41 @@
 
   <script src="../assets/js/i18n.js"></script>
   <script src="../assets/js/main.js"></script>
+  <!-- Sticky Mobile CTA Bar -->
+  <div class="sticky-cta" aria-label="Quick actions">
+    <a class="sticky-cta-btn call" href="tel:+19783909619">Call</a>
+    <a class="sticky-cta-btn whatsapp" href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="sticky-cta-btn book" href="../contact.html#contact-form">Book</a>
+  </div>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Immigration Form Preparation",
+    "serviceType": "USCIS administrative form assistance (non-legal)",
+    "description": "Bilingual administrative assistance completing USCIS forms (N-400, I-130, I-485, I-765, I-90, I-131). We help organize documents and prepare you for each step. We are not attorneys.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Inoa & Melenciano Services",
+      "url": "https://www.inoamelenciano.com"
+    },
+    "areaServed": ["US"],
+    "availableLanguage": ["English", "Spanish"],
+    "termsOfService": "https://www.inoamelenciano.com/disclosures.html",
+    "brand": {"@type":"Brand","name":"Inoa & Melenciano"}
+  }
+  </script>
+  <script>
+    // UTM capture for immigration form
+    (function(){
+      try {
+        const p = new URLSearchParams(window.location.search);
+        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
+          var el = document.getElementById(k);
+          if (el) el.value = p.get(k) || '';
+        });
+      } catch(e) {}
+    })();
+  </script>
 </body>
 </html>

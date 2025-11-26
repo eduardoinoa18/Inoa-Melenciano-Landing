@@ -138,10 +138,15 @@
             </select>
           </div>
           <input type="hidden" name="interest" value="notary" />
+          <!-- UTM Capture Fields -->
+          <input type="hidden" name="utm_source" id="utm_source">
+          <input type="hidden" name="utm_medium" id="utm_medium">
+          <input type="hidden" name="utm_campaign" id="utm_campaign">
           <div class="form-row full-width">
             <label for="message">Cuéntanos más / Tell us more</label>
             <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito notarizar un contrato de venta..."></textarea>
           </div>
+          <div class="form-row"><label><input type="checkbox" id="consent" name="consent" required> Acepto la política de privacidad y recibir comunicaciones / I agree to the privacy policy and to receive communications</label></div>
           <button type="submit" class="btn primary">Send Message / Enviar</button>
           <p class="form-helper">We offer flexible appointment scheduling including evenings and weekends.</p>
           <p id="formStatus" class="status" aria-live="polite"></p>
@@ -199,6 +204,41 @@
 
   <script src="/assets/js/i18n.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script>
+    // UTM capture for notary form
+    (function(){
+      try {
+        const p = new URLSearchParams(window.location.search);
+        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
+          var el = document.getElementById(k);
+          if (el) el.value = p.get(k) || '';
+        });
+      } catch(e) {}
+    })();
+  </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Notary Public Services",
+      "serviceType": "Notary",
+      "areaServed": [{"@type": "Country", "name": "United States"}],
+      "provider": {
+        "@type": "Organization",
+        "name": "Inoa & Melenciano Services",
+        "url": "https://inoamelenciano.com/",
+        "logo": "https://inoamelenciano.com/assets/img/logo-icon.svg"
+      },
+      "description": "Authorized notarization for affidavits, POA, real estate, and document certifications. Bilingual service.",
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free scheduling; per-document pricing at appointment"}
+    }
+    </script>
+  <!-- Sticky Mobile CTA Bar -->
+  <div class="sticky-cta" aria-label="Quick actions">
+    <a class="sticky-cta-btn call" href="tel:+19783909619">Call</a>
+    <a class="sticky-cta-btn whatsapp" href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="sticky-cta-btn book" href="../contact.html#contact-form">Book</a>
+  </div>
 </body>
 </html>
 

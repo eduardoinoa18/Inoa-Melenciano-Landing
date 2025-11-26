@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 <body>
+    <!-- Sticky Mobile CTA Bar -->
+    <div class="sticky-cta" aria-label="Quick actions">
+      <a class="sticky-cta-btn call" href="tel:+19783909619">Call</a>
+      <a class="sticky-cta-btn whatsapp" href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="sticky-cta-btn book" href="../contact.html#contact-form">Book</a>
+    </div>
   <header class="site-header">
     <a href="../index.html" class="logo">
       <img src="../assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
@@ -254,6 +260,23 @@
 
   <script src="/assets/js/i18n.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Credit Education & Dispute Guidance",
+    "serviceType": "Credit Counseling",
+    "areaServed": [{"@type": "Country", "name": "United States"}],
+    "provider": {
+      "@type": "Organization",
+      "name": "Inoa & Melenciano Services",
+      "url": "https://inoamelenciano.com/",
+      "logo": "https://inoamelenciano.com/assets/img/logo-icon.svg"
+    },
+    "description": "Educational guidance on credit reports, dispute templates, and financial literacy. No guaranteed outcomes.",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free consultation; pay-as-you-go guidance"}
+  }
+  </script>
 </body>
 </html>
 
