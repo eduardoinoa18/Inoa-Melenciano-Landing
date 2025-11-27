@@ -48,7 +48,12 @@
   backToTop.innerHTML = '↑';
   backToTop.className = 'back-to-top';
   backToTop.setAttribute('aria-label', 'Back to top');
-  backToTop.style.cssText = 'position:fixed;bottom:2rem;right:2rem;width:50px;height:50px;background:var(--gold);color:#000;border:none;border-radius:50%;font-size:1.5rem;cursor:pointer;opacity:0;visibility:hidden;transition:all 0.3s;box-shadow:var(--shadow);z-index:60;display:flex;align-items:center;justify-content:center;';
+  function setBackToTopPosition(){
+    const bottom = (window.innerWidth <= 768) ? '6rem' : '2rem';
+    backToTop.style.cssText = `position:fixed;bottom:${bottom};right:2rem;width:50px;height:50px;background:var(--gold);color:#000;border:none;border-radius:50%;font-size:1.5rem;cursor:pointer;opacity:0;visibility:hidden;transition:all 0.3s;box-shadow:var(--shadow);z-index:60;display:flex;align-items:center;justify-content:center;`;
+  }
+  setBackToTopPosition();
+  window.addEventListener('resize', setBackToTopPosition);
   backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   document.body.appendChild(backToTop);
 
