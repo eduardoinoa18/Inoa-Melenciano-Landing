@@ -2464,8 +2464,28 @@ body.theme-dark .checklist-box h3 {
   background: var(--bg-alt);
   border-radius: var(--radius-sm);
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: var(--text);
   font-style: italic;
+}
+
+/* Light banner variant to ensure readability */
+.alt-bg {
+  background: var(--surface);
+}
+.alt-bg h2,
+.alt-bg p,
+.alt-bg li,
+.alt-bg label,
+.alt-bg small,
+.alt-bg .help-text,
+.alt-bg .note-text {
+  color: var(--text);
+}
+
+/* Ensure helper text is readable on light backgrounds */
+.help-text {
+  color: var(--text);
+  opacity: 0.95;
 }
 
 .stats-section.compact {
