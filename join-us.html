@@ -64,6 +64,16 @@
       <div class="container">
         <form id="joinForm" novalidate>
           <input type="hidden" name="interest" value="professionalJoin" />
+          <!-- UTM Capture -->
+          <input type="hidden" name="utm_source" id="utm_source">
+          <input type="hidden" name="utm_medium" id="utm_medium">
+          <input type="hidden" name="utm_campaign" id="utm_campaign">
+          <input type="hidden" name="gclid" id="gclid">
+          <!-- Honeypot -->
+          <div class="visually-hidden" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+          </div>
           
           <!-- Progress bar -->
           <div class="progress-bar-container">
@@ -249,6 +259,20 @@
 
     // Initialize progress bar
     updateProgress();
+  </script>
+  <script>
+    // UTM & gclid capture
+    (function(){
+      try {
+        const p = new URLSearchParams(window.location.search);
+        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
+          var el = document.getElementById(k);
+          if (el) el.value = p.get(k) || '';
+        });
+        var g = document.getElementById('gclid');
+        if(g){ g.value = p.get('gclid') || ''; }
+      } catch(e) {}
+    })();
   </script>
 </body>
 </html>

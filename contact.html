@@ -140,10 +140,16 @@
             <textarea id="message" name="message" required placeholder="Tell us how we can help you... / Cuéntanos cómo podemos ayudarte..."></textarea>
           </div>
             <!-- UTM Capture Fields -->
-            <input type="hidden" name="utm_source" id="utm_source">
-            <input type="hidden" name="utm_medium" id="utm_medium">
-            <input type="hidden" name="utm_campaign" id="utm_campaign">
-            <!-- Consent -->
+          <input type="hidden" name="utm_source" id="utm_source">
+          <input type="hidden" name="utm_medium" id="utm_medium">
+          <input type="hidden" name="utm_campaign" id="utm_campaign">
+          <input type="hidden" name="gclid" id="gclid">
+          <!-- Honeypot -->
+          <div class="visually-hidden" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+          <!-- Consent -->
             <div class="form-row">
               <label><input type="checkbox" id="consent" name="consent" required> Acepto la política de privacidad y recibir comunicaciones / I agree to the privacy policy and to receive communications</label>
             </div>
@@ -288,6 +294,8 @@
           var el = document.getElementById(k);
           if (el) el.value = p.get(k) || '';
         });
+        var g = document.getElementById('gclid');
+        if(g){ g.value = p.get('gclid') || ''; }
       } catch(e) {}
     })();
   </script>

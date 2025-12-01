@@ -315,8 +315,8 @@
         <h2>Ready to Start Your Tax Prep?</h2>
         <p>Book a short call and upload documents securely. We review, prepare, and file with clear next steps.</p>
         <div class="cta-actions">
-          <a href="../contact.html" class="btn-primary">Book a Call</a>
-          <a href="#" class="btn-secondary">Upload Documents</a>
+          <a id="bookCallBtn" href="../contact.html" class="btn-primary">Book a Call</a>
+          <a id="uploadPortalBtn" href="#" class="btn-secondary">Upload Documents</a>
         </div>
         <p class="section-note">No legal promises — accurate preparation and guidance. Resource: <a href="#">Common documents for personal and business returns</a></p>
       </div>
@@ -425,9 +425,15 @@
         <p>Complete el formulario y nos pondremos en contacto pronto</p>
         <form id="contactForm" class="modern-form" novalidate>
         <div class="form-row">
-          <label for="name">Nombre completo / Full Name</label>
-          <input id="name" name="name" type="text" required placeholder="Ej.: Carlos Rodríguez" />
+          <label for="firstName">Nombre / First Name</label>
+          <input id="firstName" name="firstName" type="text" required placeholder="Ej.: Carlos" autocomplete="given-name" />
         </div>
+        <div class="form-row">
+          <label for="lastName">Apellido / Last Name</label>
+          <input id="lastName" name="lastName" type="text" required placeholder="Ej.: Rodríguez" autocomplete="family-name" />
+        </div>
+        <!-- Hidden combined full name field used by backend -->
+        <input type="hidden" id="name" name="name" />
         <div class="form-row">
           <label for="email">Correo electrónico / Email</label>
           <input id="email" name="email" type="email" required placeholder="tu@email.com" />
@@ -435,6 +441,10 @@
         <div class="form-row">
           <label for="phone">Teléfono / Phone</label>
           <input id="phone" name="phone" type="tel" placeholder="(xxx) xxx-xxxx" />
+        </div>
+        <div class="form-row">
+          <label for="preferredTime">Preferencia de contacto / Preferred Contact Time (opcional)</label>
+          <input id="preferredTime" name="preferredTime" type="text" placeholder="Ej.: Tardes entre 2-5pm" />
         </div>
         <div class="form-row">
           <label for="tax-type">¿Qué tipo de declaración?</label>
@@ -448,10 +458,22 @@
           </select>
         </div>
         <input type="hidden" name="interest" value="taxPrep" />
+        <!-- Honeypot -->
+        <div class="visually-hidden" aria-hidden="true">
+          <label for="website">Website</label>
+          <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+        </div>
         <!-- UTM Capture Fields -->
         <input type="hidden" name="utm_source" id="utm_source">
         <input type="hidden" name="utm_medium" id="utm_medium">
         <input type="hidden" name="utm_campaign" id="utm_campaign">
+        <input type="hidden" name="gclid" id="gclid">
+        <div class="form-row full-width">
+          <label for="docs">Subir documentos (opcional) / Upload documents (optional)</label>
+          <input id="docs" name="docs" type="file" accept=".pdf,.jpg,.jpeg,.png" multiple aria-describedby="fileHelp" />
+          <small id="fileHelp" class="help-text">Hasta 10 archivos; máx. 50MB en total; PDF/JPG/PNG. Para seguridad, los archivos se envían por portal cifrado tras enviar este formulario.</small>
+          <p id="fileError" class="status" aria-live="polite"></p>
+        </div>
         <div class="form-row full-width">
           <label for="message">Cuéntanos detalles / Tell us more</label>
           <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito declaración personal y tengo un pequeño negocio de limpieza."></textarea>
@@ -532,7 +554,84 @@
           var el = document.getElementById(k);
           if (el) el.value = p.get(k) || '';
         });
+        var g = document.getElementById('gclid');
+        if(g){ g.value = p.get('gclid') || ''; }
       } catch(e) {}
+    })();
+  </script>
+  <script>
+    // Tax intake enhancements: name combine, file validation, and GA4 events
+    (function(){
+      const form = document.getElementById('contactForm');
+      const first = document.getElementById('firstName');
+      const last = document.getElementById('lastName');
+      const full = document.getElementById('name');
+      const docs = document.getElementById('docs');
+      const fileError = document.getElementById('fileError');
+      const honeypot = document.getElementById('website');
+
+      function updateFullName(){
+        if(full){ full.value = ((first?.value || '') + ' ' + (last?.value || '')).trim(); }
+      }
+      first && first.addEventListener('input', updateFullName);
+      last && last.addEventListener('input', updateFullName);
+      updateFullName();
+
+      function validateFiles(){
+        if(!docs || !docs.files){ return true; }
+        fileError.textContent = '';
+        const files = Array.from(docs.files);
+        if(files.length > 10){ fileError.textContent = 'Máximo 10 archivos.'; return false; }
+        const allowed = ['application/pdf','image/jpeg','image/png'];
+        let total = 0;
+        for(const f of files){
+          total += f.size;
+          if(!allowed.includes(f.type)){
+            fileError.textContent = 'Solo PDF, JPG o PNG.'; return false;
+          }
+        }
+        if(total > 50 * 1024 * 1024){ fileError.textContent = 'Tamaño total supera 50MB.'; return false; }
+        return true;
+      }
+      docs && docs.addEventListener('change', validateFiles);
+
+      form && form.addEventListener('submit', function(e){
+        // Honeypot
+        if(honeypot && honeypot.value){ e.preventDefault(); return; }
+        // Only validate files locally; files are not uploaded via this form
+        if(!validateFiles()){
+          e.preventDefault();
+          return;
+        }
+        // GA4 event without blocking submission
+        try {
+          const hasFiles = docs && docs.files && docs.files.length > 0;
+          if(window.gtag){
+            window.gtag('event', 'tax_form_submitted', {
+              form_id: 'contactForm',
+              has_files: hasFiles,
+              interest: 'taxPrep'
+            });
+          }
+        } catch(_){}
+      });
+
+      // CTA click events
+      function track(id, eventName){
+        const el = document.getElementById(id);
+        if(!el) return;
+        el.addEventListener('click', function(){
+          try { window.gtag && window.gtag('event', eventName, { location: 'tax_prep_page' }); } catch(_){}
+        });
+      }
+      track('bookCallBtn','book_review_click');
+      track('uploadPortalBtn','upload_portal_click');
+
+      // Sticky CTA events
+      const phoneBtn = document.querySelector('.sticky-cta-btn.call');
+      const waBtn = document.querySelector('.sticky-cta-btn.whatsapp');
+      phoneBtn && phoneBtn.addEventListener('click', function(){ try { window.gtag && window.gtag('event','phone_click',{location:'sticky_cta'}); } catch(_){} });
+      waBtn && waBtn.addEventListener('click', function(){ try { window.gtag && window.gtag('event','whatsapp_click',{location:'sticky_cta'}); } catch(_){} });
     })();
   </script>
   <script type="application/ld+json">

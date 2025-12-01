@@ -163,7 +163,42 @@
       e.preventDefault();
       const lang = document.documentElement.lang || 'en';
       const dict = (typeof DICT !== 'undefined' && DICT[lang]) ? DICT[lang] : {};
-      
+
+      // Honeypot check
+      const honeypot = contactForm.querySelector('input[name="website"]');
+      if(honeypot && honeypot.value){
+        // Silently ignore bots
+        return;
+      }
+
+      // Optional file validation (Tax Prep intake)
+      const docsInput = contactForm.querySelector('#docs');
+      const fileErrorEl = document.getElementById('fileError');
+      const validateFiles = () => {
+        if(!docsInput || !docsInput.files) return true;
+        fileErrorEl && (fileErrorEl.textContent = '');
+        const files = Array.from(docsInput.files);
+        if(files.length > 10){ fileErrorEl && (fileErrorEl.textContent = 'Máximo 10 archivos.'); return false; }
+        const allowed = ['application/pdf','image/jpeg','image/png'];
+        let total = 0;
+        for(const f of files){
+          total += f.size;
+          if(!allowed.includes(f.type)){
+            fileErrorEl && (fileErrorEl.textContent = 'Solo PDF, JPG o PNG.');
+            return false;
+          }
+        }
+        if(total > 50 * 1024 * 1024){
+          fileErrorEl && (fileErrorEl.textContent = 'Tamaño total supera 50MB.');
+          return false;
+        }
+        return true;
+      };
+      if(!validateFiles()){
+        // Don't proceed if invalid files
+        return;
+      }
+
       // Show loading state
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalText = submitBtn ? submitBtn.textContent : '';
@@ -173,10 +208,25 @@
       }
       statusEl.textContent = '';
       statusEl.className = 'status';
-      
+
+      // Build JSON payload, excluding file blobs
       const fd = new FormData(contactForm);
-      const payload = Object.fromEntries(fd.entries());
-      
+      const payload = {};
+      for(const [key, value] of fd.entries()){
+        if(key === 'docs') continue; // files handled via secure portal later
+        payload[key] = value;
+      }
+
+      // GA4 event (non-blocking)
+      try {
+        const hasFiles = docsInput && docsInput.files && docsInput.files.length > 0;
+        window.gtag && window.gtag('event', 'lead_form_submitted', {
+          form_id: contactForm.id || 'contactForm',
+          has_files: !!hasFiles,
+          interest: payload.interest || 'general'
+        });
+      } catch(_){ }
+
       try {
         const res = await fetch('/api/lead', {
           method: 'POST',

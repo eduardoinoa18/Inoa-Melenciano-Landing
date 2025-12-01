@@ -286,9 +286,9 @@
         <p data-i18n="contact.copy">Share your goals and we'll connect with you personally.</p>
         <form id="contactForm" novalidate class="modern-form">
           <!-- Honeypot anti-spam field -->
-          <div class="form-row honeypot">
-            <label for="company">Company</label>
-            <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
+          <div class="visually-hidden" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
           </div>
           <div class="form-row">
             <label for="name" data-i18n="form.nameLabel">Full Name</label>
@@ -325,6 +325,7 @@
           <input type="hidden" name="utm_source" id="utm_source">
           <input type="hidden" name="utm_medium" id="utm_medium">
           <input type="hidden" name="utm_campaign" id="utm_campaign">
+          <input type="hidden" name="gclid" id="gclid">
           <div class="form-row">
             <label><input type="checkbox" id="consent" name="consent" required> I agree to the privacy policy and to receive communications / Acepto la política de privacidad y recibir comunicaciones</label>
           </div>
@@ -416,6 +417,8 @@
           var el = document.getElementById(k);
           if (el) el.value = p.get(k) || '';
         });
+        var g = document.getElementById('gclid');
+        if(g){ g.value = p.get('gclid') || ''; }
       } catch(e) {}
     })();
   </script>

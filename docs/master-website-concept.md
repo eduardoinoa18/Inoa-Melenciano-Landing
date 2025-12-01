@@ -184,3 +184,203 @@ Content Hygiene
 - Numbers and credentials must be verified and dated.
 - Copy changes require a compliance check for immigration/tax phrasing.
 - Spanish translations should be reviewed for clarity and regional neutrality.
+
+---
+
+## 10. Tax Preparation — Complete Page Package
+
+Purpose: Convert visitors into booked consultations or secure document uploads. Mobile-first, bilingual, accessible, and visually consistent with the existing CSS framework.
+
+1) Page Goals & Key Messages
+- Primary goal: Book a free 15-minute tax review or start secure document upload.
+- Primary messages (compliant):
+  - Experienced, bilingual tax preparer (Senior Tax Specialist)
+  - Individual & small-business tax preparation and year-round support
+  - Secure document handling and clear pricing explanation
+  - We help prepare accurate returns, identify common deductions, and avoid mistakes
+  - We do not provide legal tax guarantees or promise refunds — we guide and prepare
+  - Spanish equivalents kept consistent
+
+2) Hero (A/B test-ready copy + microcopy)
+- Design: Large visual, concise copy, primary CTA + secondary action
+- Visual: Real photo (e.g., Eduardo), soft focus, professional setting
+- EN
+  - Headline: “Tax Preparation — Simple, Secure, Bilingual”
+  - Subheadline: “Individual & small business tax filing, year-round support, and clear communication in English & Spanish.”
+  - Primary CTA: “Book a Free 15-min Review” (calendar modal)
+  - Secondary CTA: “Upload Documents Securely” (secure portal)
+- ES
+  - Headline: “Preparación de Impuestos — Fácil, Segura y Bilingüe”
+  - Subheadline: “Declaraciones para personas y pequeñas empresas, soporte durante todo el año y comunicación clara en inglés y español.”
+  - Primary CTA: “Reserva una revisión gratis (15 min)”
+  - Secondary CTA: “Sube tus documentos de forma segura”
+- Microcopy under CTAs: “No legal promises — accurate preparation and guidance.”
+
+3) Credibility Strip (below hero)
+- Show 3–5 real trust items (no fake numbers):
+  - Licensed Senior Tax Specialist
+  - Licensed REALTOR® (MA & NH) — helpful for property tax issues
+  - Century 21 North East / The Fermin Group — partner
+  - Notary Public (MA)
+- Visual: Small icons/logos + short text (use logos only with permission)
+
+4) Benefits (6 cards — concise)
+- Accurate preparation — We prepare returns carefully and review for common errors
+- Bilingual communication — Clear English & Spanish support throughout
+- Year-round support — Help after filing and simple amendments
+- Secure upload & storage — Encrypted uploads and private portal
+- Tailored to individuals & small businesses — W‑2, self-employed, rentals
+- Transparent pricing — Clear fees before work begins
+
+5) 4-Step Timeline (what to expect)
+- Desktop: horizontal; Mobile: vertical/accordion
+- Steps:
+  1. Book a Review — Quick 15-min call
+  2. Secure Document Upload — Portal + checklist
+  3. Preparation & Review — We prepare and review together
+  4. Filing & Follow-Up — E‑file + year-round support
+- Microcopy: “Timeline may vary based on complexity.”
+
+6) Results & Outcomes (non-numeric)
+- Section: “What we help you achieve”
+- Bullets: Reduce filing errors; claim eligible deductions/credits; organized, securely stored documents; clear next steps for tax planning
+- No refund amounts or guarantees
+
+7) 3 Short Success Examples (anonymized)
+- Format: Problem → Solution → Outcome (non-exaggerated)
+- Example (EN): J.H. (self‑employed) — unclear quarterlies; organized records, corrected estimates, prepared current return; outcome: return filed + clear quarterly plan
+- ES version similar
+- CTA under examples: “See how we work — Book a 15‑min review.”
+
+8) Pricing / Packages (transparent)
+- Three simple options (amounts optional or “From $X” only when verified):
+  - Starter (Simple Return): W‑2, standard deduction
+  - Self‑Employed / Rental: Includes Schedule C/E support
+  - Full Service / Business: Multi‑state, multiple income sources
+- Microcopy: “Final price after document review. Hourly or flat‑fee options available.”
+
+9) FAQ (6–8 concise, accurate)
+- Examples:
+  - Multi‑state returns? — Yes; MA/NH and coordinate others; fees may apply
+  - Audits? — Documentation support and guidance; attorney referral for representation
+  - How to send documents? — Secure portal/upload link + checklist
+  - Amend past returns? — Yes; scope review first
+  - Self‑employed info? — 1099s, expenses, mileage logs, bank statements
+  - Legal tax advice? — We prepare and guide; refer tax attorney for complex issues
+- Include Spanish translations
+
+10) CTA Section (sticky & repeated)
+- At bottom and sticky on scroll: primary + secondary CTA
+- Trust note: “Secure platform — your data is encrypted.”
+
+11) Contact / Intake Form (fields, validation, privacy)
+- Fields: First name (req), Last name (req), Email (req), Phone (req), Service interest (select), Preferred date/time (opt), File upload (PDF/JPG/PNG; max 10 files; 50MB total)
+- Consent checkbox (required)
+- Hidden UTM: utm_source, utm_medium, utm_campaign, gclid
+- Validation: required fields; email regex/domain; phone normalization; file type/size; honeypot; reCAPTCHA v3/hCaptcha
+- Post-submit: Autoreply with portal link & checklist; create lead in CRM (tags: service_interest, source, language_preference); analytics event tax_form_submitted
+
+12) Analytics & Events (GA4 + server-side hint)
+- Events: page_view; book_review_click; upload_portal_click; tax_form_submitted; file_uploaded; phone_click; whatsapp_click
+- Include UTM in CRM; consider server‑side tracking/Conversions API
+
+13) JSON-LD (Service + FAQ)
+- Service example:
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Tax Preparation",
+  "provider": {"@type": "Organization","name": "Inoa & Melenciano Services","url": "https://yourdomain.com"},
+  "areaServed": ["US", "Dominican Republic"],
+  "availableLanguage": ["English", "Spanish"],
+  "description": "Bilingual tax preparation services for individuals and small businesses, including secure document uploads and year-round support."
+}
+```
+
+- Add FAQ structured data for 3–5 on-page Q&As
+
+14) Accessibility & Privacy
+- Labeled inputs; aria-describedby on errors; AA contrast; keyboard focus states
+- Use `lang="en"` / `lang="es"` where applicable
+- Do not store SSNs without encryption & consent; request SSN only after engagement via secure portal
+- Privacy policy & cookie consent banner linked near form
+
+15) SEO Meta Tags
+- EN Title: “Tax Preparation — Bilingual Tax Services | Inoa & Melenciano”
+- EN Description: “Bilingual tax preparation for individuals & small businesses. Secure uploads, year-round support, and clear pricing. Book a free 15-min review.”
+- Add Spanish equivalents
+- Add canonical + hreflang for language variations
+
+16) Visual Design & Style
+- Use existing CSS system; align tokens if adopting:
+  - Colors: primary #0f58a3; primary‑dark #0b3f78; accent #f59e0b; bg #f7fafc; surface #fff; text #0b2540; success #10b981; warning #f97316
+  - Typography: Headline Inter/Poppins 700; Body Inter/Roboto 400 16px; UI small 14/600; LH 1.4–1.6
+  - Spacing: 4px scale; container max‑width 1200px; mobile/tablet padding patterns
+  - Icons: line icons (shield, calendar, upload, checklist, lock, person)
+  - Imagery: authentic photos (team/office), responsive sizes, WebP/AVIF
+- Components to implement: Hero, BenefitCard, Timeline, TestimonialCarousel (manual controls), PricingCards, Form (inline validation), StickyCTA, SecurePortalModal
+- Sample (Tailwind‑style) classes included in engineering appendix; map to current CSS as needed
+
+17) Code Snippets — Intake Form (HTML + minimal JS)
+
+```html
+<form id="tax-intake" class="space-y-4" enctype="multipart/form-data">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <input type="text" name="firstName" required placeholder="First name" class="input"/>
+    <input type="text" name="lastName" required placeholder="Last name" class="input"/>
+  </div>
+  <input type="email" name="email" required placeholder="Email" class="input"/>
+  <input type="tel" name="phone" required placeholder="Phone" class="input"/>
+  <select name="service_interest" class="input">
+    <option value="">Select service</option>
+    <option value="individual">Individual</option>
+    <option value="self_employed">Self-Employed</option>
+    <option value="business">Business</option>
+    <option value="amendment">Amendment</option>
+  </select>
+  <label class="block">
+    <span class="text-sm">Upload documents</span>
+    <input type="file" name="files" accept=".pdf,.jpg,.png" multiple class="mt-1 block w-full"/>
+  </label>
+  <input type="hidden" name="utm_source" id="utm_source" />
+  <input type="hidden" name="utm_medium" id="utm_medium" />
+  <input type="hidden" name="utm_campaign" id="utm_campaign" />
+  <label class="flex items-center gap-2">
+    <input type="checkbox" required name="consent" />
+    <span class="text-sm">I agree to the Privacy Policy and to receive communications.</span>
+  </label>
+  <button type="submit" class="w-full md:w-auto px-6 py-3 btn primary">Submit</button>
+  <p id="formStatus" class="status" aria-live="polite"></p>
+  <input type="text" name="website" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+</form>
+<script>
+  // Fill UTM fields from URL
+  (function(){
+    try {
+      const p = new URLSearchParams(window.location.search);
+      ['utm_source','utm_medium','utm_campaign'].forEach(k => {
+        const el = document.getElementById(k);
+        if (el) el.value = p.get(k) || '';
+      });
+    } catch(e) {}
+  })();
+  // Simple submit handler placeholder
+  document.getElementById('tax-intake')?.addEventListener('submit', function(e){
+    e.preventDefault();
+    window.gtag && gtag('event','tax_form_submitted',{method:'website'});
+    // Implement: upload to secure portal backend / CRM integration
+  });
+</script>
+```
+
+18) Assets & Imagery Guidance
+- Provide: professional headshot(s), 3 client photos (with consent), consistent stroke icons, authentic hero photo
+- Optimization: responsive sizes (320/640/1280), WebP/AVIF where supported
+
+19) Remove From Existing Tax Page (to reduce duplication)
+- Old long paragraphs; unverified stats; conflicting pricing statements; duplicate CTAs; any statements implying legal representation without proper license
+
+20) QA & Launch Checklist (Tax page)
+- Copy proofed (EN/ES); Forms tested (validation + uploads); Analytics events firing; JSON‑LD validates; Mobile views tested; Accessibility spot‑check; Privacy/cookie banner; Secure portal link tested
