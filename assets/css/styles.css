@@ -3205,19 +3205,20 @@ body.theme-dark .hero-clean {
 body.theme-dark .hero-clean h1 { color: #ffffff; }
 .hero-clean .hero-tagline {
   font-size: clamp(0.95rem, 2vw, 1.15rem);
-  color: var(--gold);
+  color: var(--gold-dark);
   font-weight: 600;
   margin-bottom: 1.5rem;
   letter-spacing: 0.5px;
 }
+body.theme-dark .hero-clean .hero-tagline { color: var(--gold-light); }
 .hero-clean .hero-subtitle {
   font-size: clamp(1rem, 2vw, 1.15rem);
   line-height: 1.7;
   margin: 0 auto 2.5rem;
   max-width: 780px;
-  color: var(--text-muted);
+  color: var(--slate);
 }
-body.theme-dark .hero-clean .hero-subtitle { color: var(--text-light); }
+body.theme-dark .hero-clean .hero-subtitle { color: rgba(255, 255, 255, 0.85); }
 .hero-clean .hero-cta {
   display: flex;
   gap: 1rem;
@@ -3226,14 +3227,16 @@ body.theme-dark .hero-clean .hero-subtitle { color: var(--text-light); }
   margin-bottom: 3rem;
 }
 .btn-link {
-  color: var(--text-muted);
+  color: var(--slate);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 0.5rem 0;
   transition: color var(--transition);
 }
-.btn-link:hover { color: var(--gold); }
+.btn-link:hover { color: var(--gold-dark); }
+body.theme-dark .btn-link { color: var(--text-light); }
+body.theme-dark .btn-link:hover { color: var(--gold); }
 
 /* Trust Bar */
 .trust-bar {
@@ -3262,8 +3265,9 @@ body.theme-dark .hero-clean .hero-subtitle { color: var(--text-light); }
 body.theme-dark .trust-item strong { color: var(--gold-light); }
 .trust-item span {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: var(--slate);
 }
+body.theme-dark .trust-item span { color: var(--text-light); }
 
 /* Quick Navigation Tiles */
 .quick-nav {
@@ -3299,9 +3303,23 @@ body.theme-dark .trust-item strong { color: var(--gold-light); }
   border-color: var(--gold);
 }
 .tile-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+.tile-icon svg {
+  stroke: var(--navy-dark);
+  transition: transform var(--transition);
+}
+body.theme-dark .tile-icon svg { stroke: var(--navy-dark); }
+.quick-tile:hover .tile-icon svg {
+  transform: scale(1.1);
 }
 .quick-tile h3 {
   font-size: 1.25rem;
@@ -3311,9 +3329,10 @@ body.theme-dark .trust-item strong { color: var(--gold-light); }
 body.theme-dark .quick-tile h3 { color: var(--gold-light); }
 .quick-tile p {
   font-size: 0.95rem;
-  color: var(--text-muted);
+  color: var(--slate);
   line-height: 1.6;
 }
+body.theme-dark .quick-tile p { color: var(--text-muted); }
 
 /* Core Values Section */
 .core-values {
@@ -3353,7 +3372,7 @@ body.theme-dark .quick-tile h3 { color: var(--gold-light); }
 .badge-icon {
   width: 40px;
   height: 40px;
-  background: var(--gold);
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
   color: #ffffff;
   border-radius: 50%;
   display: flex;
@@ -3362,12 +3381,14 @@ body.theme-dark .quick-tile h3 { color: var(--gold-light); }
   font-size: 1.5rem;
   font-weight: 700;
   flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
 }
 .value-badge strong {
   font-size: 0.95rem;
-  color: var(--text);
+  color: var(--navy);
   line-height: 1.4;
 }
+body.theme-dark .value-badge strong { color: var(--text); }
 
 /* How We Work — 3 Step Process */
 .how-we-work {
@@ -3403,7 +3424,7 @@ body.theme-dark .quick-tile h3 { color: var(--gold-light); }
 .step-num {
   width: 60px;
   height: 60px;
-  background: var(--gold);
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
   color: #ffffff;
   border-radius: 50%;
   display: flex;
@@ -3412,6 +3433,7 @@ body.theme-dark .quick-tile h3 { color: var(--gold-light); }
   font-size: 1.75rem;
   font-weight: 700;
   margin: 0 auto 1.5rem;
+  box-shadow: var(--shadow-sm);
 }
 .step-simple h3 {
   font-size: 1.25rem;
@@ -3421,9 +3443,10 @@ body.theme-dark .quick-tile h3 { color: var(--gold-light); }
 body.theme-dark .step-simple h3 { color: var(--gold-light); }
 .step-simple p {
   font-size: 0.95rem;
-  color: var(--text-muted);
+  color: var(--slate);
   line-height: 1.6;
 }
+body.theme-dark .step-simple p { color: var(--text-muted); }
 
 /* About Us Homepage Section */
 .about-home {
@@ -3434,18 +3457,20 @@ body.theme-dark .step-simple h3 { color: var(--gold-light); }
 .about-home h2 {
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   margin-bottom: 2rem;
-  color: var(--text);
+  color: var(--navy);
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
+body.theme-dark .about-home h2 { color: var(--text); }
 .about-home p {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: var(--text-muted);
+  color: var(--slate);
   max-width: 800px;
   margin: 0 auto 2rem;
 }
+body.theme-dark .about-home p { color: var(--text-muted); }
 .about-home .btn {
   margin-top: 1rem;
 }
