@@ -328,3 +328,26 @@
       }
     });
   }
+
+// FAQ progressive disclosure: collapse beyond 6 items with toggle
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.faq-list').forEach(function(list){
+    const items = list.querySelectorAll('details');
+    if(items.length > 6){
+      list.classList.add('collapsed');
+      const btn = document.createElement('button');
+      btn.className = 'faq-toggle';
+      btn.setAttribute('type', 'button');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.innerHTML = '<span data-lang="en">Show more</span><span data-lang="es">Ver más</span>';
+      btn.addEventListener('click', function(){
+        const isCollapsed = list.classList.toggle('collapsed');
+        btn.setAttribute('aria-expanded', (!isCollapsed).toString());
+        btn.innerHTML = isCollapsed 
+          ? '<span data-lang="en">Show more</span><span data-lang="es">Ver más</span>' 
+          : '<span data-lang="en">Show less</span><span data-lang="es">Ver menos</span>';
+      });
+      list.insertAdjacentElement('afterend', btn);
+    }
+  });
+});

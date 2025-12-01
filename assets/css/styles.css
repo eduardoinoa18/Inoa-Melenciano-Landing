@@ -3172,3 +3172,8 @@ body.theme-dark .review-card-simple cite {
     max-width: 300px;
   }
 }
+
+/* FAQ progressive disclosure */
+.faq-list.collapsed details:nth-of-type(n+7) { display: none; }
+.faq-toggle { margin-top: 0.75rem; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 0.9rem; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; font-weight: 600; }
+.faq-toggle:hover { border-color: var(--gold); color: var(--gold); }
