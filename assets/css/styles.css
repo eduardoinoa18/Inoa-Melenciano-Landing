@@ -3189,9 +3189,9 @@ body.theme-dark .review-card-simple cite {
 
 /* Part 1 Homepage Refinement — Modern Clean Styles */
 
-/* Hero Clean: White background, soft gradients, minimal animations */
+/* Hero Clean: Brand navy gradient for maximum contrast */
 .hero-clean {
-  background: linear-gradient(135deg, #d8dce2 0%, #c8ced6 50%, #d8dce2 100%);
+  background: var(--gradient-hero);
   padding: 5rem 2rem 4rem;
   text-align: center;
   min-height: 70vh;
@@ -3201,34 +3201,31 @@ body.theme-dark .review-card-simple cite {
   position: relative;
 }
 body.theme-dark .hero-clean {
-  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, var(--navy-dark) 100%);
+  background: var(--gradient-hero);
 }
 .hero-clean h1 {
   font-size: clamp(2.5rem, 6vw, 3.5rem);
   font-weight: 800;
   margin: 0 0 1rem;
-  color: #0a1420;
+  color: #ffffff;
   letter-spacing: -0.5px;
   line-height: 1.15;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 body.theme-dark .hero-clean h1 { color: #ffffff; }
 .hero-clean .hero-tagline {
   font-size: clamp(0.95rem, 2vw, 1.15rem);
-  color: var(--gold-dark);
+  color: var(--gold-light);
   font-weight: 600;
   margin-bottom: 1.5rem;
   letter-spacing: 0.5px;
 }
-body.theme-dark .hero-clean .hero-tagline { color: var(--gold-light); }
 .hero-clean .hero-subtitle {
   font-size: clamp(1rem, 2vw, 1.15rem);
   line-height: 1.7;
   margin: 0 auto 2.5rem;
   max-width: 780px;
-  color: var(--slate);
+  color: rgba(255, 255, 255, 0.9);
 }
-body.theme-dark .hero-clean .hero-subtitle { color: rgba(255, 255, 255, 0.85); }
 .hero-clean .hero-cta {
   display: flex;
   gap: 1rem;
@@ -3247,6 +3244,9 @@ body.theme-dark .hero-clean .hero-subtitle { color: rgba(255, 255, 255, 0.85); }
 .btn-link:hover { color: var(--gold-dark); }
 body.theme-dark .btn-link { color: var(--text-light); }
 body.theme-dark .btn-link:hover { color: var(--gold); }
+/* Ensure hero links are visible on dark banner */
+.hero-clean .btn-link { color: rgba(255, 255, 255, 0.92); }
+.hero-clean .btn-link:hover { color: var(--gold-light); }
 
 /* Trust Bar */
 .trust-bar {
@@ -3278,6 +3278,20 @@ body.theme-dark .trust-item strong { color: var(--gold-light); }
   color: var(--slate);
 }
 body.theme-dark .trust-item span { color: var(--text-light); }
+/* Hero-specific trust bar colors on dark banner */
+.hero-clean .trust-bar { border-top-color: rgba(255, 255, 255, 0.2); }
+.hero-clean .trust-item strong { color: #ffffff; }
+.hero-clean .trust-item span { color: rgba(255, 255, 255, 0.85); }
+
+/* Ensure outline button is visible on dark hero banner */
+.hero-clean .btn.outline {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+.hero-clean .btn.outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+}
 
 /* Quick Navigation Tiles */
 .quick-nav {
