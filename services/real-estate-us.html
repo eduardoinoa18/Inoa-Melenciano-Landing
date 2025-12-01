@@ -221,6 +221,12 @@
           <input type="hidden" name="utm_source" id="utm_source">
           <input type="hidden" name="utm_medium" id="utm_medium">
           <input type="hidden" name="utm_campaign" id="utm_campaign">
+          <input type="hidden" name="gclid" id="gclid">
+          <!-- Honeypot -->
+          <div class="visually-hidden" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+          </div>
           <div class="form-row full-width">
             <label for="message">Cuéntanos más / Tell us more</label>
             <textarea id="message" name="message" rows="5" placeholder="Ej.: Buscamos una casa de 3 habitaciones en Lawrence..."></textarea>
@@ -344,6 +350,8 @@
           var el = document.getElementById(k);
           if (el) el.value = p.get(k) || '';
         });
+        var g = document.getElementById('gclid');
+        if(g){ g.value = p.get('gclid') || ''; }
       } catch(e) {}
     })();
   </script>

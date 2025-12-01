@@ -305,6 +305,8 @@
           var el = document.getElementById(k);
           if (el) el.value = p.get(k) || '';
         });
+        var g = document.getElementById('gclid');
+        if(g){ g.value = p.get('gclid') || ''; }
       } catch(e) {}
     })();
   </script>
