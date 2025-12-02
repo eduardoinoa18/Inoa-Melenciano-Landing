@@ -3827,3 +3827,44 @@ body.theme-dark .section-intro { color: var(--text-muted); }
 }
 body.theme-dark .network-item h3 { color: var(--gold-light); }
 
+/* ===== Footer: stronger readability ===== */
+.site-footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.92);
+  padding: 4rem 2rem 2rem;
+  border-top: 4px solid var(--gold);
+}
+.site-footer h3 { color: var(--gold-light); }
+.site-footer a { color: rgba(255,255,255,0.92); }
+.site-footer a:hover { color: var(--gold-light); }
+.footer-content { max-width: 1200px; margin: 0 auto 2rem; }
+.legal { color: rgba(255,255,255,0.72); }
+
+/* ===== Icon contrast fixes ===== */
+/* Values */
+.value-card .value-icon { 
+  width: 56px; height: 56px; border-radius: 50%; 
+  background: var(--gradient-gold); display:flex; align-items:center; justify-content:center; 
+  box-shadow: var(--shadow-sm); margin-bottom: 0.75rem;
+}
+.value-card .value-icon svg { stroke: #ffffff; }
+/* Differentiators */
+.diff-icon { background: var(--gradient-gold); }
+.diff-icon svg { stroke: #ffffff; }
+/* Service Network */
+.network-icon { background: var(--gradient-gold); }
+.network-icon svg { stroke: #ffffff; }
+
+/* ===== Team carousel visuals ===== */
+.team-carousel { position: relative; overflow: hidden; max-width: 1100px; margin: 0 auto; }
+.team-track { display: flex; gap: 2rem; transition: transform 0.4s ease; padding: 0.5rem; }
+.carousel-controls { display:flex; justify-content:center; gap:1rem; margin-top: 1rem; }
+.carousel-btn { background: var(--gold); color:#111; border:none; border-radius: var(--radius-sm); padding:0.6rem 1rem; cursor:pointer; box-shadow: var(--shadow-sm); }
+.carousel-btn:disabled { opacity: 0.5; cursor: default; }
+.carousel-btn#prevTeam::before { content: '◀'; margin-right: 0.5rem; }
+.carousel-btn#nextTeam::after { content: '▶'; margin-left: 0.5rem; }
+
+@media (max-width: 768px){
+  .team-track { gap: 1rem; }
+}
+
