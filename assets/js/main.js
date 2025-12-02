@@ -157,6 +157,26 @@
     fadeInObserver.observe(el);
   });
 
+  // Simple Team Carousel
+  const teamTrack = document.getElementById('teamTrack');
+  const prevTeam = document.getElementById('prevTeam');
+  const nextTeam = document.getElementById('nextTeam');
+  if(teamTrack && prevTeam && nextTeam){
+    const cards = teamTrack.querySelectorAll('.team-card');
+    const cardWidth = 320 + 32; // card width + gap
+    let index = 0;
+    const maxIndex = Math.max(0, cards.length - 3); // show ~3 at a time on desktop
+    function update(){
+      teamTrack.style.transform = `translateX(${-index * cardWidth}px)`;
+      prevTeam.disabled = (index === 0);
+      nextTeam.disabled = (index >= maxIndex);
+    }
+    prevTeam.addEventListener('click', () => { if(index>0){ index--; update(); }});
+    nextTeam.addEventListener('click', () => { if(index<maxIndex){ index++; update(); }});
+    window.addEventListener('resize', update);
+    update();
+  }
+
   // Contact form submit enhancement with loading state
   if(contactForm && statusEl){
     contactForm.addEventListener('submit', async (e) => {
