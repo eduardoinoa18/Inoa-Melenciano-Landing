@@ -85,23 +85,24 @@ body {
 img, svg { display: block; max-width: 100%; height: auto; }
 .visually-hidden { position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
 
-/* Global Icon Contrast on dark/gold surfaces */
+/* Context-aware icon visibility */
 .value-icon svg,
 .diff-icon svg,
 .network-icon svg,
-.hero svg,
-.site-footer svg,
+.tile-icon svg,
+.trust-icon svg,
 .nav-toggle svg,
 #themeToggle svg,
 #themeToggleFooter svg {
-  stroke: #ffffff;
+  stroke: currentColor;
   fill: none;
 }
-.value-icon svg *,
-.diff-icon svg *,
-.network-icon svg * {
-  stroke: #ffffff;
-}
+.values-section .value-icon { color: var(--navy); }
+.mission-vision-section .mv-card .value-icon { color: var(--navy); }
+.quick-tiles .tile-icon { color: var(--navy); }
+.service-network-section .network-icon { color: #ffffff; }
+.hero, .site-footer { color: #ffffff; }
+.site-header .nav-toggle { color: var(--text); }
 
 /* Pagination dots for carousels */
 .carousel-dots {
@@ -446,6 +447,15 @@ body.theme-dark .site-header {
   pointer-events: none;
   animation: pulse 8s ease-in-out infinite;
 }
+
+/* Team Carousel Refinements */
+.team-carousel { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; }
+.team-viewport { overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+.team-viewport::-webkit-scrollbar { display: none; }
+.team-track { display: flex; gap: 32px; transition: transform var(--transition); }
+.team-card { scroll-snap-align: start; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); min-width: 320px; padding: 16px; }
+.carousel-btn { background: var(--navy); color: #fff; border: none; padding: 10px 14px; border-radius: var(--radius-sm); cursor: pointer; box-shadow: var(--shadow-sm); }
+.carousel-btn:disabled { opacity: 0.4; cursor: default; }
 .hero-inner {
   max-width: 920px;
   margin: 0 auto;

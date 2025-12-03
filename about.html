@@ -119,14 +119,7 @@
     }
     </script>
 
-    <!-- Breadcrumb Navigation -->
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <ol>
-        <li><a href="index.html" data-lang="en">Home</a><a href="index.html" data-lang="es">Inicio</a></li>
-        <li aria-current="page" data-lang="en">About Us</li>
-        <li aria-current="page" data-lang="es">Nosotros</li>
-      </ol>
-    </nav>
+    <!-- Breadcrumb intentionally removed to avoid duplication under header -->
 
     <!-- Hero Section -->
     <section class="hero hero-clean hero-about" aria-labelledby="about-hero-heading">
@@ -147,6 +140,50 @@
         </div>
       </div>
     </section>
+
+    <!-- Consistent Footer -->
+    <footer class="site-footer" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="visually-hidden">Footer</h2>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="./assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
+          <span>Inoa &amp; Melenciano</span>
+        </div>
+        <div class="footer-actions">
+          <button id="themeToggleFooter" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        </div>
+      </div>
+      <div class="footer-columns">
+        <div>
+          <h3 data-i18n="footer.company">Company</h3>
+          <ul>
+            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li><a href="team.html" data-i18n="nav.team">Our Team</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer.services">Services</h3>
+          <ul>
+            <li><a href="services/real-estate-us.html">Real Estate (US)</a></li>
+            <li><a href="services/tax-prep.html">Tax Preparation</a></li>
+            <li><a href="services/credit-repair.html">Credit Repair</a></li>
+            <li><a href="services/immigration.html">Immigration Assistance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer.contact">Contact</h3>
+          <ul>
+            <li><a href="tel:+19783909619">(978) 390-9619</a></li>
+            <li><a href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Inoa &amp; Melenciano. All rights reserved.</p>
+      </div>
+    </footer>
 
     <!-- Our Story -->
     <section class="story-section" aria-labelledby="story-heading">
