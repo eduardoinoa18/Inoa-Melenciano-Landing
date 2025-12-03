@@ -1,3 +1,13 @@
+/* Tax Prep Hero Section */
+.hero-tax-prep {
+  background: linear-gradient(135deg, #f4f6fa 0%, #e9ecf3 100%);
+}
+.hero-tax-prep .hero-img {
+  background: url('../assets/img/hero-tax-docs.jpg') center/cover no-repeat;
+  min-height: 180px;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
 /* Refined Professional Design System for Inoa & Melenciano Services */
 /* Brand colors: Navy Blue (#1a2a4a) | Gold (#c9a961) | Slate (#4a5a6a) */
 
