@@ -101,7 +101,7 @@ img, svg { display: block; max-width: 100%; height: auto; }
 .diff-icon { background: var(--gold); color: #ffffff; border-radius: 50%; padding: 10px; width: 48px; height: 48px; display: inline-flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm); }
 .tile-icon { background: var(--navy); color: #ffffff; border-radius: 12px; padding: 10px; display: inline-flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm); }
 .network-icon { background: var(--gold-dark); color: #ffffff; border-radius: 50%; padding: 12px; width: 64px; height: 64px; display: inline-flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm); }
-.values-section .value-icon { color: var(--gold); }
+.values-section .value-icon { background: var(--navy); color: #ffffff; }
 .mission-vision-section .mv-card .value-icon { color: var(--gold); }
 .quick-tiles .tile-icon { color: var(--gold); }
 .service-network-section .network-icon { color: #ffffff; }
