@@ -85,6 +85,48 @@ body {
 img, svg { display: block; max-width: 100%; height: auto; }
 .visually-hidden { position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; }
 
+/* Global Icon Contrast on dark/gold surfaces */
+.value-icon svg,
+.diff-icon svg,
+.network-icon svg,
+.hero svg,
+.site-footer svg,
+.nav-toggle svg,
+#themeToggle svg,
+#themeToggleFooter svg {
+  stroke: #ffffff;
+  fill: none;
+}
+.value-icon svg *,
+.diff-icon svg *,
+.network-icon svg * {
+  stroke: #ffffff;
+}
+
+/* Pagination dots for carousels */
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: transform var(--transition), background var(--transition);
+}
+.carousel-dot.active {
+  background: var(--gold);
+  transform: scale(1.2);
+}
+body.theme-dark .carousel-dot { background: rgba(255,255,255,0.4); }
+body.theme-dark .carousel-dot.active { background: var(--gold); }
+
 /* Accessibility: Focus Visible */
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
   outline: 3px solid var(--gold);

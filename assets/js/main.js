@@ -157,24 +157,82 @@
     fadeInObserver.observe(el);
   });
 
-  // Simple Team Carousel
+  // Enhanced Team Carousel: keyboard, dots, autoplay
   const teamTrack = document.getElementById('teamTrack');
   const prevTeam = document.getElementById('prevTeam');
   const nextTeam = document.getElementById('nextTeam');
+  const teamDots = document.getElementById('teamDots');
   if(teamTrack && prevTeam && nextTeam){
-    const cards = teamTrack.querySelectorAll('.team-card');
-    const cardWidth = 320 + 32; // card width + gap
+    const cards = Array.from(teamTrack.querySelectorAll('.team-card'));
+    const gap = 32;
+    let cardWidth = 320 + gap; // default
+    let visible = 3; // default visible on desktop
     let index = 0;
-    const maxIndex = Math.max(0, cards.length - 3); // show ~3 at a time on desktop
+    let autoplayTimer = null;
+
+    function measure(){
+      const first = cards[0];
+      if(first){
+        const rect = first.getBoundingClientRect();
+        cardWidth = Math.round(rect.width) + gap;
+      }
+      visible = window.innerWidth <= 640 ? 1 : (window.innerWidth <= 1024 ? 2 : 3);
+    }
+
+    function maxIndex(){
+      return Math.max(0, cards.length - visible);
+    }
+
     function update(){
       teamTrack.style.transform = `translateX(${-index * cardWidth}px)`;
       prevTeam.disabled = (index === 0);
-      nextTeam.disabled = (index >= maxIndex);
+      nextTeam.disabled = (index >= maxIndex());
+      updateDots();
     }
-    prevTeam.addEventListener('click', () => { if(index>0){ index--; update(); }});
-    nextTeam.addEventListener('click', () => { if(index<maxIndex){ index++; update(); }});
-    window.addEventListener('resize', update);
+
+    function updateDots(){
+      if(!teamDots) return;
+      const total = maxIndex() + 1; // pages
+      teamDots.innerHTML = '';
+      for(let i=0;i<total;i++){
+        const dot = document.createElement('button');
+        dot.className = 'carousel-dot' + (i===index ? ' active' : '');
+        dot.setAttribute('aria-label', `Go to slide ${i+1}`);
+        dot.addEventListener('click', () => { index = i; update(); });
+        teamDots.appendChild(dot);
+      }
+    }
+
+    function next(){ if(index < maxIndex()){ index++; update(); } }
+    function prev(){ if(index > 0){ index--; update(); } }
+
+    // Keyboard support on track
+    teamTrack.addEventListener('keydown', (e) => {
+      if(e.key === 'ArrowRight'){ e.preventDefault(); next(); }
+      else if(e.key === 'ArrowLeft'){ e.preventDefault(); prev(); }
+    });
+
+    // Buttons
+    prevTeam.addEventListener('click', prev);
+    nextTeam.addEventListener('click', next);
+
+    // Autoplay with pause on hover (5s)
+    function startAutoplay(){
+      stopAutoplay();
+      autoplayTimer = setInterval(() => {
+        if(index >= maxIndex()) index = 0; else index++;
+        update();
+      }, 5000);
+    }
+    function stopAutoplay(){ if(autoplayTimer){ clearInterval(autoplayTimer); autoplayTimer = null; } }
+    teamTrack.addEventListener('mouseenter', stopAutoplay);
+    teamTrack.addEventListener('mouseleave', startAutoplay);
+
+    // Initialize
+    measure();
     update();
+    startAutoplay();
+    window.addEventListener('resize', () => { measure(); update(); });
   }
 
   // Contact form submit enhancement with loading state
