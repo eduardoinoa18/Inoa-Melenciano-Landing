@@ -323,42 +323,36 @@
         <p data-i18n="footer.newsletterDesc">Opt-in form coming soon (privacy-focused).</p>
       </div>
     </div>
-    <div class="legal">
-      <p>&copy; <span id="year"></span> Inoa &amp; Melenciano Services. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    <div class="footer-columns">
+      <div>
+        <h3 data-i18n="footer.company">Company</h3>
+        <ul>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../team.html">Our Team</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="footer.services">Services</h3>
+        <ul>
+          <li><a href="real-estate-us.html">Real Estate (US)</a></li>
+          <li><a href="tax-prep.html">Tax Preparation</a></li>
+          <li><a href="credit-repair.html">Credit Repair</a></li>
+          <li><a href="immigration.html">Immigration Assistance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="footer.contact">Contact</h3>
+        <ul>
+          <li><a href="tel:+19783909619">(978) 390-9619</a></li>
+          <li><a href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></li>
+        </ul>
+      </div>
     </div>
-  </footer>
-
-  <script src="/assets/js/i18n.js"></script>
-  <script src="/assets/js/main.js"></script>
-  <script>
-    // UTM capture for real estate US form
-    (function(){
-      try {
-        const p = new URLSearchParams(window.location.search);
-        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
-          var el = document.getElementById(k);
-          if (el) el.value = p.get(k) || '';
-        });
-        var g = document.getElementById('gclid');
-        if(g){ g.value = p.get('gclid') || ''; }
-      } catch(e) {}
-    })();
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Real Estate Services (US)",
-    "serviceType": "Real Estate Brokerage",
-    "availableLanguage": ["English","Spanish"],
-    "areaServed": [{"@type": "Country", "name": "United States"}],
-    "provider": {
-      "@type": "Organization",
-      "name": "Inoa & Melenciano Services",
-      "url": "https://inoamelenciano.com/",
-      "logo": "https://inoamelenciano.com/assets/img/logo-icon.svg"
-    },
-    "description": "Buying, selling, and investing services with Century 21 North East and Newfed Mortgage coordination. Bilingual guidance.",
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Inoa &amp; Melenciano. All rights reserved.</p>
+    </div>
     "offers": {
       "@type": "Offer",
       "price": "0",

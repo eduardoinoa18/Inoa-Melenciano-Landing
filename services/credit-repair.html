@@ -23,46 +23,36 @@
       <button class="nav-toggle" aria-label="Toggle menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
       <ul class="nav-links">
         <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
-        <li class="dropdown">
-          <button data-i18n="nav.services" class="dd-btn">Services ▾</button>
-          <ul class="dropdown-menu">
-            <li><a href="real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
-            <li><a href="real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
-            <li><a href="tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
-            <li><a class="active" href="credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
-            <li><a href="immigration.html" data-i18n="svc.immigration">Immigration Assistance</a></li>
-            <li><a href="business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
-            <li><a href="notary.html" data-i18n="svc.notary">Notary Public</a></li>
-            <li><a href="translations-admin.html" data-i18n="svc.translationsAdmin">Translations & Admin</a></li>
-          </ul>
-        </li>
-        <li><a href="../about.html" data-i18n="nav.about">About Us</a></li>
-        <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
-        <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header-controls">
-      <div class="lang-switch" aria-label="Language Switcher">
-        <button data-lang="en" class="active">EN</button>
-        <button data-lang="es">ES</button>
-      </div>
-      <button id="themeToggle" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero hero-credit-repair">
-      <div class="hero-inner">
-        <h1 data-i18n="svc.creditRepair">Credit Repair Guidance</h1>
-        <p data-i18n="credit.guidance.desc">Educational credit guidance, dispute assistance, and financial literacy support to help you rebuild your credit score and unlock better financial opportunities.</p>
-      </div>
-    </section>
-
-    <section class="benefits-section" aria-labelledby="cr-benefits">
-      <h2 id="cr-benefits">Why Work With Us</h2>
-      <div class="benefits-grid">
-        <div class="benefit-card"><h3>Educational</h3><p>We teach you the process step by step.</p></div>
-        <div class="benefit-card"><h3>Templates</h3><p>Ready-to-use dispute letters and trackers.</p></div>
+        <div class="footer-columns">
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="../about.html">About Us</a></li>
+              <li><a href="../team.html">Our Team</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul>
+              <li><a href="real-estate-us.html">Real Estate (US)</a></li>
+              <li><a href="tax-prep.html">Tax Preparation</a></li>
+              <li><a href="credit-repair.html">Credit Repair</a></li>
+              <li><a href="immigration.html">Immigration Assistance</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="tel:+19783909619">(978) 390-9619</a></li>
+              <li><a href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a></li>
+              <li><a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> Inoa &amp; Melenciano. All rights reserved.</p>
+        </div>
         <div class="benefit-card"><h3>Bilingual</h3><p>Clear guidance in Spanish & English.</p></div>
         <div class="benefit-card"><h3>Budget Help</h3><p>Strategies for utilization and payments.</p></div>
         <div class="benefit-card"><h3>Accountability</h3><p>Check-ins to keep you on track.</p></div>
@@ -132,41 +122,16 @@
           <p class="review-text">"I saw meaningful credit improvement over several months. They taught me the process, gave me templates, and kept me accountable. The education helped me prepare for home financing."</p>
           <div class="review-author">
             <div class="review-avatar">AS</div>
-            <div class="review-info">
-              <h4>Ana S.</h4>
-              <p>First-time homebuyer, Lawrence MA</p>
-            </div>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Professional and patient. They explained every dispute step and helped me budget better. Clear guidance with realistic expectations."</p>
-          <div class="review-author">
-            <div class="review-avatar">JM</div>
-            <div class="review-info">
-              <h4>Jose M.</h4>
-              <p>Business owner, Boston MA</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" aria-labelledby="credit-start">
-      <div class="contact-inner">
-        <h2 id="credit-start" data-i18n="credit.cta.title">Hablemos de tu crédito</h2>
-        <p>Complete el formulario y nos pondremos en contacto pronto</p>
-        <form id="contactForm" class="modern-form" novalidate>
-        <div class="form-row">
-          <label for="name">Nombre completo / Full Name</label>
-          <input id="name" name="name" type="text" required placeholder="Ej.: Ana Martínez" />
-        </div>
-        <div class="form-row">
-          <label for="email">Correo electrónico / Email</label>
-          <input id="email" name="email" type="email" required placeholder="tu@email.com" />
+            <ul class="nav-links">
+              <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+              <li><a href="../about.html" data-i18n="nav.about">About</a></li>
+              <li><a href="../services/real-estate-us.html" data-i18n="nav.services">Services</a></li>
+              <li><a href="../team.html" data-i18n="nav.team">Team</a></li>
+              <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
         </div>
         <div class="form-row">
           <label for="phone">Teléfono / Phone</label>
+        <main>
           <input id="phone" name="phone" type="tel" placeholder="WhatsApp o teléfono" />
         </div>
         <div class="form-row">

@@ -293,42 +293,36 @@
         <p data-i18n="footer.newsletterDesc">Opt-in form coming soon (privacy-focused).</p>
       </div>
     </div>
-    <div class="legal">
-      <p>&copy; <span id="year"></span> Inoa &amp; Melenciano Services. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    <div class="footer-columns">
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../team.html">Our Team</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="real-estate-us.html">Real Estate (US)</a></li>
+          <li><a href="tax-prep.html">Tax Preparation</a></li>
+          <li><a href="credit-repair.html">Credit Repair</a></li>
+          <li><a href="immigration.html">Immigration Assistance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+19783909619">(978) 390-9619</a></li>
+          <li><a href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></li>
+        </ul>
+      </div>
     </div>
-  </footer>
-
-  <script src="/assets/js/i18n.js"></script>
-  <script src="/assets/js/main.js"></script>
-  <script>
-    // UTM capture for real estate DR form
-    (function(){
-      try {
-        const p = new URLSearchParams(window.location.search);
-        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
-          var el = document.getElementById(k);
-          if (el) el.value = p.get(k) || '';
-        });
-        var g = document.getElementById('gclid');
-        if(g){ g.value = p.get('gclid') || ''; }
-      } catch(e) {}
-    })();
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {"@type":"Question","name":"Can I buy in the DR remotely?","acceptedAnswer":{"@type":"Answer","text":"Yes, with legal support and proper documentation (including POA when needed), reservations and closings can be completed remotely."}},
-      {"@type":"Question","name":"Are foreigners allowed to own property?","acceptedAnswer":{"@type":"Answer","text":"Yes. Foreign ownership is permitted in the Dominican Republic; we refer experienced legal partners for compliance."}},
-      {"@type":"Question","name":"What are typical closing costs?","acceptedAnswer":{"@type":"Answer","text":"Closing costs vary by project and province and can include taxes and legal fees; we outline them before commitment."}},
-      {"@type":"Question","name":"Do you help with property management?","acceptedAnswer":{"@type":"Answer","text":"Yes. We introduce in-house rental programs where available or connect you with trusted managers."}}
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Inoa &amp; Melenciano. All rights reserved.</p>
+    </div>
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inoamelenciano.com/"},
