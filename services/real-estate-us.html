@@ -1,53 +1,127 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Real Estate Services (US) • Inoa & Melenciano Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Real Estate (US) | Inoa & Melenciano</title>
   <meta name="description" content="Buying, selling, investing—residential & commercial real estate with Century 21 North East and Newfed Mortgage." />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/site.css">
 </head>
 <body>
-  <header class="site-header">
-    <a href="../index.html" class="logo">
-      <img src="../assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
-      <span>Inoa &amp; Melenciano <span data-i18n="services">Services</span></span>
-    </a>
-    <nav class="main-nav" aria-label="Main Navigation">
-      <button class="nav-toggle" aria-label="Toggle menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-      <ul class="nav-links">
-        <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
-        <li class="dropdown">
-          <button data-i18n="nav.services" class="dd-btn">Services ▾</button>
-          <ul class="dropdown-menu">
-            <li><a class="active" href="real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
-            <li><a href="real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
-            <li><a href="tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
-            <li><a href="credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
-            <li><a href="immigration.html" data-i18n="svc.immigration">Immigration Assistance</a></li>
-            <li><a href="business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
-            <li><a href="notary.html" data-i18n="svc.notary">Notary Public</a></li>
-            <li><a href="translations-admin.html" data-i18n="svc.translationsAdmin">Translations & Admin</a></li>
-          </ul>
-        </li>
-        <li><a href="../about.html" data-i18n="nav.about">About Us</a></li>
-        <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
-        <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header-controls">
-      <div class="lang-switch" aria-label="Language Switcher">
-        <button data-lang="en" class="active">EN</button>
-        <button data-lang="es">ES</button>
-      </div>
-      <button id="themeToggle" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+  <header class="header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand">
+        <img src="../assets/img/logo-icon.svg" alt="Logo" width="24" height="24"> Inoa & Melenciano
+      </a>
+      <nav class="nav">
+        <a href="../services/index.html">Services</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero hero-real-estate-us">
-      <div class="hero-inner">
-        <h1 data-lang="en">Real Estate Services (US)</h1>
+  <section class="hero">
+    <div class="container">
+      <h1 class="h1">Real Estate (US)</h1>
+      <p class="p">Buy, sell, and invest with trusted guidance — English + Español.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="grid">
+      <div class="card">
+        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-6 9 6"/><path d="M9 22V12h6v10"/></svg></div>
+        <h3 class="h3">Expert Navigation</h3>
+        <p class="p">Clear steps from search to closing.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg></div>
+        <h3 class="h3">Speed & Coordination</h3>
+        <p class="p">Showings, offers, and timelines managed efficiently.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18"/><path d="M12 3v18"/></svg></div>
+        <h3 class="h3">Bilingual Support</h3>
+        <p class="p">English + Español for buyers and sellers.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="h2">What We Do</h2>
+      <div class="grid">
+        <div class="card"><h3 class="h3">Buyers</h3><p class="p">Pre-approval help, searches, and offers.</p></div>
+        <div class="card"><h3 class="h3">Sellers</h3><p class="p">Pricing, marketing, and showings.</p></div>
+        <div class="card"><h3 class="h3">Investors</h3><p class="p">Rental and flip analysis.</p></div>
+        <div class="card"><h3 class="h3">Market Analysis</h3><p class="p">CMA reports and neighborhood insights.</p></div>
+        <div class="card"><h3 class="h3">Financing</h3><p class="p">Newfed Mortgage coordination.</p></div>
+        <div class="card"><h3 class="h3">Post-Close</h3><p class="p">Trusted network for maintenance and insurance.</p></div>
+      </div>
+    </section>
+
+    <div style="background:#FFF9E6;border-left:4px solid #D4AF37;padding:1rem;margin-bottom:2rem;">
+      <h3 class="h3">Professional Affiliations</h3>
+      <p class="p">We provide <strong>licensed real estate services</strong> through our affiliation with <strong>Century 21 North East</strong> and <strong>The Fermin Group</strong>. Our team brings you access to their established network, expertise, and resources.</p>
+    </div>
+
+    <section>
+      <h2 class="h2">How It Works</h2>
+      <ol class="steps">
+        <li><strong>Consultation:</strong> Goals and budget.</li>
+        <li><strong>Search:</strong> Curated listings and showings.</li>
+        <li><strong>Offer:</strong> Strategy and negotiation.</li>
+        <li><strong>Closing:</strong> Final steps and move-in plan.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 class="h2">Results You'll Get</h2>
+      <div class="grid">
+        <div class="card"><h3 class="h3">Smart decisions</h3><p class="p">Data and guidance for confidence.</p></div>
+        <div class="card"><h3 class="h3">Time saved</h3><p class="p">Efficient process, less stress.</p></div>
+        <div class="card"><h3 class="h3">Successful closings</h3><p class="p">Smooth coordination to the finish line.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="h2">FAQ</h2>
+      <details>
+        <summary>Do you charge for a consultation?</summary>
+        <p>No, initial consultations are free.</p>
+      </details>
+      <details>
+        <summary>What areas do you serve?</summary>
+        <p>Massachusetts and New Hampshire, with a focus on the Greater Boston area.</p>
+      </details>
+      <details>
+        <summary>Can you help with financing?</summary>
+        <p>Yes, we coordinate with Newfed Mortgage for pre-approvals and financing.</p>
+      </details>
+    </section>
+
+    <section class="cta">
+      <div class="card">
+        <h2 class="h2">Ready to tour?</h2>
+        <p class="p">Book a consultation — we'll plan your path.</p>
+        <p class="p"><a class="btn primary" href="../contact.html">Contact Us</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="brand"><img src="../assets/img/logo-icon.svg" alt="Logo" width="24" height="24"><strong>Inoa & Melenciano</strong></div>
+      <div class="cols">
+        <div><h4 class="h3">Company</h4><p class="p"><a href="../about.html">About</a> • <a href="../team.html">Team</a> • <a href="../contact.html">Contact</a></p></div>
+        <div><h4 class="h3">Services</h4><p class="p"><a href="index.html">All Services</a></p></div>
+        <div><h4 class="h3">Contact</h4><p class="p"><a href="tel:+19783909619">(978) 390-9619</a> • <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p></div>
+      </div>
+      <div class="copy">© <span id="year"></span> Inoa & Melenciano</div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
         <h1 data-lang="es">Servicios de Bienes Raíces (EE. UU.)</h1>
         <p class="hero-description" data-lang="en">Licensed, bilingual guidance for buying, selling, and investing in MA & NH. Coordinated support with Century 21 North East and trusted mortgage partners.</p>
         <p class="hero-description" data-lang="es">Asesoría inmobiliaria con licencia y bilingüe para comprar, vender e invertir en MA y NH. Coordinación con Century 21 North East y socios hipotecarios de confianza.</p>
