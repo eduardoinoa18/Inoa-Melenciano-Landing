@@ -10,6 +10,7 @@
   const statusEl = document.getElementById('formStatus');
   const yearEl = document.getElementById('year');
   const header = document.querySelector('.site-header');
+  const GA4_ID = window.GA4_ID || 'G-XXXXXXXXXX';
 
   // Set footer year
   if(yearEl){ yearEl.textContent = new Date().getFullYear(); }
@@ -17,6 +18,20 @@
   // Add page load animation
   document.addEventListener('DOMContentLoaded', () => {
     body.style.opacity = '1';
+    // GA4 loader
+    try {
+      if(GA4_ID && GA4_ID !== 'G-XXXXXXXXXX' && !window.gtag){
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+        const s = document.createElement('script');
+        s.async = true;
+        s.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`;
+        document.head.appendChild(s);
+        gtag('js', new Date());
+        gtag('config', GA4_ID, { send_page_view: true });
+      }
+    } catch(_){ /* no-op */ }
   });
 
   // Restore theme preference
