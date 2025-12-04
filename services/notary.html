@@ -1,60 +1,111 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Notary Public Services • Inoa & Melenciano Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notary Public | Inoa & Melenciano</title>
   <meta name="description" content="Authorized notary public services for legal documents—bilingual notarization." />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/site.css">
 </head>
 <body>
-  <header class="site-header">
-    <a href="../index.html" class="logo">
-      <img src="../assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
-      <span>Inoa &amp; Melenciano <span data-i18n="services">Services</span></span>
-    </a>
-    <nav class="main-nav" aria-label="Main Navigation">
-      <button class="nav-toggle" aria-label="Toggle menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-      <ul class="nav-links">
-        <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
-        <li class="dropdown">
-          <button data-i18n="nav.services" class="dd-btn">Services ▾</button>
-          <ul class="dropdown-menu">
-            <li><a href="real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
-            <li><a href="real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
-            <li><a href="tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
-            <li><a href="credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
-            <li><a href="immigration.html" data-i18n="svc.immigration">Immigration Assistance</a></li>
-            <li><a href="business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
-            <li><a class="active" href="notary.html" data-i18n="svc.notary">Notary Public</a></li>
-            <li><a href="translations-admin.html" data-i18n="svc.translationsAdmin">Translations & Admin</a></li>
-          </ul>
-        </li>
-        <li><a href="../about.html" data-i18n="nav.about">About Us</a></li>
-        <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
-        <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header-controls">
-      <div class="lang-switch" aria-label="Language Switcher">
-        <button data-lang="en" class="active">EN</button>
-        <button data-lang="es">ES</button>
-      </div>
-      <button id="themeToggle" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+  <header class="header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand">
+        <img src="../assets/img/logo-icon.svg" alt="Logo" width="24" height="24"> Inoa & Melenciano
+      </a>
+      <nav class="nav">
+        <a href="../services/index.html">Services</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero hero-notary">
-      <div class="hero-content">
-        <h1>Notary Public Services</h1>
-        <p>Bilingual notarization for legal documents, power of attorney, affidavits, and more.</p>
-        <a class="btn primary" href="../contact.html#contact-form">Book an Appointment</a>
+  <section class="hero">
+    <div class="container">
+      <h1 class="h1">Notary Public</h1>
+      <p class="p">Mobile notary services by appointment.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="grid">
+      <div class="card">
+        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 12l4 4 8-8"/></svg></div>
+        <h3 class="h3">Authorized Service</h3>
+        <p class="p">Licensed notary public for legal documents.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg></div>
+        <h3 class="h3">Quick & Mobile</h3>
+        <p class="p">Same-day availability; on-site options by arrangement.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18"/><path d="M12 3v18"/></svg></div>
+        <h3 class="h3">Bilingual Support</h3>
+        <p class="p">English + Español notarization.</p>
       </div>
     </section>
 
-    <section class="reviews-section">
-      <h2>Lo que dicen nuestros clientes / What Our Clients Say</h2>
+    <section>
+      <h2 class="h2">Common Notarized Documents</h2>
+      <div class="grid">
+        <div class="card"><h3 class="h3">Real Estate</h3><p class="p">Deeds, closings, and affidavits.</p></div>
+        <div class="card"><h3 class="h3">Power of Attorney</h3><p class="p">Financial and healthcare authorizations.</p></div>
+        <div class="card"><h3 class="h3">Affidavits</h3><p class="p">Sworn statements for legal matters.</p></div>
+        <div class="card"><h3 class="h3">Contracts</h3><p class="p">Business agreements and leases.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="h2">How Notarization Works</h2>
+      <ol class="steps">
+        <li><strong>Book:</strong> Schedule and share document type.</li>
+        <li><strong>Verify:</strong> Bring valid ID; document must be unsigned.</li>
+        <li><strong>Witness & Sign:</strong> Identity verified, signature witnessed, seal applied.</li>
+        <li><strong>Done:</strong> Receive notarized document and copies if needed.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 class="h2">FAQ</h2>
+      <details>
+        <summary>What ID do I need?</summary>
+        <p>A government-issued photo ID (e.g., driver’s license or passport) is required for all signers.</p>
+      </details>
+      <details>
+        <summary>Can you notarize documents in Spanish?</summary>
+        <p>Yes. We provide bilingual support and can notarize Spanish-language documents.</p>
+      </details>
+      <details>
+        <summary>Do you offer mobile notary?</summary>
+        <p>On-site options may be available by arrangement. Ask about availability and fees.</p>
+      </details>
+    </section>
+
+    <section class="cta">
+      <div class="card">
+        <h2 class="h2">Need a Notary?</h2>
+        <p class="p">Book an appointment — same-day slots often available.</p>
+        <p class="p"><a class="btn primary" href="../contact.html">Contact Us</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="brand"><img src="../assets/img/logo-icon.svg" alt="Logo" width="24" height="24"><strong>Inoa & Melenciano</strong></div>
+      <div class="cols">
+        <div><h4 class="h3">Company</h4><p class="p"><a href="../about.html">About</a> • <a href="../team.html">Team</a> • <a href="../contact.html">Contact</a></p></div>
+        <div><h4 class="h3">Services</h4><p class="p"><a href="index.html">All Services</a></p></div>
+        <div><h4 class="h3">Contact</h4><p class="p"><a href="tel:+19783909619">(978) 390-9619</a> • <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p></div>
+      </div>
+      <div class="copy">© <span id="year"></span> Inoa & Melenciano</div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
       <div class="reviews-grid">
         <div class="review-card">
           <div class="review-stars">★★★★★</div>

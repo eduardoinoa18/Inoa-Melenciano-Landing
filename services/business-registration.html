@@ -1,64 +1,111 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Business Registration • Inoa & Melenciano Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Business Registration | Inoa & Melenciano</title>
   <meta name="description" content="Business entity selection and registration guidance (LLC, Corp, etc.)." />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/site.css">
 </head>
 <body>
-  <header class="site-header">
-    <a href="../index.html" class="logo">
-      <img src="../assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
-      <span>Inoa &amp; Melenciano <span data-i18n="services">Services</span></span>
-    </a>
-    <nav class="main-nav" aria-label="Main Navigation">
-      <button class="nav-toggle" aria-label="Toggle menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-      <ul class="nav-links">
-        <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
-        <li><a href="../about.html" data-i18n="nav.about">About</a></li>
-        <li><a href="../services/real-estate-us.html" data-i18n="nav.services">Services</a></li>
-        <li><a href="../team.html" data-i18n="nav.team">Team</a></li>
-        <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand">
+        <img src="../assets/img/logo-icon.svg" alt="Logo" width="24" height="24"> Inoa & Melenciano
+      </a>
+      <nav class="nav">
+        <a href="../services/index.html">Services</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
-  <main>
 
-    <section class="services-overview" aria-labelledby="entities">
-      <h2 id="entities">Choose Your Business Structure</h2>
-      <div class="grid-2">
-        <div class="simple-card">
-          <h3>Sole Proprietorship</h3>
-          <p><strong>Best for:</strong> Freelancers, side hustles, testing ideas<br>
-          <strong>Setup:</strong> Simplest, no filing needed<br>
-          <strong>Liability:</strong> Unlimited personal risk</p>
-        </div>
-        <div class="simple-card">
-          <h3>LLC (Limited Liability)</h3>
-          <p><strong>Best for:</strong> Small businesses, contractors, investors<br>
-          <strong>Setup:</strong> State filing, ~$500 MA<br>
-          <strong>Liability:</strong> Personal protection</p>
-        </div>
-        <div class="simple-card">
-          <h3>S-Corporation</h3>
-          <p><strong>Often best for:</strong> Higher profits; potential tax efficiency<br>
-          <strong>Setup:</strong> IRS election, payroll required<br>
-          <strong>Liability:</strong> Personal protection<br>
-          <em>Note:</em> Suitability varies—confirm with your tax professional.</p>
-        </div>
-        <div class="simple-card">
-          <h3>C-Corporation</h3>
-          <p><strong>Best for:</strong> High growth, venture funding<br>
-          <strong>Setup:</strong> Complex, board required<br>
-          <strong>Liability:</strong> Full separation</p>
-        </div>
+  <section class="hero">
+    <div class="container">
+      <h1 class="h1">Business Registration</h1>
+      <p class="p">LLC and EIN setup made simple.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="grid">
+      <div class="card">
+        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+        <h3 class="h3">Entity Guidance</h3>
+        <p class="p">LLC, S-Corp, C-Corp selection support.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg></div>
+        <h3 class="h3">Fast Filings</h3>
+        <p class="p">State and IRS coordination.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18"/><path d="M12 3v18"/></svg></div>
+        <h3 class="h3">Bilingual Support</h3>
+        <p class="p">English + Español.</p>
       </div>
     </section>
 
-    <section class="process-section">
-      <h2>Step-by-Step Business Registration Process</h2>
+    <section>
+      <h2 class="h2">Entity Options</h2>
+      <div class="grid">
+        <div class="card"><h3 class="h3">Sole Proprietorship</h3><p class="p">Simplest; unlimited personal risk.</p></div>
+        <div class="card"><h3 class="h3">LLC</h3><p class="p">Personal protection; flexible tax.</p></div>
+        <div class="card"><h3 class="h3">S-Corporation</h3><p class="p">Tax efficiency for higher profits.</p></div>
+        <div class="card"><h3 class="h3">C-Corporation</h3><p class="p">Complex; venture funding ready.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="h2">Registration Process</h2>
+      <ol class="steps">
+        <li><strong>Consultation:</strong> Goals, revenue, liability concerns.</li>
+        <li><strong>Name Check:</strong> Ensure availability, reserve.</li>
+        <li><strong>State Filing:</strong> Articles of Organization/Incorporation.</li>
+        <li><strong>EIN & Tax:</strong> IRS registration and S-Corp election if needed.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 class="h2">FAQ</h2>
+      <details>
+        <summary>How long does it take?</summary>
+        <p>MA LLCs typically complete in 2–5 business days online.</p>
+      </details>
+      <details>
+        <summary>Do you provide legal advice?</summary>
+        <p>No. We provide administrative guidance and refer attorneys when needed.</p>
+      </details>
+      <details>
+        <summary>Are state fees included?</summary>
+        <p>State fees are separate and paid to the state; we outline them upfront.</p>
+      </details>
+    </section>
+
+    <section class="cta">
+      <div class="card">
+        <h2 class="h2">Ready to Launch?</h2>
+        <p class="p">Book a consultation — we’ll map your entity and filings.</p>
+        <p class="p"><a class="btn primary" href="../contact.html">Contact Us</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="brand"><img src="../assets/img/logo-icon.svg" alt="Logo" width="24" height="24"><strong>Inoa & Melenciano</strong></div>
+      <div class="cols">
+        <div><h4 class="h3">Company</h4><p class="p"><a href="../about.html">About</a> • <a href="../team.html">Team</a> • <a href="../contact.html">Contact</a></p></div>
+        <div><h4 class="h3">Services</h4><p class="p"><a href="index.html">All Services</a></p></div>
+        <div><h4 class="h3">Contact</h4><p class="p"><a href="tel:+19783909619">(978) 390-9619</a> • <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p></div>
+      </div>
+      <div class="copy">© <span id="year"></span> Inoa & Melenciano</div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
       <div class="process-grid">
         <div class="process-step">
           <div class="process-number">1</div>
