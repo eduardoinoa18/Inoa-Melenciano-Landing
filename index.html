@@ -20,10 +20,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/site.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body class="theme-light">
-  <header class="header"><div class="navbar container"><div class="brand"><img src="assets/img/logo-icon.svg" alt="Logo" width="28" height="28"><span>Inoa & Melenciano</span></div><nav class="menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="services/index.html">Services</a><a href="team.html">Team</a><a href="contact.html">Contact</a></nav><button class="toggle" aria-label="Menu">☰</button></div></header>
+  <header class="site-header">
     <a href="index.html" class="logo">
       <img src="./assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
       <span>Inoa &amp; Melenciano <span data-i18n="services">Services</span></span>
@@ -50,7 +50,22 @@
         <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
-    <footer class="footer"><div class="container"><div class="brand"><img src="assets/img/logo-icon.svg" alt="Logo" width="24" height="24"><strong>Inoa & Melenciano</strong></div><div class="cols"><div><h4 class="h3">Company</h4><p class="p"><a href="about.html">About</a> • <a href="team.html">Team</a> • <a href="contact.html">Contact</a></p></div><div><h4 class="h3">Services</h4><p class="p"><a href="services/index.html">All Services</a></p></div><div><h4 class="h3">Contact</h4><p class="p"><a href="tel:+19783909619">(978) 390-9619</a> • <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p></div></div><div class="copy">© <span id="year"></span> Inoa & Melenciano</div></div></footer>
+    <div class="header-controls">
+      <div class="lang-switch" aria-label="Language Switcher">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="es">ES</button>
+      </div>
+      <button id="themeToggle" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="services-section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="services-heading" data-lang="es">Servicios Completos para tu Vida y tu Negocio</h2>
+          <h2 id="services-heading" data-lang="en">Complete Services for Your Life and Business</h2>
+        <p class="section-sub" data-lang="es">Soluciones profesionales integradas bajo una sola marca bilingüe de confianza</p>
         <p class="section-sub" data-lang="en">Integrated professional solutions under one trusted bilingual brand</p>
       </div>
       <div class="services-grid enhanced">
@@ -175,6 +190,7 @@
           </ul>
           <a href="services/translations-admin.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Get Admin Support →</a>
         </article>
+      </div>
       </div>
     </section>
 
