@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TITLE_PLACEHOLDER  Inoa & Melenciano Services</title>
+  <meta name="description" content="DESC_PLACEHOLDER" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body class="theme-light">
+  <header class="site-header">
+    <a href="../index.html" class="logo">
+      <img src="../assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
+      <span>Inoa &amp; Melenciano <span data-i18n="services">Services</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <button class="nav-toggle" aria-label="Toggle menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      <ul class="nav-links">
+        <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+        <li class="dropdown">
+          <button data-i18n="nav.services" class="dd-btn">Services </button>
+          <ul class="dropdown-menu">ACTIVE_MENU_PLACEHOLDER</ul>
+        </li>
+        <li><a href="../about.html" data-i18n="nav.about">About Us</a></li>
+        <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
+        <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-controls">
+      <div class="lang-switch" aria-label="Language Switcher">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="es">ES</button>
+      </div>
+      <button id="themeToggle" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-service">
+      <div class="container">
+        <h1>HERO_H1_PLACEHOLDER</h1>
+        <p>HERO_DESC_PLACEHOLDER</p>
+      </div>
+    </section>
+
+    <section class="service-content">
+      <div class="container">
+        CONTENT_PLACEHOLDER
+        
+        <div class="cta-box">
+          <h3 data-lang="es">Listo para comenzar?</h3>
+          <h3 data-lang="en">Ready to get started?</h3>
+          <a href="../contact.html" class="btn primary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="visually-hidden">Footer</h2>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="../assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
+        <span>Inoa &amp; Melenciano</span>
+      </div>
+      <div class="footer-actions">
+        <button id="themeToggleFooter" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      </div>
+    </div>
+    <div class="footer-columns">
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../team.html">Our Team</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="real-estate-us.html">Real Estate (US)</a></li>
+          <li><a href="real-estate-dr.html">Paraíso Inmobiliario (DR)</a></li>
+          <li><a href="tax-prep.html">Tax Preparation</a></li>
+          <li><a href="credit-repair.html">Credit Repair</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <p>Phone: <a href="tel:+19783909619">(978) 390-9619</a></p>
+        <p>Email: <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <p>&copy; <span id="year"></span> Inoa &amp; Melenciano Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

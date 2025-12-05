@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Translations & Admin • Inoa & Melenciano Services</title>
-  <meta name="description" content="Bilingual translation and administrative support services." />
+  <meta name="description" content="Bilingual translation and administrative support for business and personal documents." />
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
-<body>
+<body class="theme-light">
   <header class="site-header">
     <a href="../index.html" class="logo">
       <img src="../assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
@@ -16,27 +16,27 @@
     <nav class="main-nav" aria-label="Main Navigation">
       <button class="nav-toggle" aria-label="Toggle menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
       <ul class="nav-links">
-        <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li class="dropdown">
-          <button data-i18n="nav.services" class="dd-btn">Services ▾</button>
+          <button class="dd-btn">Services ▾</button>
           <ul class="dropdown-menu">
-            <li><a href="real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
-            <li><a href="real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
-            <li><a href="tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
-            <li><a href="credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
-            <li><a href="immigration.html" data-i18n="svc.immigration">Immigration Assistance</a></li>
-            <li><a href="business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
-            <li><a href="notary.html" data-i18n="svc.notary">Notary Public</a></li>
-            <li><a class="active" href="translations-admin.html" data-i18n="svc.translationsAdmin">Translations & Admin</a></li>
+            <li><a href="real-estate-us.html">Real Estate (US)</a></li>
+            <li><a href="real-estate-dr.html">Paraíso Inmobiliario (DR)</a></li>
+            <li><a href="tax-prep.html">Tax Preparation</a></li>
+            <li><a href="credit-repair.html">Credit Repair</a></li>
+            <li><a href="immigration.html">Immigration</a></li>
+            <li><a href="business-registration.html">Business Registration</a></li>
+            <li><a href="notary.html">Notary Public</a></li>
+            <li><a class="active" href="translations-admin.html">Translations & Admin</a></li>
           </ul>
         </li>
-        <li><a href="../about.html" data-i18n="nav.about">About Us</a></li>
-        <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
-        <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../team.html">Our Team</a></li>
+        <li><a href="../contact.html">Contact</a></li>
       </ul>
     </nav>
     <div class="header-controls">
-      <div class="lang-switch" aria-label="Language Switcher">
+      <div class="lang-switch">
         <button data-lang="en" class="active">EN</button>
         <button data-lang="es">ES</button>
       </div>
@@ -44,318 +44,100 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1 class="h1">Translations & Admin</h1>
-      <p class="p">Certified translations and administrative help.</p>
-    </div>
-  </section>
-
-  <main class="container">
-    <section class="grid">
-      <div class="card">
-        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14M12 5v14"/></svg></div>
-        <h3 class="h3">Certified Translations</h3>
-        <p class="p">Birth certificates, diplomas, contracts, and more.</p>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg></div>
-        <h3 class="h3">24–72h Turnaround</h3>
-        <p class="p">Fast delivery for most projects.</p>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18"/><path d="M12 3v18"/></svg></div>
-        <h3 class="h3">Bilingual Admin</h3>
-        <p class="p">Forms, accounts, and support in EN + ES.</p>
+  <main>
+    <section class="hero-service">
+      <div class="container">
+        <h1 data-lang="en">Translation & Administrative Services</h1>
+        <h1 data-lang="es">Servicios de Traducción y Administrativos</h1>
+        <p data-lang="en">Bilingual document translation, certified translations, and administrative support for personal and business needs.</p>
+        <p data-lang="es">Traducción de documentos bilingües, traducciones certificadas y apoyo administrativo para necesidades personales y comerciales.</p>
       </div>
     </section>
 
-    <section>
-      <h2 class="h2">Our Services</h2>
-      <div class="grid">
-        <div class="card"><h3 class="h3">Document Translation</h3><p class="p">Certified or general; birth certificates, diplomas, contracts.</p></div>
-        <div class="card"><h3 class="h3">Form Completion</h3><p class="p">Government, school, financial paperwork.</p></div>
-        <div class="card"><h3 class="h3">Digital Setup</h3><p class="p">Email, banking apps, government portals.</p></div>
-        <div class="card"><h3 class="h3">Admin Support</h3><p class="p">Scheduling, calls, correspondence, organization.</p></div>
-        <div class="card"><h3 class="h3">Bookkeeping Help</h3><p class="p">Receipt tracking, QuickBooks/Wave setup.</p></div>
-        <div class="card"><h3 class="h3">Communication</h3><p class="p">Email translation, interpreting, drafting.</p></div>
-      </div>
-    </section>
+    <section class="service-content">
+      <div class="container">
+        <h2 data-lang="en">What We Offer</h2>
+        <h2 data-lang="es">Qué Ofrecemos</h2>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3 data-lang="en">Document Translation</h3>
+            <h3 data-lang="es">Traducción de Documentos</h3>
+            <p data-lang="en">English-Spanish translation for contracts, letters, forms, and business documents</p>
+            <p data-lang="es">Traducción inglés-español para contratos, cartas, formularios y documentos comerciales</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-lang="en">Certified Translations</h3>
+            <h3 data-lang="es">Traducciones Certificadas</h3>
+            <p data-lang="en">Coordinate certified translations for USCIS, courts, and official agencies</p>
+            <p data-lang="es">Coordina traducciones certificadas para USCIS, tribunales y agencias oficiales</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-lang="en">Form Assistance</h3>
+            <h3 data-lang="es">Asistencia con Formularios</h3>
+            <p data-lang="en">Help completing government forms, applications, and complex paperwork in Spanish or English</p>
+            <p data-lang="es">Ayuda para completar formularios gubernamentales, solicitudes y trámites complejos en español o inglés</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-lang="en">Admin Support</h3>
+            <h3 data-lang="es">Apoyo Administrativo</h3>
+            <p data-lang="en">Data entry, document organization, filing, and bilingual correspondence</p>
+            <p data-lang="es">Entrada de datos, organización de documentos, archivo y correspondencia bilingüe</p>
+          </div>
+        </div>
 
-    <section>
-      <h2 class="h2">How It Works</h2>
-      <ol class="steps">
-        <li><strong>Request:</strong> Submit document or describe task; quick quote provided.</li>
-        <li><strong>Complete:</strong> Translation or admin task done (24–72 hrs for most).</li>
-        <li><strong>Review & Deliver:</strong> Proofread, certified if needed, and sent securely.</li>
-      </ol>
-    </section>
+        <div class="disclaimer-box">
+          <p><strong>Service Note:</strong> Translation services are provided for informational purposes. For legal or official use, certified translations are coordinated with licensed translators.</p>
+        </div>
 
-    <section>
-      <h2 class="h2">FAQ</h2>
-      <details>
-        <summary>What’s the difference between certified and general translation?</summary>
-        <p>Certified includes an affidavit for official use (e.g., immigration, court). General is for reference.</p>
-      </details>
-      <details>
-        <summary>How long does translation take?</summary>
-        <p>24–72 hours for most documents; rush options available.</p>
-      </details>
-      <details>
-        <summary>Can you help with government forms?</summary>
-        <p>Yes, we provide bilingual guidance for common forms and applications.</p>
-      </details>
-    </section>
-
-    <section class="cta">
-      <div class="card">
-        <h2 class="h2">Need Translation or Admin Help?</h2>
-        <p class="p">Send your document or describe your task — we’ll quote quickly.</p>
-        <p class="p"><a class="btn primary" href="../contact.html">Contact Us</a></p>
+        <div class="cta-box">
+          <h3 data-lang="en">Need translation or admin help?</h3>
+          <h3 data-lang="es">¿Necesitas traducción o ayuda administrativa?</h3>
+          <a href="../contact.html" class="btn primary">Get a Quote</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <section class="grid-3">
-      <div class="simple-card">
-        <h3>Document Translation</h3>
-        <p>Birth certificates, diplomas, medical records, contracts. General or certified ($25-$150)</p>
-      </div>
-      <div class="simple-card">
-        <h3>Form Completion</h3>
-        <p>Government forms, school applications, financial paperwork. Bilingual assistance ($30-$75/hr)</p>
-      </div>
-      <div class="simple-card">
-        <h3>Digital Account Setup</h3>
-        <p>Email, banking apps, social media, government portals. Step-by-step guidance</p>
-      </div>
-      <div class="simple-card">
-        <h3>Administrative Support</h3>
-        <p>Scheduling, phone calls, correspondence, document organization. Hourly or task-based</p>
-      </div>
-      <div class="simple-card">
-        <h3>Bookkeeping Help</h3>
-        <p>Receipt organization, QuickBooks/Wave setup, expense tracking. Tax prep coordination</p>
-      </div>
-      <div class="simple-card">
-        <h3>Communication Support</h3>
-        <p>Email translation, appointment interpreting, official correspondence drafting</p>
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="../assets/img/logo-icon.svg" alt="Logo" class="logo-icon">
+        <span>Inoa &amp; Melenciano</span>
       </div>
     </div>
-  </section>
-
-  <section class="simple-process" aria-labelledby="process">
-    <h2 id="process">How It Works</h2>
-    <div class="grid-3">
-      <div class="process-step-simple">
-        <div class="step-number">1</div>
-        <h3>Request</h3>
-        <p>Submit document or describe task (call, email, visit). Quick quote provided</p>
-      </div>
-      <div class="process-step-simple">
-        <div class="step-number">2</div>
-        <h3>Complete</h3>
-        <p>Translation, form filling, or admin task completed (24-72 hrs for most projects)</p>
-      </div>
-      <div class="process-step-simple">
-        <div class="step-number">3</div>
-        <h3>Deliver</h3>
-        <p>Receive final document or confirmation. Certified translations include notarization & apostille if needed</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="document-checklist">
-    <h2>Common Documents We Handle</h2>
-    <div class="grid-2">
-      <div class="checklist-box">
-        <h3>Translation Projects</h3>
-        <ul class="compact-list">
-          <li>Birth/marriage certificates</li>
-          <li>Diplomas & transcripts</li>
-          <li>Medical records</li>
-          <li>Contracts & leases</li>
-          <li>Business documents</li>
+    <div class="footer-columns">
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../team.html">Our Team</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
       </div>
-      <div class="checklist-box">
-        <h3>Administrative Tasks</h3>
-        <ul class="compact-list">
-          <li>Government forms (USCIS, IRS, state)</li>
-          <li>School applications</li>
-          <li>Email & account setup</li>
-          <li>Appointment scheduling</li>
-          <li>Document organization</li>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="real-estate-us.html">Real Estate (US)</a></li>
+          <li><a href="real-estate-dr.html">Paraíso Inmobiliario (DR)</a></li>
+          <li><a href="tax-prep.html">Tax Preparation</a></li>
+          <li><a href="credit-repair.html">Credit Repair</a></li>
         </ul>
       </div>
-    </div>
-    <p class="note-text">All certified translations include notarization. Apostille service available for international use</p>
-  </section>
-
-  <!-- Removed aggregate metrics to avoid unverifiable claims; turnaround communicated in process and FAQ. -->
-
-  <section class="reviews-section compact">
-    <h2>What Clients Say</h2>
-    <div class="review-grid-simple">
-      <div class="review-card-simple">
-        <p>"They translated my university diploma and helped me apply to grad school. Everything was certified and accepted immediately. Professional and fast."</p>
-        <cite>— Ana P., Graduate Student</cite>
-      </div>
-      <div class="review-card-simple">
-        <p>"I needed help setting up online banking and completing a government form. They walked me through everything in Spanish. Made my life so much easier."</p>
-        <cite>— Luis M., Small Business Owner</cite>
+      <div>
+        <h3>Connect</h3>
+        <p>Phone: <a href="tel:+19783909619">(978) 390-9619</a></p>
+        <p>Email: <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p>
       </div>
     </div>
-  </section>
+    <div class="legal">
+      <p>&copy; <span id="year"></span> Inoa &amp; Melenciano Services. All rights reserved.</p>
+    </div>
+  </footer>
 
-  <section class="cta">
-    <h2>Ready to Get Help?</h2>
-    <p>Tell us about your translation or admin support needs.</p>
-    <form id="supportForm" class="contact-form" aria-labelledby="supportFormHeading">
-      <div class="form-row">
-        <label for="message">Cuéntanos más / Tell us more</label>
-        <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito traducir documentos legales del español al inglés..."></textarea>
-      </div>
-      <div class="form-row">
-        <label><input type="checkbox" id="consent" name="consent" required> Acepto la política de privacidad y recibir comunicaciones / I agree to the privacy policy and to receive communications</label></div>
-      <button type="submit" class="btn primary">Send Message / Enviar</button>
-      <p class="form-helper">We provide bilingual administrative support for documents, forms, translations, and daily business tasks.</p>
-      <p id="formStatus" class="status" aria-live="polite"></p>
-    </form>
-  </section>
-
-    <section class="faq-section" aria-labelledby="ta-faq">
-      <h2 id="ta-faq">Frequently Asked Questions</h2>
-      <div class="faq-list">
-        <details>
-          <summary>Are translations certified?</summary>
-          <p>Yes. We provide certified translations and notarization. Apostille service is available when required.</p>
-        </details>
-        <details>
-          <summary>How do I send documents?</summary>
-          <p>You can send secure uploads, email PDFs, or high-quality photos. We’ll confirm legibility before starting.</p>
-        </details>
-        <details>
-          <summary>What is the typical turnaround time?</summary>
-          <p>Most projects deliver in 24–72 hours. Complex projects may take longer—your quote includes a timeline.</p>
-        </details>
-        <details>
-          <summary>Do you keep my information private?</summary>
-          <p>Yes. We treat your documents confidentially and use secure channels for delivery.</p>
-        </details>
-      </div>
-    </section>
-</main>
-<footer class="site-footer" aria-labelledby="footer-heading">
-  <h2 id="footer-heading" class="visually-hidden">Footer</h2>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <img src="../assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
-      <span>Inoa &amp; Melenciano</span>
-    </div>
-    <div class="footer-actions">
-      <button id="themeToggleFooter" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
-    </div>
-  </div>
-  <div class="footer-columns">
-    <div>
-      <h3 data-i18n="footer.company">Company</h3>
-      <ul>
-        <li><a href="../about.html" data-i18n="nav.about">About Us</a></li>
-        <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
-        <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3 data-i18n="footer.services">Services</h3>
-      <ul>
-        <li><a href="real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
-        <li><a href="real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
-        <li><a href="tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
-        <li><a href="credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
-        <li><a href="immigration.html" data-i18n="svc.immigration">Immigration</a></li>
-        <li><a href="business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
-        <li><a href="notary.html" data-i18n="svc.notary">Notary Public</a></li>
-        <li><a href="translations-admin.html" data-i18n="svc.translationsAdmin">Translations & Admin</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3 data-i18n="footer.connect">Connect</h3>
-      <p>Email: <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p>
-      <p data-i18n="footer.socialComingSoon">Social channels coming soon.</p>
-    </div>
-    <div>
-      <h3 data-i18n="footer.newsletter">Stay Informed</h3>
-      <p data-i18n="footer.newsletterDesc">Opt-in form coming soon (privacy-focused).</p>
-    </div>
-  </div>
-  <div class="legal">
-    <p>&copy; <span id="year"></span> Inoa &amp; Melenciano Services. <span data-i18n="footer.rights">All rights reserved.</span></p>
-  </div>
-</footer>
   <script src="../assets/js/i18n.js"></script>
   <script src="../assets/js/main.js"></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {"@type":"Question","name":"Are translations certified?","acceptedAnswer":{"@type":"Answer","text":"Yes. We provide certified translations with notarization, and apostille services are available when required."}},
-      {"@type":"Question","name":"How do I send documents?","acceptedAnswer":{"@type":"Answer","text":"You can send secure uploads, PDFs by email, or clear photos; we confirm legibility before starting."}},
-      {"@type":"Question","name":"What is the typical turnaround time?","acceptedAnswer":{"@type":"Answer","text":"Most projects complete in 24–72 hours; complex work may take longer and timelines are included in your quote."}},
-      {"@type":"Question","name":"Do you keep my information private?","acceptedAnswer":{"@type":"Answer","text":"Yes. We handle documents confidentially and deliver via secure channels."}}
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inoamelenciano.com/"},
-      {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inoamelenciano.com/services/"},
-      {"@type": "ListItem", "position": 3, "name": "Translations & Admin", "item": "https://www.inoamelenciano.com/services/translations-admin.html"}
-    ]
-  }
-  </script>
-  <script>
-    // UTM capture for translations/admin form
-    (function(){
-      try {
-        const p = new URLSearchParams(window.location.search);
-        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
-          var el = document.getElementById(k);
-          if (el) el.value = p.get(k) || '';
-        });
-        var g = document.getElementById('gclid');
-        if(g){ g.value = p.get('gclid') || ''; }
-      } catch(e) {}
-    })();
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Translations & Administrative Support",
-    "serviceType": ["Translation Service", "Administrative Support"],
-    "availableLanguage": ["English","Spanish"],
-    "areaServed": [{"@type": "Country", "name": "United States"}],
-    "provider": {
-      "@type": "Organization",
-      "name": "Inoa & Melenciano Services",
-      "url": "https://inoamelenciano.com/",
-      "logo": "https://inoamelenciano.com/assets/img/logo-icon.svg"
-    },
-    "description": "Bilingual document translation, form completion, account setup, and administrative assistance.",
-    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free quote; per-task pricing"}
-  }
-  </script>
-  <!-- Sticky Mobile CTA Bar -->
-  <div class="sticky-cta" aria-label="Quick actions">
-    <a class="sticky-cta-btn call" href="tel:+19783909619">Call</a>
-    <a class="sticky-cta-btn whatsapp" href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a>
-    <a class="sticky-cta-btn book" href="../contact.html#contact-form">Book</a>
-  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
 

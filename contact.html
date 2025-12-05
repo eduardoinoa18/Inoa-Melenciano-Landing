@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Us • Inoa & Melenciano Services</title>
-  <meta name="description" content="Get in touch with Inoa & Melenciano Services - bilingual support for real estate, tax, credit, and business services." />
+  <meta name="description" content="Get in touch for a free consultation. Available in English and Spanish." />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
+<body class="theme-light">
   <header class="site-header">
     <a href="index.html" class="logo">
       <img src="./assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
@@ -32,7 +32,7 @@
         </li>
         <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
         <li><a href="team.html" data-i18n="nav.team">Our Team</a></li>
-        <li><a class="active" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
     <div class="header-controls">
@@ -45,188 +45,101 @@
   </header>
 
   <main>
-    <section class="hero hero-contact">
-      <div class="hero-inner">
-        <h1>Let's Start Your Journey</h1>
-        <p>Whether you're buying a home, starting a business, or planning your financial future—we're here to help every step of the way.</p>
+    <section class="hero-page">
+      <div class="container">
+        <h1 data-lang="es">Contáctanos</h1>
+        <h1 data-lang="en">Contact Us</h1>
+        <p data-lang="es">Disponible en inglés y español. Consulta gratuita.</p>
+        <p data-lang="en">Available in English and Spanish. Free consultation.</p>
       </div>
     </section>
 
-    <!-- Quick Contact Actions -->
-    <section class="stats-section compact" aria-label="Quick contact options">
-      <div class="stats-row">
-        <a class="stat-item" href="tel:+19783909619">
-          <strong>Call Us</strong>
-          <span>(978) 390-9619</span>
-        </a>
-        <a class="stat-item" href="https://wa.me/19783909619" target="_blank" rel="noopener">
-          <strong>WhatsApp</strong>
-          <span>Chat Now</span>
-        </a>
-        <a class="stat-item" href="#contact-form">
-          <strong>Book</strong>
-          <span>Free 15-min consult</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="trust-section">
-      <div class="trust-badges">
-        <div class="trust-badge">
-          <div class="trust-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </div>
-          <h4>Quick Response</h4>
-          <p>24-48hr reply time</p>
-        </div>
-        <div class="trust-badge">
-          <div class="trust-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </div>
-          <h4>Bilingual Team</h4>
-          <p>English & Spanish</p>
-        </div>
-        <div class="trust-badge">
-          <div class="trust-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          </div>
-          <h4>Free Consultation</h4>
-          <p>No obligation</p>
-        </div>
-        <div class="trust-badge">
-          <div class="trust-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </div>
-          <h4>Full Service</h4>
-          <p>8+ service areas</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" aria-labelledby="contact-form">
-      <div class="contact-inner">
-        <h2 id="contact-form">Get in Touch / Contáctanos</h2>
-        <p>Complete the form below and we'll reach out within 24-48 hours</p>
-        <form id="leadForm" class="modern-form" novalidate>
-          <div class="form-row">
-            <label for="name">Full Name / Nombre *</label>
-            <input id="name" name="name" type="text" required placeholder="María López" />
-          </div>
-          <div class="form-row">
-            <label for="email">Email *</label>
-            <input id="email" name="email" type="email" required placeholder="maria@example.com" />
-          </div>
-          <div class="form-row">
-            <label for="phone">Phone / Teléfono</label>
-            <input id="phone" name="phone" type="tel" placeholder="(617) 555-0100" />
-          </div>
-          <div class="form-row">
-            <label for="interest">Service Interest / Servicio</label>
-            <select id="interest" name="interest">
-              <option value="general">General Inquiry / Consulta General</option>
-              <option value="realEstateUS">Real Estate (US)</option>
-              <option value="realEstateDR">Real Estate (Dominican Republic)</option>
-              <option value="mortgage">Mortgage / Hipoteca</option>
-              <option value="taxPrep">Tax Preparation / Impuestos</option>
-              <option value="creditRepair">Credit Repair / Reparación de Crédito</option>
-              <option value="immigration">Immigration / Inmigración</option>
-              <option value="businessReg">Business Registration / Registro de Negocio</option>
-              <option value="notary">Notary Public / Notario</option>
-              <option value="translations">Translations / Traducciones</option>
-            </select>
-          </div>
-          <div class="form-row full-width">
-            <label for="message">Your Message / Tu Mensaje *</label>
-            <textarea id="message" name="message" required placeholder="Tell us how we can help you... / Cuéntanos cómo podemos ayudarte..."></textarea>
-          </div>
-            <!-- UTM Capture Fields -->
-          <input type="hidden" name="utm_source" id="utm_source">
-          <input type="hidden" name="utm_medium" id="utm_medium">
-          <input type="hidden" name="utm_campaign" id="utm_campaign">
-          <input type="hidden" name="gclid" id="gclid">
-          <!-- Honeypot -->
-          <div class="visually-hidden" aria-hidden="true">
-            <label for="website">Website</label>
-            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
-          </div>
-          <!-- Consent -->
-            <div class="form-row">
-              <label><input type="checkbox" id="consent" name="consent" required> Acepto la política de privacidad y recibir comunicaciones / I agree to the privacy policy and to receive communications</label>
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2 data-lang="es">Información de Contacto</h2>
+            <h2 data-lang="en">Contact Information</h2>
+            
+            <div class="contact-item">
+              <h3>📞 Phone</h3>
+              <p><a href="tel:+19783909619">(978) 390-9619</a></p>
             </div>
-          <button type="submit" class="btn primary">Send Message / Enviar</button>
-          <p class="form-helper">We respond to all inquiries within 24-48 hours. For urgent matters, call us at (978) 390-9619.</p>
-          <p id="formStatus" class="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
+            
+            <div class="contact-item">
+              <h3>✉️ Email</h3>
+              <p><a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p>
+            </div>
+            
+            <div class="contact-item">
+              <h3>💬 WhatsApp</h3>
+              <p><a href="https://wa.me/19783909619" target="_blank" rel="noopener">(978) 390-9619</a></p>
+            </div>
+            
+            <div class="contact-item">
+              <h3 data-lang="es">Horario</h3>
+              <h3 data-lang="en">Hours</h3>
+              <p data-lang="es">Lunes - Viernes: 9 AM - 6 PM<br>Sábados: Por cita</p>
+              <p data-lang="en">Monday - Friday: 9 AM - 6 PM<br>Saturdays: By appointment</p>
+            </div>
+          </div>
 
-    <section class="stats-section">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <span class="stat-number">3,000+</span>
-          <span class="stat-label">Clients Served</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number">8</span>
-          <span class="stat-label">Service Areas</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number">2</span>
-          <span class="stat-label">Countries (US & DR)</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number">98%</span>
-          <span class="stat-label">Client Satisfaction</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-info-section">
-      <h2 class="contact-info-heading">How to Reach Us / Cómo Contactarnos</h2>
-      <div class="contact-info-grid">
-        <div class="contact-info-card">
-          <h3>
-            <span class="contact-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </span> Phone & WhatsApp
-          </h3>
-          <p>
-            <strong>(978) 390-9619</strong><br>
-            Available for calls and WhatsApp messages<br>
-            Monday-Friday: 9 AM - 7 PM EST<br>
-            Saturday: 10 AM - 4 PM EST
-          </p>
-        </div>
-        <div class="contact-info-card">
-          <h3>
-            <span class="contact-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </span> Email
-          </h3>
-          <p>
-            <strong>info@inoamelenciano.com</strong><br>
-            We respond to all emails within 24-48 hours<br>
-            For urgent matters, please call us directly
-          </p>
-        </div>
-        <div class="contact-info-card">
-          <h3>
-            <span class="contact-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </span> Office Location
-          </h3>
-          <p>
-            <strong>Lawrence, Massachusetts</strong><br>
-            Serving Greater Boston, Merrimack Valley,<br>
-            and clients nationwide<br>
-            <em>By appointment only</em>
-          </p>
+          <div class="contact-form-wrapper" id="contact-form">
+            <h2 data-lang="es">Envía un Mensaje</h2>
+            <h2 data-lang="en">Send a Message</h2>
+            
+            <form id="contactForm" class="contact-form" aria-labelledby="contactFormHeading">
+              <div class="form-row">
+                <label for="name">Name / Nombre *</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-row">
+                <label for="email">Email / Correo Electrónico *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-row">
+                <label for="phone">Phone / Teléfono</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              
+              <div class="form-row">
+                <label for="service">Service Interested In / Servicio de Interés</label>
+                <select id="service" name="service">
+                  <option value="">-- Select / Seleccionar --</option>
+                  <option value="real-estate-us">Real Estate (US)</option>
+                  <option value="real-estate-dr">Real Estate (DR)</option>
+                  <option value="tax-prep">Tax Preparation</option>
+                  <option value="credit-repair">Credit Repair</option>
+                  <option value="immigration">Immigration</option>
+                  <option value="business-registration">Business Registration</option>
+                  <option value="notary">Notary Public</option>
+                  <option value="translations-admin">Translations & Admin</option>
+                </select>
+              </div>
+              
+              <div class="form-row">
+                <label for="message">Message / Mensaje *</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              
+              <div class="form-row">
+                <label>
+                  <input type="checkbox" id="consent" name="consent" required> 
+                  <span data-lang="es">Acepto la política de privacidad y recibir comunicaciones</span>
+                  <span data-lang="en">I agree to the privacy policy and to receive communications</span>
+                </label>
+              </div>
+              
+              <button type="submit" class="btn primary">Send Message / Enviar</button>
+              <p id="formStatus" class="status" aria-live="polite"></p>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
-
-  <!-- Removed duplicate footer to keep single consistent footer -->
 
   <footer class="site-footer" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="visually-hidden">Footer</h2>
@@ -246,8 +159,6 @@
           <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
           <li><a href="team.html" data-i18n="nav.team">Our Team</a></li>
           <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
-          <li><a href="disclosures.html">Disclosures</a></li>
-          <li><a href="join-us.html">Join Us</a></li>
         </ul>
       </div>
       <div>
@@ -257,49 +168,21 @@
           <li><a href="services/real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
           <li><a href="services/tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
           <li><a href="services/credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
-          <li><a href="services/immigration.html" data-i18n="svc.immigration">Immigration</a></li>
-          <li><a href="services/business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
-          <li><a href="services/notary.html" data-i18n="svc.notary">Notary Public</a></li>
-          <li><a href="services/translations-admin.html">Translations & Admin</a></li>
         </ul>
       </div>
       <div>
         <h3 data-i18n="footer.connect">Connect</h3>
         <p>Phone: <a href="tel:+19783909619">(978) 390-9619</a></p>
         <p>Email: <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p>
-        <p>WhatsApp: <a href="https://wa.me/19783909619" target="_blank" rel="noopener">Message Us</a></p>
-      </div>
-      <div>
-        <h3>Hours</h3>
-        <p>Mon-Fri: 9 AM - 7 PM<br>Saturday: 10 AM - 4 PM<br>Sunday: Closed</p>
       </div>
     </div>
     <div class="legal">
-      <p>&copy; <span id="year"></span> Inoa &amp; Melenciano Services. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Inoa &amp; Melenciano Services. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </div>
   </footer>
 
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
-  <!-- Sticky Mobile CTA Bar -->
-  <div class="sticky-cta" aria-label="Quick actions">
-    <a class="sticky-cta-btn call" href="tel:+19783909619">Call</a>
-    <a class="sticky-cta-btn whatsapp" href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a>
-    <a class="sticky-cta-btn book" href="#contact-form">Book</a>
-  </div>
-  <script>
-    // UTM capture
-    (function(){
-      try {
-        const p = new URLSearchParams(window.location.search);
-        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
-          var el = document.getElementById(k);
-          if (el) el.value = p.get(k) || '';
-        });
-        var g = document.getElementById('gclid');
-        if(g){ g.value = p.get('gclid') || ''; }
-      } catch(e) {}
-    })();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

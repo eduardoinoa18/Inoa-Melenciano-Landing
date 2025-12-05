@@ -31,7 +31,7 @@
     <nav class="main-nav" aria-label="Main Navigation">
       <button class="nav-toggle" aria-label="Toggle menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
       <ul class="nav-links">
-        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
         <li class="dropdown">
           <button data-i18n="nav.services" class="dd-btn">Services ▾</button>
           <ul class="dropdown-menu">
@@ -60,7 +60,20 @@
   </header>
 
   <main>
-    <section class="services-section" aria-labelledby="services-heading">
+    <section class="hero-home">
+      <div class="container">
+        <h1 data-lang="es">Servicios Confiables para tu Vida y tu Negocio</h1>
+        <h1 data-lang="en">Trusted Services for Your Life and Business</h1>
+        <p class="hero-subtitle" data-lang="es">Impuestos, bienes raíces, crédito, inmigración, negocios y más. Todo bajo un mismo techo, siempre en tu idioma.</p>
+        <p class="hero-subtitle" data-lang="en">Taxes, real estate, credit, immigration, business services and more. Everything under one roof, always in your language.</p>
+        <div class="hero-cta">
+          <a href="contact.html" class="btn primary" data-i18n="cta.getStarted">Get Started</a>
+          <a href="#services" class="btn secondary" data-i18n="cta.exploreServices">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services-section" aria-labelledby="services-heading">
       <div class="container">
         <div class="section-head">
           <h2 id="services-heading" data-lang="es">Servicios Completos para tu Vida y tu Negocio</h2>
@@ -69,128 +82,95 @@
           <p class="section-sub" data-lang="en">Integrated professional solutions under one trusted bilingual brand</p>
         </div>
         <div class="services-grid enhanced">
-        <article class="svc-card real-estate" onclick="window.location.href='services/real-estate-us.html'">
-          <span class="service-badge">Most Popular</span>
-          <div class="icon-circle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <h3 data-lang="es">Bienes Raíces (US)</h3>
-          <h3 data-lang="en">Real Estate (US)</h3>
-          <p data-lang="es">Compra, venta e inversión con un REALTOR® con más de $10M cerrados.</p>
-          <p data-lang="en">Buy, sell and invest with a REALTOR® with over $10M closed.</p>
-          <ul class="service-highlights">
-            <li>✓ Full-service buying & selling assistance</li>
-            <li>✓ Mortgage connections through Newfed</li>
-            <li>✓ Bilingual support throughout the process</li>
-          </ul>
-          <a href="services/real-estate-us.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Explore Real Estate →</a>
-        </article>
-        <article class="svc-card caribbean" onclick="window.location.href='services/real-estate-dr.html'">
-          <div class="icon-circle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <h3 data-lang="es">Paraíso Inmobiliario (DR)</h3>
-          <h3 data-lang="en">Caribbean Investment (DR)</h3>
-          <p data-lang="es">Oportunidades de inversión en bienes raíces del Caribe con ROI excepcional.</p>
-          <p data-lang="en">Caribbean real estate investment opportunities with exceptional ROI potential.</p>
-          <ul class="service-highlights">
-            <li>✓ Caribbean investment opportunities</li>
-            <li>✓ Residential & commercial properties</li>
-            <li>✓ Complete bilingual transaction support</li>
-          </ul>
-          <a href="services/real-estate-dr.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Discover DR Properties →</a>
-        </article>
-        <article class="svc-card" onclick="window.location.href='services/tax-prep.html'">
-          <div class="icon-circle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-          </div>
-          <h3 data-lang="es">Impuestos & IRS</h3>
-          <h3 data-lang="en">Taxes & IRS Support</h3>
-          <p data-lang="es">Declaración, organización y planificación para maximizar tu reembolso y evitar problemas con el IRS.</p>
-          <p data-lang="en">Filing, organization and planning to maximize your refund and avoid IRS issues.</p>
-          <ul class="service-highlights">
-            <li>✓ Personal & business tax returns</li>
-            <li>✓ Deduction optimization strategies</li>
-            <li>✓ Year-round tax planning support</li>
-          </ul>
-          <a href="services/tax-prep.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Get Tax Help →</a>
-        </article>
-        <article class="svc-card" onclick="window.location.href='services/credit-repair.html'">
-          <div class="icon-circle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </div>
-          <h3 data-lang="es">Crédito & Finanzas</h3>
-          <h3 data-lang="en">Credit & Finance</h3>
-          <p data-lang="es">Educación crediticia y estrategias para reconstruir tu posición financiera.</p>
-          <p data-lang="en">Credit education and strategies to rebuild your financial standing.</p>
-          <ul class="service-highlights">
-            <li>✓ Credit report analysis & disputes</li>
-            <li>✓ Financial education & strategies</li>
-            <li>✓ Personalized improvement roadmaps</li>
-          </ul>
-          <a href="services/credit-repair.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Improve Your Credit →</a>
-        </article>
-        <article class="svc-card" onclick="window.location.href='services/immigration.html'">
-          <div class="icon-circle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-          </div>
-          <h3 data-lang="es">Asistencia con Inmigración</h3>
-          <h3 data-lang="en">Immigration Assistance</h3>
-          <p data-lang="es">Ayuda administrativa con formularios USCIS, traducción y organización de documentos.</p>
-          <p data-lang="en">Administrative help with USCIS forms, translation and document organization.</p>
-          <ul class="service-highlights">
-            <li>✓ USCIS form completion assistance</li>
-            <li>✓ Document organization & translation</li>
-            <li>✓ Process navigation in your language</li>
-          </ul>
-          <a href="services/immigration.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Immigration Help →</a>
-        </article>
-        <article class="svc-card" onclick="window.location.href='services/business-registration.html'">
-          <div class="icon-circle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-          </div>
-          <h3 data-lang="es">Consultoría de Negocios</h3>
-          <h3 data-lang="en">Business Consulting</h3>
-          <p data-lang="es">Estructura, organización, estrategia y procesos para que tu negocio crezca.</p>
-          <p data-lang="en">Structure, organization, strategy and processes to grow your business.</p>
-          <ul class="service-highlights">
-            <li>✓ Entity selection guidance (LLC, Corp, etc.)</li>
-            <li>✓ State & federal filing assistance</li>
-            <li>✓ EIN & business license support</li>
-          </ul>
-          <a href="services/business-registration.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Start Your Business →</a>
-        </article>
-        <article class="svc-card" onclick="window.location.href='services/notary.html'">
-          <div class="icon-circle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
-          </div>
-          <h3 data-lang="es">Notario Público</h3>
-          <h3 data-lang="en">Notary Public</h3>
-          <p data-lang="es">Notarización autorizada para documentos legales, contratos y formularios oficiales.</p>
-          <p data-lang="en">Authorized notarization for legal documents, contracts and official forms.</p>
-          <ul class="service-highlights">
-            <li>✓ Licensed notary public services</li>
-            <li>✓ Document authentication & witnessing</li>
-            <li>✓ Flexible appointment scheduling</li>
-          </ul>
-          <a href="services/notary.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Book Notary Service →</a>
-        </article>
-        <article class="svc-card" onclick="window.location.href='services/translations-admin.html'">
-          <div class="icon-circle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </div>
-          <h3 data-lang="es">Soporte Administrativo</h3>
-          <h3 data-lang="en">Administrative Support</h3>
-          <p data-lang="es">Ayuda bilingüe con documentos, formularios, cuentas y tareas diarias.</p>
-          <p data-lang="en">Bilingual help with documents, forms, accounts & daily tasks.</p>
-          <ul class="service-highlights">
-            <li>✓ Professional document translation</li>
-            <li>✓ Form completion & submission help</li>
-            <li>✓ Administrative coordination support</li>
-          </ul>
-          <a href="services/translations-admin.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Get Admin Support →</a>
-        </article>
-      </div>
+          <article class="svc-card real-estate" onclick="window.location.href='services/real-estate-us.html'">
+            <span class="service-badge">Most Popular</span>
+            <div class="icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 data-lang="es">Bienes Raíces (EE. UU.)</h3>
+            <h3 data-lang="en">Real Estate (US)</h3>
+            <p data-lang="es">Compra, venta e inversión en MA & NH con Century 21 North East y Newfed Mortgage</p>
+            <p data-lang="en">Buy, sell, and invest in MA & NH with Century 21 North East and Newfed Mortgage</p>
+            <a href="services/real-estate-us.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Learn More →</a>
+          </article>
+
+          <article class="svc-card real-estate-dr" onclick="window.location.href='services/real-estate-dr.html'">
+            <div class="icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 data-lang="es">Paraíso Inmobiliario (RD)</h3>
+            <h3 data-lang="en">Real Estate (Dominican Republic)</h3>
+            <p data-lang="es">Inversiones exclusivas en República Dominicana: residencial y comercial</p>
+            <p data-lang="en">Exclusive Dominican Republic investments: residential and commercial</p>
+            <a href="services/real-estate-dr.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Learn More →</a>
+          </article>
+
+          <article class="svc-card tax-prep" onclick="window.location.href='services/tax-prep.html'">
+            <div class="icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 data-lang="es">Preparación de Impuestos</h3>
+            <h3 data-lang="en">Tax Preparation</h3>
+            <p data-lang="es">Impuestos individuales y de negocios, planificación estratégica, máximas devoluciones</p>
+            <p data-lang="en">Individual and business taxes, strategic planning, maximum refunds</p>
+            <a href="services/tax-prep.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Learn More →</a>
+          </article>
+
+          <article class="svc-card credit-repair" onclick="window.location.href='services/credit-repair.html'">
+            <div class="icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <h3 data-lang="es">Reparación de Crédito</h3>
+            <h3 data-lang="en">Credit Repair</h3>
+            <p data-lang="es">Orientación educativa sobre disputas, estrategia y mejora de puntaje crediticio</p>
+            <p data-lang="en">Educational guidance on disputes, strategy and credit score improvement</p>
+            <a href="services/credit-repair.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Learn More →</a>
+          </article>
+
+          <article class="svc-card immigration" onclick="window.location.href='services/immigration.html'">
+            <div class="icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3 data-lang="es">Asistencia de Inmigración</h3>
+            <h3 data-lang="en">Immigration Assistance</h3>
+            <p data-lang="es">Preparación de formularios USCIS: ciudadanía, residencia, permisos de trabajo</p>
+            <p data-lang="en">USCIS form preparation: citizenship, green cards, work permits</p>
+            <a href="services/immigration.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Learn More →</a>
+          </article>
+
+          <article class="svc-card business-registration" onclick="window.location.href='services/business-registration.html'">
+            <div class="icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+            </div>
+            <h3 data-lang="es">Registro de Negocios</h3>
+            <h3 data-lang="en">Business Registration</h3>
+            <p data-lang="es">Selección de entidades LLC, Corp, EIN y presentaciones estatales</p>
+            <p data-lang="en">Entity selection LLC, Corp, EIN and state filings</p>
+            <a href="services/business-registration.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Learn More →</a>
+          </article>
+
+          <article class="svc-card notary" onclick="window.location.href='services/notary.html'">
+            <div class="icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3 data-lang="es">Notario Público</h3>
+            <h3 data-lang="en">Notary Public</h3>
+            <p data-lang="es">Servicios de notario móvil autorizado para documentos legales bilingües</p>
+            <p data-lang="en">Authorized mobile notary services for bilingual legal documents</p>
+            <a href="services/notary.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Learn More →</a>
+          </article>
+
+          <article class="svc-card translations" onclick="window.location.href='services/translations-admin.html'">
+            <div class="icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.89 3H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7.89"/><polyline points="15 10 21 10 18.5 5 16 10"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="18" x2="13" y2="18"/></svg>
+            </div>
+            <h3 data-lang="es">Traducciones y Admin</h3>
+            <h3 data-lang="en">Translations & Admin Support</h3>
+            <p data-lang="es">Traducciones certificadas, formularios, configuración de cuentas y apoyo administrativo</p>
+            <p data-lang="en">Certified translations, forms, account setup and administrative support</p>
+            <a href="services/translations-admin.html" class="card-link" data-i18n="common.learnMore" onclick="event.stopPropagation()">Get Admin Support →</a>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -198,11 +178,11 @@
       <div class="container">
         <h2 id="home-reviews" data-lang="es">Confianza que se gana con resultados</h2>
         <h2 id="home-reviews-en" data-lang="en">Trust Earned Through Results</h2>
-          <div class="cards grid grid-3 space-top">
-            <div class="card testimonial"><p class="p">They helped me organize my taxes and buy my first home. Professional and clear.</p><strong>— Maria R.</strong></div>
-            <div class="card testimonial"><p class="p">From registering my LLC to tax strategy—everything under one roof. Highly recommend.</p><strong>— Carlos M.</strong></div>
-            <div class="card testimonial"><p class="p">They speak my language and understand my culture. I trust them completely.</p><strong>— Jose L.</strong></div>
-          </div>
+        <div class="cards grid grid-3 space-top">
+          <div class="card testimonial"><p class="p">They helped me organize my taxes and buy my first home. Professional and clear.</p><strong>— Maria R.</strong></div>
+          <div class="card testimonial"><p class="p">From registering my LLC to tax strategy—everything under one roof. Highly recommend.</p><strong>— Carlos M.</strong></div>
+          <div class="card testimonial"><p class="p">Completed my N-400 citizenship application with clear guidance in Spanish. Made it so much easier.</p><strong>— Luis F.</strong></div>
+        </div>
       </div>
     </section>
 
@@ -213,30 +193,30 @@
         
         <div class="process-steps-simple">
           <div class="step-simple">
-            <div class="step-num">1</div>
-            <h3 data-lang="es">Cuéntanos tu situación</h3>
-            <h3 data-lang="en">Tell us your situation</h3>
-            <p data-lang="es">Agenda tu consulta y te escuchamos primero.</p>
-            <p data-lang="en">Schedule your consultation and we listen first.</p>
+            <div class="step-number">1</div>
+            <h3 data-lang="es">Conversación Inicial</h3>
+            <h3 data-lang="en">Initial Conversation</h3>
+            <p data-lang="es">Llama, envía un mensaje o agenda una cita. Entendemos tu situación y objetivos.</p>
+            <p data-lang="en">Call, message, or book an appointment. We understand your situation and goals.</p>
           </div>
           <div class="step-simple">
-            <div class="step-num">2</div>
-            <h3 data-lang="es">Analizamos & Organizamos</h3>
-            <h3 data-lang="en">Analyze & Organize</h3>
-            <p data-lang="es">Creamos un plan claro, sin complicaciones.</p>
-            <p data-lang="en">We create a clear plan, without complications.</p>
+            <div class="step-number">2</div>
+            <h3 data-lang="es">Plan Claro</h3>
+            <h3 data-lang="en">Clear Plan</h3>
+            <p data-lang="es">Te mostramos los pasos, tiempos y costos. Sin sorpresas.</p>
+            <p data-lang="en">We show you the steps, timelines and costs. No surprises.</p>
           </div>
           <div class="step-simple">
-            <div class="step-num">3</div>
-            <h3 data-lang="es">Ejecutamos y te acompañamos</h3>
+            <div class="step-number">3</div>
+            <h3 data-lang="es">Ejecutar y Guiarte</h3>
             <h3 data-lang="en">Execute & Guide You</h3>
-            <p data-lang="es">Te guiamos con transparencia y profesionalismo.</p>
-            <p data-lang="en">We guide you with transparency and professionalism.</p>
+            <p data-lang="es">Completamos el trabajo contigo, explicando todo en el camino.</p>
+            <p data-lang="en">We complete the work with you, explaining everything along the way.</p>
           </div>
         </div>
       </div>
     </section>
-    
+
     <section class="about-home" aria-labelledby="about-home-heading">
       <div class="container">
         <h2 id="about-home-heading" data-lang="es">Somos un equipo dedicado a servir y empoderar a la comunidad hispana</h2>
@@ -245,68 +225,26 @@
         <p data-lang="es">Combinamos experiencia en impuestos, bienes raíces, finanzas, negocios y tecnología para ayudar a familias y emprendedores a tomar mejores decisiones, organizarse, crecer y avanzar. Nuestro enfoque es simple: brindar un servicio confiable, moderno y humano.</p>
         <p data-lang="en">We combine experience in taxes, real estate, finance, business and technology to help families and entrepreneurs make better decisions, get organized, grow and move forward. Our approach is simple: provide reliable, modern and human service.</p>
         
-        <a href="about.html" class="btn outline" data-lang="es">Conoce Nuestro Equipo</a>
-        <a href="about.html" class="btn outline" data-lang="en">Meet Our Team</a>
+        <a href="about.html" class="btn secondary" data-i18n="nav.about">Learn More About Us</a>
       </div>
     </section>
 
-    <section id="contact" class="contact-section alt" aria-labelledby="contact-heading">
-      <div class="contact-inner">
-        <h2 id="contact-heading" data-i18n="contact.heading">Start Your Journey With Us</h2>
-        <p data-i18n="contact.copy">Share your goals and we'll connect with you personally.</p>
-        <form id="contactForm" novalidate class="modern-form">
-          <!-- Honeypot anti-spam field -->
-          <div class="visually-hidden" aria-hidden="true">
-            <label for="website">Website</label>
-            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
-          </div>
-          <div class="form-row">
-            <label for="name" data-i18n="form.nameLabel">Full Name</label>
-            <input id="name" name="name" type="text" required placeholder="John / María" />
-          </div>
-          <div class="form-row">
-            <label for="email" data-i18n="form.emailLabel">Email</label>
-            <input id="email" name="email" type="email" required placeholder="you@example.com" />
-          </div>
-          <div class="form-row">
-            <label for="phone" data-i18n="form.phoneLabel">Phone</label>
-            <input id="phone" name="phone" type="tel" placeholder="(xxx) xxx-xxxx" />
-          </div>
-          <div class="form-row">
-            <label for="interest" data-i18n="form.interestLabel">Service Interest</label>
-            <select id="interest" name="interest">
-              <option value="general" data-i18n="form.opt.general">General Inquiry</option>
-              <option value="realEstateUS" data-i18n="form.opt.realEstateUS">Real Estate (US)</option>
-              <option value="realEstateDR" data-i18n="form.opt.realEstateDR">Real Estate (Dominican Republic)</option>
-              <option value="mortgage" data-i18n="form.opt.mortgage">Mortgage/Refinance</option>
-              <option value="taxPrep" data-i18n="form.opt.taxPrep">Tax Preparation</option>
-              <option value="creditRepair" data-i18n="form.opt.creditRepair">Credit Repair</option>
-              <option value="immigration" data-i18n="form.opt.immigration">Immigration Assistance</option>
-              <option value="businessReg" data-i18n="form.opt.businessReg">Business Registration</option>
-              <option value="notary" data-i18n="form.opt.notary">Notary Service</option>
-              <option value="translationsAdmin" data-i18n="form.opt.translationsAdmin">Translations & Admin Support</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <label for="message" data-i18n="form.messageLabel">Brief Details</label>
-            <textarea id="message" name="message" rows="4" placeholder="Tell us how we can help" ></textarea>
-          </div>
-          <!-- UTM Capture Fields -->
-          <input type="hidden" name="utm_source" id="utm_source">
-          <input type="hidden" name="utm_medium" id="utm_medium">
-          <input type="hidden" name="utm_campaign" id="utm_campaign">
-          <input type="hidden" name="gclid" id="gclid">
-          <div class="form-row">
-            <label><input type="checkbox" id="consent" name="consent" required> I agree to the privacy policy and to receive communications / Acepto la política de privacidad y recibir comunicaciones</label>
-          </div>
-          <button type="submit" class="btn primary" data-i18n="form.submit">Submit</button>
-          <p id="formStatus" class="status" aria-live="polite"></p>
-        </form>
+    <section class="cta-section">
+      <div class="container">
+        <h2 data-lang="es">¿Listo para dar el siguiente paso?</h2>
+        <h2 data-lang="en">Ready to take the next step?</h2>
+        <p data-lang="es">Agenda una consulta gratuita y hablemos de tus necesidades.</p>
+        <p data-lang="en">Schedule a free consultation and let's talk about your needs.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn primary" data-i18n="cta.scheduleConsultation">Schedule Consultation</a>
+          <a href="tel:+19783909619" class="btn secondary">📞 (978) 390-9619</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="visually-hidden">Footer</h2>
     <div class="footer-top">
       <div class="footer-brand">
         <img src="./assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
@@ -340,6 +278,7 @@
       </div>
       <div>
         <h3 data-i18n="footer.connect">Connect</h3>
+        <p>Phone: <a href="tel:+19783909619">(978) 390-9619</a></p>
         <p>Email: <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p>
         <p data-i18n="footer.socialComingSoon">Social channels coming soon.</p>
       </div>
@@ -353,45 +292,16 @@
     </div>
   </footer>
 
-  <script src="/assets/js/i18n.js"></script>
-  <script src="/assets/js/main.js"></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Inoa & Melenciano Services",
-    "url": "https://www.inoamelenciano.com",
-    "logo": "https://www.inoamelenciano.com/assets/img/logo-icon.svg",
-    "sameAs": ["https://www.instagram.com/eduardoinoa"],
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "telephone": "+1-978-705-5509",
-      "contactType": "customer service",
-      "areaServed": ["US","DO"],
-      "availableLanguage": ["English","Spanish"]
-    }]
-  }
-  </script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  
   <!-- Sticky Mobile CTA Bar -->
   <div class="sticky-cta" aria-label="Quick actions">
     <a class="sticky-cta-btn call" href="tel:+19783909619">Call</a>
     <a class="sticky-cta-btn whatsapp" href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a>
     <a class="sticky-cta-btn book" href="contact.html#contact-form">Book</a>
   </div>
-  <script>
-    // UTM capture for homepage contact form
-    (function(){
-      try {
-        const p = new URLSearchParams(window.location.search);
-        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
-          var el = document.getElementById(k);
-          if (el) el.value = p.get(k) || '';
-        });
-        var g = document.getElementById('gclid');
-        if(g){ g.value = p.get('gclid') || ''; }
-      } catch(e) {}
-    })();
-  </script>
 </body>
 </html>
 
