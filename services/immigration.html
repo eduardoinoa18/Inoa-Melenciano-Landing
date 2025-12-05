@@ -1,495 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Immigration Services | Inoa & Melenciano</title>
-  <meta name="description" content="Professional USCIS form preparation assistance - citizenship, green cards, family petitions, work permits with bilingual support." />
-  <link rel="stylesheet" href="../assets/css/site.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Immigration Services • Optima Service Group Services</title>
+  <meta name="description" content="Bilingual immigration form assistance, translation coordination, and document support." />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
-<body>
-  <header class="header">
-    <div class="container navbar">
-      <a href="../index.html" class="brand">
-        <img src="../assets/img/logo-icon.svg" alt="Logo" width="24" height="24"> Inoa & Melenciano
-      </a>
-      <nav class="nav">
-        <a href="../services/index.html">Services</a>
-        <a href="../about.html">About</a>
-        <a href="../contact.html">Contact</a>
-      </nav>
+<body class="theme-light">
+  <header class="site-header">
+    <a href="../index.html" class="logo">
+      <img src="../assets/img/optima-logo.svg" alt="Optima Service Group Logo" class="logo-icon">
+      <span>Optima Service Group <span data-i18n="services">Services</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <button class="nav-toggle" aria-label="Toggle menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown">
+          <button class="dd-btn">Services ▾</button>
+          <ul class="dropdown-menu">
+            <li><a href="real-estate-us.html">Real Estate (US)</a></li>
+            <li><a href="real-estate-dr.html">Paraíso Inmobiliario (DR)</a></li>
+            <li><a href="tax-prep.html">Tax Preparation</a></li>
+            <li><a href="credit-repair.html">Credit Repair</a></li>
+            <li><a class="active" href="immigration.html">Immigration</a></li>
+            <li><a href="business-registration.html">Business Registration</a></li>
+            <li><a href="notary.html">Notary Public</a></li>
+            <li><a href="translations-admin.html">Translations & Admin</a></li>
+          </ul>
+        </li>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../team.html">Our Team</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-controls">
+      <div class="lang-switch">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="es">ES</button>
+      </div>
+      <button id="themeToggle" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1 class="h1">Immigration Services</h1>
-      <p class="p">Guidance on common forms and processes — English + Español.</p>
-    </div>
-  </section>
-
-  <main class="container">
-    <div class="disclaimer-box" style="background:#FFF9E6;border-left:4px solid #D4AF37;padding:1rem;margin-bottom:2rem;">
-      <p><strong>Administrative Assistance Only:</strong> We help complete USCIS forms and organize documents. We are not immigration attorneys. For complex cases or legal representation, consult a licensed attorney.</p>
-    </div>
-
-    <section class="grid">
-      <div class="card">
-        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 12l4 4 8-8"/></svg></div>
-        <h3 class="h3">Clarity & Care</h3>
-        <p class="p">Transparent steps and supportive communication at every stage.</p>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg></div>
-        <h3 class="h3">Efficient Coordination</h3>
-        <p class="p">Checklists and timelines to keep you on track.</p>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18"/><path d="M12 3v18"/></svg></div>
-        <h3 class="h3">Bilingual Support</h3>
-        <p class="p">English + Español — clear guidance for families and individuals.</p>
+  <main>
+    <section class="hero-service">
+      <div class="container">
+        <h1 data-lang="en">Immigration Form Assistance</h1>
+        <h1 data-lang="es">Asistencia con Formularios de Inmigración</h1>
+        <p data-lang="en">Bilingual support for immigration paperwork, translation coordination, and document preparation. We are not attorneys.</p>
+        <p data-lang="es">Apoyo bilingüe para trámites de inmigración, coordinación de traducciones y preparación de documentos. No somos abogados.</p>
       </div>
     </section>
 
-    <section>
-      <h2 class="h2">Common Forms We Complete</h2>
-      <div class="grid">
-        <div class="card"><h3 class="h3">N-400 Citizenship</h3><p class="p">U.S. citizenship application for green card holders.</p></div>
-        <div class="card"><h3 class="h3">I-130 Family Petition</h3><p class="p">Sponsoring family members—spouse, parents, children, siblings.</p></div>
-        <div class="card"><h3 class="h3">I-485 Green Card</h3><p class="p">Adjustment of status to permanent residence.</p></div>
-        <div class="card"><h3 class="h3">I-765 Work Permit</h3><p class="p">Employment authorization (EAD).</p></div>
-        <div class="card"><h3 class="h3">I-90 Renewal</h3><p class="p">Green card renewal or replacement.</p></div>
-        <div class="card"><h3 class="h3">I-131 Travel Permit</h3><p class="p">Re-entry permit or advance parole.</p></div>
-      </div>
-    </section>
+    <section class="service-content">
+      <div class="container">
+        <h2 data-lang="en">What We Offer</h2>
+        <h2 data-lang="es">Qué Ofrecemos</h2>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3 data-lang="en">Form Completion</h3>
+            <h3 data-lang="es">Llenado de Formularios</h3>
+            <p data-lang="en">Help completing USCIS forms (I-130, I-485, I-765, N-400, etc.) accurately</p>
+            <p data-lang="es">Ayuda para completar formularios de USCIS (I-130, I-485, I-765, N-400, etc.) con precisión</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-lang="en">Document Checklist</h3>
+            <h3 data-lang="es">Lista de Documentos</h3>
+            <p data-lang="en">Identify required supporting documents, organize evidence, ensure completeness</p>
+            <p data-lang="es">Identifica documentos de respaldo requeridos, organiza evidencia, garantiza integridad</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-lang="en">Translation Support</h3>
+            <h3 data-lang="es">Apoyo de Traducción</h3>
+            <p data-lang="en">Coordinate certified translation of birth certificates, marriage records, etc.</p>
+            <p data-lang="es">Coordina traducción certificada de actas de nacimiento, registros de matrimonio, etc.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-lang="en">Filing Preparation</h3>
+            <h3 data-lang="es">Preparación de Presentación</h3>
+            <p data-lang="en">Package applications, prepare cover letters, confirm mailing/filing procedures</p>
+            <p data-lang="es">Empaqueta aplicaciones, prepara cartas de presentación, confirma procedimientos de envío</p>
+          </div>
+        </div>
 
-    <section>
-      <h2 class="h2">How It Works</h2>
-      <ol class="steps">
-        <li><strong>Consultation:</strong> Understand your goals and case details.</li>
-        <li><strong>Checklist:</strong> Provide a tailored list of documents.</li>
-        <li><strong>Preparation:</strong> Complete forms carefully and review together.</li>
-        <li><strong>Submission:</strong> Package and send with tracking; next steps guidance.</li>
-      </ol>
-    </section>
+        <div class="disclaimer-box">
+          <p><strong>Legal Disclaimer:</strong> We are NOT immigration attorneys and do not provide legal advice. We provide clerical assistance with form completion only. For complex cases, we recommend consulting a licensed immigration attorney.</p>
+        </div>
 
-    <section>
-      <h2 class="h2">Results You'll Get</h2>
-      <div class="grid">
-        <div class="card"><h3 class="h3">Organized filings</h3><p class="p">Professional packets and confident submissions.</p></div>
-        <div class="card"><h3 class="h3">Time saved</h3><p class="p">Clear process reduces back-and-forth.</p></div>
-        <div class="card"><h3 class="h3">Peace of mind</h3><p class="p">Know what to expect and when.</p></div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="h2">FAQ</h2>
-      <details>
-        <summary>Do you provide legal advice?</summary>
-        <p>We are not attorneys. We assist with forms and organization.</p>
-      </details>
-      <details>
-        <summary>How long does it take?</summary>
-        <p>Varies by case; we share a clear timeline after consultation.</p>
-      </details>
-      <details>
-        <summary>What languages do you support?</summary>
-        <p>English and Spanish for all services.</p>
-      </details>
-      <details>
-        <summary>Which forms do you help with?</summary>
-        <p>N-400, I-130, I-485, I-765, I-90, I-131 and others, confirmed during consultation.</p>
-      </details>
-    </section>
-
-    <section class="cta">
-      <div class="card">
-        <h2 class="h2">Ready to begin?</h2>
-        <p class="p">Book a consultation — we'll map your steps clearly.</p>
-        <p class="p"><a class="btn primary" href="../contact.html">Contact Us</a></p>
+        <div class="cta-box">
+          <h3 data-lang="en">Get help with your immigration paperwork</h3>
+          <h3 data-lang="es">Obtén ayuda con tus trámites de inmigración</h3>
+          <a href="../contact.html" class="btn primary">Schedule Consultation</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="brand"><img src="../assets/img/logo-icon.svg" alt="Logo" width="24" height="24"><strong>Inoa & Melenciano</strong></div>
-      <div class="cols">
-        <div><h4 class="h3">Company</h4><p class="p"><a href="../about.html">About</a> • <a href="../team.html">Team</a> • <a href="../contact.html">Contact</a></p></div>
-        <div><h4 class="h3">Services</h4><p class="p"><a href="index.html">All Services</a></p></div>
-        <div><h4 class="h3">Contact</h4><p class="p"><a href="tel:+19783909619">(978) 390-9619</a> • <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p></div>
-      </div>
-      <div class="copy">© <span id="year"></span> Inoa & Melenciano</div>
-    </div>
-  </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
-        <div class="grid-3">
-        <div class="simple-card">
-          <h3>N-400 Citizenship</h3>
-          <p>U.S. citizenship application for green card holders (5+ years or 3 if married to citizen)</p>
-        </div>
-        <div class="simple-card">
-          <h3>I-130 Family Petition</h3>
-          <p>Sponsoring family members—spouse, parents, children, siblings</p>
-        </div>
-        <div class="simple-card">
-          <h3>I-485 Green Card</h3>
-          <p>Adjustment of status to permanent residence while in U.S.</p>
-        </div>
-        <div class="simple-card">
-          <h3>I-765 Work Permit</h3>
-          <p>Employment authorization (EAD) for temporary work permission</p>
-        </div>
-        <div class="simple-card">
-          <h3>I-90 Renewal</h3>
-          <p>Green card renewal or replacement (expired/lost/damaged)</p>
-        </div>
-        <div class="simple-card">
-          <h3>I-131 Travel Permit</h3>
-          <p>Re-entry permit or advance parole for international travel</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="how-we-work-section">
-      <div class="container">
-        <h2>Your Path to Approval</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-number">1</div>
-            <div class="timeline-content">
-              <h3>Free Consultation</h3>
-              <p>We review your situation, assess eligibility, and explain exactly which forms you need and why. You'll leave with a clear document checklist and timeline. <strong>30-45 minutes</strong></p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-number">2</div>
-            <div class="timeline-content">
-              <h3>Document Collection</h3>
-              <p>Gather required documents (birth certificates, passports, financial records). We coordinate certified translations if needed. <strong>1-2 weeks</strong></p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-number">3</div>
-            <div class="timeline-content">
-              <h3>Form Completion</h3>
-              <p>We complete your USCIS form bilingually, verify every answer, organize supporting documents, and prepare the filing package. <strong>1-2 hours</strong></p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-number">4</div>
-            <div class="timeline-content">
-              <h3>Filing & Tracking</h3>
-              <p>Submit to USCIS, track case status, explain notices, prepare for biometrics/interview. We're with you until approval. <strong>Ongoing support</strong></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Results Section -->
-    <section class="results-section">
-      <div class="container">
-        <h2>Our Track Record</h2>
-        <p class="results-subtitle">Real results for real families</p>
-        <div class="results-grid">
-          <div class="result-card">
-            <div class="result-number">800+</div>
-            <div class="result-label">Forms Filed</div>
-            <p class="result-description">N-400, I-130, I-485, I-765, I-90, I-131 and more</p>
-          </div>
-          <div class="result-card">
-            <div class="result-number">95%</div>
-            <div class="result-label">Approval Rate</div>
-            <p class="result-description">High success rate thanks to thorough preparation</p>
-          </div>
-          <div class="result-card">
-            <div class="result-number">100%</div>
-            <div class="result-label">Bilingual Service</div>
-            <p class="result-description">Complete support in English and Spanish</p>
-          </div>
-          <div class="result-card">
-            <div class="result-number">15+</div>
-            <div class="result-label">Form Types</div>
-            <p class="result-description">Citizenship, green cards, work permits, travel documents</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Success Stories -->
-    <section class="success-stories">
-
-    <!-- Documents Needed -->
-    <section class="services-overview alt-bg">
-      <div class="container">
-        <h2>Typical Documents Needed</h2>
-      <div class="grid-2">
-        <div class="checklist-box">
-          <h3>Identity & Status</h3>
-          <ul class="compact-list">
-            <li>Passport & green card</li>
-            <li>Birth & marriage certificates</li>
-            <li>Previous USCIS notices</li>
-            <li>Government ID</li>
-          </ul>
-        </div>
-        <div class="checklist-box">
-          <h3>Financial & Employment</h3>
-          <ul class="compact-list">
-            <li>Tax returns (3-5 years)</li>
-            <li>W-2s, pay stubs</li>
-            <li>Employment letters</li>
-            <li>Bank statements</li>
-          </ul>
-        </div>
-      </div>
-      <p class="note-text">Specific requirements vary by form. We provide a personalized checklist during consultation.</p>
-      </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="cta-section">
-      <div class="container">
-        <h2>Ready to Start Your Immigration Journey?</h2>
-        <p class="cta-subtitle">Schedule a free consultation to discuss your case and get your personalized roadmap</p>
-        <div class="cta-buttons">
-          <a href="../contact.html" class="btn-primary">Schedule Free Consultation</a>
-          <a href="../team.html" class="btn-secondary">Meet Our Team</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq-section" aria-labelledby="immig-faq">
-      <div class="container">
-        <h2 id="immig-faq">Frequently Asked Questions</h2>
-        <div class="faq-list">
-          <details>
-            <summary>Are you immigration attorneys?</summary>
-            <p>No. We provide administrative assistance with USCIS forms and document organization. For legal advice or representation, we refer licensed attorneys.</p>
-          </details>
-          <details>
-            <summary>Which forms do you help with?</summary>
-            <p>N-400, I-130, I-485, I-765, I-90, I-131 and more. We confirm the right forms for your situation in a free consultation.</p>
-          </details>
-          <details>
-            <summary>How long does the process take?</summary>
-            <p>USCIS timelines vary by case and field office. We help you file quickly and track your case, but we cannot control USCIS processing times.</p>
-          </details>
-          <details>
-            <summary>Do you offer translation and notary?</summary>
-            <p>Yes. We coordinate certified translations and notarization as needed so your package is complete.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-  </main>
-              <h4>Roberto G.</h4>
-              <p>U.S. Citizen, Haverhill MA</p>
-            </div>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Professional, patient, and bilingual. They helped me renew my work permit (I-765) and explained the process clearly. Highly recommend for immigration paperwork!"</p>
-          <div class="review-author">
-            <div class="review-avatar">AS</div>
-            <div class="review-info">
-              <h4>Ana S.</h4>
-              <p>Work permit holder, Lynn MA</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="related-services">
-      <h2>Servicios complementarios / Complementary Services</h2>
-      <div class="related-grid">
-        <a href="translations-admin.html" class="related-card">
-          <div class="icon-circle">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </div>
-          <h3>Document Translation</h3>
-          <p>Professional translation of birth certificates, diplomas, and supporting documents for USCIS submission.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-        <a href="notary.html" class="related-card">
-          <div class="icon-circle">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
-          </div>
-          <h3>Notary Services</h3>
-          <p>Notarize affidavits, powers of attorney, and supporting documents for immigration applications.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-        <a href="real-estate-us.html" class="related-card">
-          <div class="icon-circle">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <h3>Real Estate Services</h3>
-          <p>Once you have your green card or citizenship, we help you buy your first home in the U.S.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="contact-section" aria-labelledby="start">
-      <div class="contact-inner">
-        <h2 id="start">Request Immigration Form Assistance</h2>
-        <p>Complete el formulario y nos pondremos en contacto pronto</p>
-        <form id="contactForm" class="modern-form" novalidate>
-          <div class="form-row">
-            <label for="name">Nombre completo / Full Name *</label>
-            <input id="name" name="name" type="text" required placeholder="Ej.: Juan Pérez" />
-          </div>
-          <div class="form-row">
-            <label for="email">Correo electrónico / Email *</label>
-            <input id="email" name="email" type="email" required placeholder="tu@email.com" />
-          </div>
-          <div class="form-row">
-            <label for="phone">Teléfono / Phone</label>
-            <input id="phone" name="phone" type="tel" placeholder="(xxx) xxx-xxxx" />
-          </div>
-          <div class="form-row">
-            <label for="form-type">What type of form? / ¿Qué tipo de formulario?</label>
-            <select id="form-type" name="formType">
-              <option value="">Select / Selecciona...</option>
-              <option value="citizenship">N-400 Citizenship / Ciudadanía</option>
-              <option value="greencard">I-485 Adjustment of Status / Residencia</option>
-              <option value="familyPetition">I-130 Family Petition / Petición familiar</option>
-              <option value="workPermit">I-765 Work Permit / Permiso de trabajo</option>
-              <option value="renewal">I-90 Green Card Renewal / Renovación</option>
-              <option value="travel">I-131 Travel Document / Documento de viaje</option>
-              <option value="other">Other / Otro</option>
-            </select>
-          </div>
-          <input type="hidden" name="interest" value="immigration" />
-          <!-- UTM Capture Fields -->
-          <input type="hidden" name="utm_source" id="utm_source">
-          <input type="hidden" name="utm_medium" id="utm_medium">
-          <input type="hidden" name="utm_campaign" id="utm_campaign">
-          <input type="hidden" name="gclid" id="gclid">
-          <!-- Honeypot -->
-          <div class="visually-hidden" aria-hidden="true">
-            <label for="website">Website</label>
-            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
-          </div>
-          <div class="form-row full-width">
-            <label for="message">Cuéntanos más / Tell us more</label>
-            <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito ayuda completando el formulario N-400. Ya tengo mi green card por 5 años..."></textarea>
-          </div>
-          <div class="form-row"><label><input type="checkbox" id="consent" name="consent" required> Acepto la política de privacidad y recibir comunicaciones / I agree to the privacy policy and to receive communications</label></div>
-          <button type="submit" class="btn primary">Send Message / Enviar</button>
-          <p class="form-helper">We provide administrative support only—not legal advice. For complex legal matters, consult an immigration attorney.</p>
-          <p id="formStatus" class="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" class="visually-hidden">Footer</h2>
+  <footer class="site-footer">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="../assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
-        <span>Inoa &amp; Melenciano</span>
-      </div>
-      <div class="footer-actions">
-        <button id="themeToggleFooter" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <img src="../assets/img/optima-logo.svg" alt="Logo" class="logo-icon">
+        <span>Optima Service Group</span>
       </div>
     </div>
     <div class="footer-columns">
       <div>
-        <h3 data-i18n="footer.company">Company</h3>
+        <h3>Company</h3>
         <ul>
-          <li><a href="../about.html" data-i18n="nav.about">About Us</a></li>
-          <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
-          <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../team.html">Our Team</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h3 data-i18n="footer.services">Services</h3>
+        <h3>Services</h3>
         <ul>
-          <li><a href="real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
-          <li><a href="real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
-          <li><a href="tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
-          <li><a href="credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
-          <li><a href="immigration.html" data-i18n="svc.immigration">Immigration</a></li>
-          <li><a href="business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
-          <li><a href="notary.html" data-i18n="svc.notary">Notary Public</a></li>
-          <li><a href="translations-admin.html" data-i18n="svc.translationsAdmin">Translations & Admin</a></li>
+          <li><a href="real-estate-us.html">Real Estate (US)</a></li>
+          <li><a href="real-estate-dr.html">Paraíso Inmobiliario (DR)</a></li>
+          <li><a href="tax-prep.html">Tax Preparation</a></li>
+          <li><a href="credit-repair.html">Credit Repair</a></li>
         </ul>
       </div>
       <div>
-        <h3 data-i18n="footer.connect">Connect</h3>
-        <p>Email: <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p>
-        <p data-i18n="footer.socialComingSoon">Social channels coming soon.</p>
-      </div>
-      <div>
-        <h3 data-i18n="footer.newsletter">Stay Informed</h3>
-        <p data-i18n="footer.newsletterDesc">Opt-in form coming soon (privacy-focused).</p>
+        <h3>Connect</h3>
+        <p>Phone: <a href="tel:+19783909619">(978) 390-9619</a></p>
+        <p>Email: <a href="mailto:info@optimaservicegroup.com">info@optimaservicegroup.com</a></p>
       </div>
     </div>
     <div class="legal">
-      <p>&copy; <span id="year"></span> Inoa &amp; Melenciano Services. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p>&copy; <span id="year"></span> Optima Service Group Services. All rights reserved.</p>
     </div>
   </footer>
 
   <script src="../assets/js/i18n.js"></script>
   <script src="../assets/js/main.js"></script>
-  <!-- Sticky Mobile CTA Bar -->
-  <div class="sticky-cta" aria-label="Quick actions">
-    <a class="sticky-cta-btn call" href="tel:+19783909619">Call</a>
-    <a class="sticky-cta-btn whatsapp" href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a>
-    <a class="sticky-cta-btn book" href="../contact.html#contact-form">Book</a>
-  </div>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Immigration Form Preparation",
-    "serviceType": "USCIS administrative form assistance (non-legal)",
-    "description": "Bilingual administrative assistance completing USCIS forms (N-400, I-130, I-485, I-765, I-90, I-131). We help organize documents and prepare you for each step. We are not attorneys.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Inoa & Melenciano Services",
-      "url": "https://www.inoamelenciano.com"
-    },
-    "areaServed": ["US"],
-    "availableLanguage": ["English", "Spanish"],
-    "termsOfService": "https://www.inoamelenciano.com/disclosures.html",
-    "brand": {"@type":"Brand","name":"Inoa & Melenciano"}
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {"@type":"Question","name":"Are you immigration attorneys?","acceptedAnswer":{"@type":"Answer","text":"No. We provide administrative USCIS form assistance and document organization; for legal advice we refer licensed attorneys."}},
-      {"@type":"Question","name":"Which forms do you help with?","acceptedAnswer":{"@type":"Answer","text":"N-400, I-130, I-485, I-765, I-90, I-131 and others, confirmed during consultation."}},
-      {"@type":"Question","name":"How long does the process take?","acceptedAnswer":{"@type":"Answer","text":"Timelines vary by case and field office; we file quickly and track, but USCIS processing times are outside our control."}},
-      {"@type":"Question","name":"Do you offer translation and notary?","acceptedAnswer":{"@type":"Answer","text":"Yes. We coordinate certified translations and notarization so your filing is complete."}}
-    ]
-  }
-  </script>
-  <script>
-    // UTM capture for immigration form
-    (function(){
-      try {
-        const p = new URLSearchParams(window.location.search);
-        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
-          var el = document.getElementById(k);
-          if (el) el.value = p.get(k) || '';
-        });
-        var g = document.getElementById('gclid');
-        if(g){ g.value = p.get('gclid') || ''; }
-      } catch(e) {}
-    })();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
+

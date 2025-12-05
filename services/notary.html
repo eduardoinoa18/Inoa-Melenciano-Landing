@@ -1,351 +1,147 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Notary Public | Inoa & Melenciano</title>
-  <meta name="description" content="Authorized notary public services for legal documents—bilingual notarization." />
-  <link rel="stylesheet" href="../assets/css/site.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notary Public • Optima Service Group Services</title>
+  <meta name="description" content="Bilingual notary public services in Massachusetts for documents, affidavits, and legal forms." />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
-<body>
-  <header class="header">
-    <div class="container navbar">
-      <a href="../index.html" class="brand">
-        <img src="../assets/img/logo-icon.svg" alt="Logo" width="24" height="24"> Inoa & Melenciano
-      </a>
-      <nav class="nav">
-        <a href="../services/index.html">Services</a>
-        <a href="../about.html">About</a>
-        <a href="../contact.html">Contact</a>
-      </nav>
+<body class="theme-light">
+  <header class="site-header">
+    <a href="../index.html" class="logo">
+      <img src="../assets/img/optima-logo.svg" alt="Optima Service Group Logo" class="logo-icon">
+      <span>Optima Service Group <span data-i18n="services">Services</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <button class="nav-toggle" aria-label="Toggle menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown">
+          <button class="dd-btn">Services ▾</button>
+          <ul class="dropdown-menu">
+            <li><a href="real-estate-us.html">Real Estate (US)</a></li>
+            <li><a href="real-estate-dr.html">Paraíso Inmobiliario (DR)</a></li>
+            <li><a href="tax-prep.html">Tax Preparation</a></li>
+            <li><a href="credit-repair.html">Credit Repair</a></li>
+            <li><a href="immigration.html">Immigration</a></li>
+            <li><a href="business-registration.html">Business Registration</a></li>
+            <li><a class="active" href="notary.html">Notary Public</a></li>
+            <li><a href="translations-admin.html">Translations & Admin</a></li>
+          </ul>
+        </li>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../team.html">Our Team</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-controls">
+      <div class="lang-switch">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="es">ES</button>
+      </div>
+      <button id="themeToggle" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1 class="h1">Notary Public</h1>
-      <p class="p">Mobile notary services by appointment.</p>
-    </div>
-  </section>
-
-  <main class="container">
-    <section class="grid">
-      <div class="card">
-        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 12l4 4 8-8"/></svg></div>
-        <h3 class="h3">Authorized Service</h3>
-        <p class="p">Licensed notary public for legal documents.</p>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg></div>
-        <h3 class="h3">Quick & Mobile</h3>
-        <p class="p">Same-day availability; on-site options by arrangement.</p>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18"/><path d="M12 3v18"/></svg></div>
-        <h3 class="h3">Bilingual Support</h3>
-        <p class="p">English + Español notarization.</p>
+  <main>
+    <section class="hero-service">
+      <div class="container">
+        <h1 data-lang="en">Notary Public Services</h1>
+        <h1 data-lang="es">Servicios de Notario Público</h1>
+        <p data-lang="en">Licensed bilingual notary public in Massachusetts. Notarize affidavits, deeds, powers of attorney, and more.</p>
+        <p data-lang="es">Notario público con licencia y bilingüe en Massachusetts. Notariza declaraciones juradas, escrituras, poderes notariales y más.</p>
       </div>
     </section>
 
-    <section>
-      <h2 class="h2">Common Notarized Documents</h2>
-      <div class="grid">
-        <div class="card"><h3 class="h3">Real Estate</h3><p class="p">Deeds, closings, and affidavits.</p></div>
-        <div class="card"><h3 class="h3">Power of Attorney</h3><p class="p">Financial and healthcare authorizations.</p></div>
-        <div class="card"><h3 class="h3">Affidavits</h3><p class="p">Sworn statements for legal matters.</p></div>
-        <div class="card"><h3 class="h3">Contracts</h3><p class="p">Business agreements and leases.</p></div>
-      </div>
-    </section>
+    <section class="service-content">
+      <div class="container">
+        <h2 data-lang="en">What We Offer</h2>
+        <h2 data-lang="es">Qué Ofrecemos</h2>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3 data-lang="en">Document Notarization</h3>
+            <h3 data-lang="es">Notarización de Documentos</h3>
+            <p data-lang="en">Notarize affidavits, deeds, contracts, powers of attorney, and legal forms</p>
+            <p data-lang="es">Notariza declaraciones juradas, escrituras, contratos, poderes notariales y formularios legales</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-lang="en">Real Estate Closings</h3>
+            <h3 data-lang="es">Cierres Inmobiliarios</h3>
+            <p data-lang="en">Notarize mortgage documents, HUD-1 forms, and closing disclosures</p>
+            <p data-lang="es">Notariza documentos hipotecarios, formularios HUD-1 y divulgaciones de cierre</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-lang="en">Identity Verification</h3>
+            <h3 data-lang="es">Verificación de Identidad</h3>
+            <p data-lang="en">Confirm signer identity with valid ID, administer oaths and affirmations</p>
+            <p data-lang="es">Confirma la identidad del firmante con identificación válida, administra juramentos y afirmaciones</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-lang="en">Mobile Notary</h3>
+            <h3 data-lang="es">Notario Móvil</h3>
+            <p data-lang="en">Available for on-site notarization at your home or office (fee applies)</p>
+            <p data-lang="es">Disponible para notarización en el sitio en tu hogar u oficina (se aplica tarifa)</p>
+          </div>
+        </div>
 
-    <section>
-      <h2 class="h2">How Notarization Works</h2>
-      <ol class="steps">
-        <li><strong>Book:</strong> Schedule and share document type.</li>
-        <li><strong>Verify:</strong> Bring valid ID; document must be unsigned.</li>
-        <li><strong>Witness & Sign:</strong> Identity verified, signature witnessed, seal applied.</li>
-        <li><strong>Done:</strong> Receive notarized document and copies if needed.</li>
-      </ol>
-    </section>
+        <div class="disclaimer-box">
+          <p><strong>Jurisdiction:</strong> Notary public services are authorized in Massachusetts only. Valid government-issued ID required for all signers.</p>
+        </div>
 
-    <section>
-      <h2 class="h2">FAQ</h2>
-      <details>
-        <summary>What ID do I need?</summary>
-        <p>A government-issued photo ID (e.g., driver’s license or passport) is required for all signers.</p>
-      </details>
-      <details>
-        <summary>Can you notarize documents in Spanish?</summary>
-        <p>Yes. We provide bilingual support and can notarize Spanish-language documents.</p>
-      </details>
-      <details>
-        <summary>Do you offer mobile notary?</summary>
-        <p>On-site options may be available by arrangement. Ask about availability and fees.</p>
-      </details>
-    </section>
-
-    <section class="cta">
-      <div class="card">
-        <h2 class="h2">Need a Notary?</h2>
-        <p class="p">Book an appointment — same-day slots often available.</p>
-        <p class="p"><a class="btn primary" href="../contact.html">Contact Us</a></p>
+        <div class="cta-box">
+          <h3 data-lang="en">Need a document notarized?</h3>
+          <h3 data-lang="es">¿Necesitas notarizar un documento?</h3>
+          <a href="../contact.html" class="btn primary">Schedule Appointment</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="brand"><img src="../assets/img/logo-icon.svg" alt="Logo" width="24" height="24"><strong>Inoa & Melenciano</strong></div>
-      <div class="cols">
-        <div><h4 class="h3">Company</h4><p class="p"><a href="../about.html">About</a> • <a href="../team.html">Team</a> • <a href="../contact.html">Contact</a></p></div>
-        <div><h4 class="h3">Services</h4><p class="p"><a href="index.html">All Services</a></p></div>
-        <div><h4 class="h3">Contact</h4><p class="p"><a href="tel:+19783909619">(978) 390-9619</a> • <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p></div>
-      </div>
-      <div class="copy">© <span id="year"></span> Inoa & Melenciano</div>
-    </div>
-  </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Quick and professional notary service for my real estate closing. They explained everything in Spanish and made the process stress-free. Highly recommend!"</p>
-          <div class="review-author"><div class="review-avatar">JG</div><div class="review-info"><h4>J. Gómez</h4><p>Seller, Lawrence MA</p></div></div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Needed a power of attorney notarized the same day. They accommodated my schedule and handled everything professionally."
-          </p>
-          <div class="review-author"><div class="review-avatar">AP</div><div class="review-info"><h4>A. Perez</h4><p>Client, Haverhill MA</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="process-section">
-      <h2>How Notarization Works</h2>
-      <div class="process-grid">
-        <div class="process-step"><div class="process-number">1</div><h3>Book</h3><p>Schedule an appointment and share your document type.</p></div>
-        <div class="process-step"><div class="process-number">2</div><h3>Verify</h3><p>Bring valid ID and ensure document is complete (unsigned).</p></div>
-        <div class="process-step"><div class="process-number">3</div><h3>Witness & Sign</h3><p>We verify identity, witness signing, and apply the seal.</p></div>
-        <div class="process-step"><div class="process-number">4</div><h3>Done</h3><p>Receive notarized document and any requested copies.</p></div>
-      </div>
-    </section>
-
-    <section class="results-section" aria-labelledby="notary-results">
-      <h2 id="notary-results">What to Expect</h2>
-      <div class="stats-grid">
-        <div class="stat-card"><span class="stat-number">15–30m</span><span class="stat-label">Typical Appointment</span></div>
-        <div class="stat-card"><span class="stat-number">Same-day</span><span class="stat-label">Availability</span></div>
-        <div class="stat-card"><span class="stat-number">ES/EN</span><span class="stat-label">Bilingual Support</span></div>
-        <div class="stat-card"><span class="stat-number">Multi-doc</span><span class="stat-label">Bundle Options</span></div>
-      </div>
-    </section>
-
-    <section class="faq-section" aria-labelledby="notary-faq">
-      <h2 id="notary-faq">Frequently Asked Questions</h2>
-      <div class="faq-list">
-        <details><summary>What ID do I need?</summary><p>A government-issued photo ID (e.g., driver’s license or passport) is required for all signers.</p></details>
-        <details><summary>Can you notarize documents in Spanish?</summary><p>Yes. We provide bilingual support and can notarize Spanish-language documents.</p></details>
-        <details><summary>Do you offer mobile notary?</summary><p>On-site options may be available by arrangement. Ask about availability and fees.</p></details>
-        <details><summary>Do you provide legal advice?</summary><p>No. We notarize signatures; for legal advice we refer licensed attorneys.</p></details>
-      </div>
-    </section>
-
-    <section class="related-services">
-      <h2>Servicios complementarios / Complementary Services</h2>
-      <div class="related-grid">
-        <a href="immigration.html" class="related-card" title="Immigration Form Preparation">
-          <div class="icon-circle">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-          </div>
-          <h3>Immigration Assistance</h3>
-          <p>Need immigration form help? We prepare USCIS documents and notarize supporting affidavits.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-        <a href="business-registration.html" class="related-card" title="Business Registration">
-          <div class="icon-circle">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-          </div>
-          <h3>Business Registration</h3>
-          <p>Starting a business? We notarize formation documents and operating agreements.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-        <a href="translations-admin.html" class="related-card" title="Translations & Admin">
-          <div class="icon-circle">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </div>
-          <h3>Translation Services</h3>
-          <p>Need document translation? We translate and notarize certified documents.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="lead-capture" aria-labelledby="book">
-      <div class="contact-inner">
-        <h2 id="book">Schedule Notarization</h2>
-        <p>Complete el formulario y nos pondremos en contacto pronto</p>
-        <form id="contactForm" class="modern-form" novalidate>
-          <div class="form-row">
-            <label for="name">Nombre completo / Full Name *</label>
-            <input id="name" name="name" type="text" required placeholder="Ej.: Carlos Méndez" />
-          </div>
-          <div class="form-row">
-            <label for="email">Correo electrónico / Email *</label>
-            <input id="email" name="email" type="email" required placeholder="tu@email.com" />
-          </div>
-          <div class="form-row">
-            <label for="phone">Teléfono / Phone</label>
-            <input id="phone" name="phone" type="tel" placeholder="(xxx) xxx-xxxx" />
-          </div>
-          <div class="form-row">
-            <label for="document-type">Type of document / Tipo de documento</label>
-            <select id="document-type" name="documentType">
-              <option value="">Select / Selecciona...</option>
-              <option value="affidavit">Affidavit / Declaración jurada</option>
-              <option value="contract">Contract / Contrato</option>
-              <option value="power">Power of Attorney / Poder notarial</option>
-              <option value="deed">Property Deed / Escritura</option>
-              <option value="certification">Document Certification / Certificación</option>
-              <option value="other">Other / Otro</option>
-            </select>
-          </div>
-          <input type="hidden" name="interest" value="notary" />
-          <!-- UTM Capture Fields -->
-          <input type="hidden" name="utm_source" id="utm_source">
-          <input type="hidden" name="utm_medium" id="utm_medium">
-          <input type="hidden" name="utm_campaign" id="utm_campaign">
-          <input type="hidden" name="gclid" id="gclid">
-          <!-- Honeypot -->
-          <div class="visually-hidden" aria-hidden="true">
-            <label for="website">Website</label>
-            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
-          </div>
-          <div class="form-row full-width">
-            <label for="message">Cuéntanos más / Tell us more</label>
-            <textarea id="message" name="message" rows="5" placeholder="Ej.: Necesito notarizar un contrato de venta..."></textarea>
-          </div>
-          <div class="form-row"><label><input type="checkbox" id="consent" name="consent" required> Acepto la política de privacidad y recibir comunicaciones / I agree to the privacy policy and to receive communications</label></div>
-          <button type="submit" class="btn primary">Send Message / Enviar</button>
-          <p class="form-helper">We offer flexible appointment scheduling including evenings and weekends.</p>
-          <p id="formStatus" class="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" class="visually-hidden">Footer</h2>
+  <footer class="site-footer">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="../assets/img/logo-icon.svg" alt="Inoa & Melenciano Logo" class="logo-icon">
-        <span>Inoa &amp; Melenciano</span>
-      </div>
-      <div class="footer-actions">
-        <button id="themeToggleFooter" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <img src="../assets/img/optima-logo.svg" alt="Logo" class="logo-icon">
+        <span>Optima Service Group</span>
       </div>
     </div>
     <div class="footer-columns">
       <div>
-        <h3 data-i18n="footer.company">Company</h3>
+        <h3>Company</h3>
         <ul>
-          <li><a href="../about.html" data-i18n="nav.about">About Us</a></li>
-          <li><a href="../team.html" data-i18n="nav.team">Our Team</a></li>
-          <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../team.html">Our Team</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h3 data-i18n="footer.services">Services</h3>
+        <h3>Services</h3>
         <ul>
-          <li><a href="real-estate-us.html" data-i18n="svc.realEstateUS">Real Estate (US)</a></li>
-          <li><a href="real-estate-dr.html" data-i18n="svc.realEstateDR">Paraíso Inmobiliario (DR)</a></li>
-          <li><a href="tax-prep.html" data-i18n="svc.taxPrep">Tax Preparation</a></li>
-          <li><a href="credit-repair.html" data-i18n="svc.creditRepair">Credit Repair</a></li>
-          <li><a href="immigration.html" data-i18n="svc.immigration">Immigration</a></li>
-          <li><a href="business-registration.html" data-i18n="svc.businessRegistration">Business Registration</a></li>
-          <li><a href="notary.html" data-i18n="svc.notary">Notary Public</a></li>
+          <li><a href="real-estate-us.html">Real Estate (US)</a></li>
+          <li><a href="real-estate-dr.html">Paraíso Inmobiliario (DR)</a></li>
+          <li><a href="tax-prep.html">Tax Preparation</a></li>
+          <li><a href="credit-repair.html">Credit Repair</a></li>
         </ul>
       </div>
       <div>
-        <h3 data-i18n="footer.connect">Connect</h3>
-        <p>Email: <a href="mailto:info@inoamelenciano.com">info@inoamelenciano.com</a></p>
-        <p data-i18n="footer.socialComingSoon">Social channels coming soon.</p>
-      </div>
-      <div>
-        <h3 data-i18n="footer.newsletter">Stay Informed</h3>
-        <p data-i18n="footer.newsletterDesc">Opt-in form coming soon (privacy-focused).</p>
+        <h3>Connect</h3>
+        <p>Phone: <a href="tel:+19783909619">(978) 390-9619</a></p>
+        <p>Email: <a href="mailto:info@optimaservicegroup.com">info@optimaservicegroup.com</a></p>
       </div>
     </div>
     <div class="legal">
-      <p>&copy; <span id="year"></span> Inoa &amp; Melenciano Services. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p>&copy; <span id="year"></span> Optima Service Group Services. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="/assets/js/i18n.js"></script>
-  <script src="/assets/js/main.js"></script>
-  <script>
-    // UTM capture for notary form
-    (function(){
-      try {
-        const p = new URLSearchParams(window.location.search);
-        ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
-          var el = document.getElementById(k);
-          if (el) el.value = p.get(k) || '';
-        });
-        var g = document.getElementById('gclid');
-        if(g){ g.value = p.get('gclid') || ''; }
-      } catch(e) {}
-    })();
-  </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Notary Public Services",
-      "serviceType": "Notary",
-      "availableLanguage": ["English","Spanish"],
-      "areaServed": [{"@type": "Country", "name": "United States"}],
-      "provider": {
-        "@type": "Organization",
-        "name": "Inoa & Melenciano Services",
-        "url": "https://inoamelenciano.com/",
-        "logo": "https://inoamelenciano.com/assets/img/logo-icon.svg"
-      },
-      "description": "Authorized notarization for affidavits, POA, real estate, and document certifications. Bilingual service.",
-      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free scheduling; per-document pricing at appointment"}
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.inoamelenciano.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.inoamelenciano.com/services/"},
-        {"@type": "ListItem", "position": 3, "name": "Notary Public", "item": "https://www.inoamelenciano.com/services/notary.html"}
-      ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type":"Question","name":"What ID do I need?","acceptedAnswer":{"@type":"Answer","text":"A government-issued photo ID (e.g., driver’s license or passport) is required for all signers."}},
-        {"@type":"Question","name":"Can you notarize documents in Spanish?","acceptedAnswer":{"@type":"Answer","text":"Yes. We provide bilingual support and notarize Spanish-language documents."}},
-        {"@type":"Question","name":"Do you offer mobile notary?","acceptedAnswer":{"@type":"Answer","text":"On-site options may be available by arrangement; ask about availability and fees."}},
-        {"@type":"Question","name":"Do you provide legal advice?","acceptedAnswer":{"@type":"Answer","text":"No. We notarize signatures; for legal advice we refer licensed attorneys."}}
-      ]
-    }
-    </script>
-  <!-- Sticky Mobile CTA Bar -->
-  <div class="sticky-cta" aria-label="Quick actions">
-    <a class="sticky-cta-btn call" href="tel:+19783909619">Call</a>
-    <a class="sticky-cta-btn whatsapp" href="https://wa.me/19783909619" target="_blank" rel="noopener">WhatsApp</a>
-    <a class="sticky-cta-btn book" href="../contact.html#contact-form">Book</a>
-  </div>
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
+
 
 
 
